@@ -1553,6 +1553,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+      draceon: {
+		randomBattleMoves: ["foulplay", "protect", "toxic", "wish"],
+		randomBattleLevel: 82,
+		randomDoubleBattleMoves: ["foulplay", "helpinghand", "moonlight", "protect", "snarl", "toxic"],
+		randomDoubleBattleLevel: 88,
+		tier: "UU",
+		doublesTier: "(DUU)",
+		natDexTier: "OU",
+	},
 	umbreon: {
 		randomBattleMoves: ["foulplay", "protect", "toxic", "wish"],
 		randomBattleLevel: 82,
