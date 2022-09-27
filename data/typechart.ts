@@ -322,7 +322,7 @@ export const TypeChart: {[k: string]: TypeData} = {
 			Psychic: 0,
 			Rock: 1,
 			Steel: 1,
-			Water: 0,
+			Water: 2,
 		},
 		HPivs: {atk: 30, def: 30},
 		HPdvs: {def: 13},
