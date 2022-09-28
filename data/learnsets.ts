@@ -22470,6 +22470,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			happyhour: ["6S6"],
 			hydropump: ["8M", "5S5"],
 			splash: ["8L1", "8V", "7L1", "7V", "7S7", "6L1", "6S6", "5L1", "5D", "5S5", "4L1", "4S0", "4S1", "4S2", "4S3", "4S4", "3L1"],
+                  megasplash: ["6T"],
 			tackle: ["8L15", "8V", "7L15", "7V", "6L15", "5L15", "4L15", "3L15"],
 		},
 		eventData: [
