@@ -6983,7 +6983,7 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
       megasplash: {
 		name: "Mega Splash",
-            desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
-		shortDesc: "OHKOs the target. Fails if user is a lower level. Nearly always goes first.",
+            desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. Pokemon with the Sturdy Ability are immune.",
+		shortDesc: "OHKOs the target. Nearly always goes first.",
 	},
 };
