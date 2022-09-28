@@ -781,7 +781,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 		onWeather(target) {
 			let sleet = false;
 			for (const pokemon of this.getAllActive()) {
-				if (pokemon.hasAbility('sleet')) {
+				if (pokemon.hasAbility('sleet') || pokemon.hasAbility('absolutezero')) {
 					sleet = true;
 				}
 			}

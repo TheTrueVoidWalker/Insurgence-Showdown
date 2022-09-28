@@ -1939,4 +1939,9 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+	absolutezero: {
+		name: "Absolute Zero",
+		desc: "On switch-in, this Pokemon summons Hail. This Pokemon takes no damage from Hail, and its SPA is doubled while in Hail. While this ability is active, Hail damage is increased to 20% of total HP per turn. ",
+		shortDesc: "Summons Hail, while hail is active doubles SPA and hail damage is increased to 1/5.",
+	},
 };
