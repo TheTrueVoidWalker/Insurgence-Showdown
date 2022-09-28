@@ -20471,18 +20471,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
       megasplash: {
 		num: -1,
-		basePower: 0,
+		basePower: 42069,
 		category: "Physical",
 		name: "Mega Splash",
 		pp: 5,
 		priority: 2,
-            accuracy: true,
+    	accuracy: true,
 		flags: {contact: 1},
-		ohko: true,
 		target: "normal",
+		onEffectiveness(typeMod, target, type) {
+			return 1;
+		},
 		type: "Water",
-		zMove: {basePower: 180},
-		maxMove: {basePower: 130},
 		contestType: "Beautiful",
 	},
 };
