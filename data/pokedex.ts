@@ -15191,7 +15191,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	},
 	druddigondelta: {
 		gen: 6,
-		num: 612,
+		num: 621,
 		name: "Druddigon-Delta",
 		baseSpecies: "Druddigon",
 		forme: "Delta",
