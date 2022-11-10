@@ -5327,6 +5327,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	druddigondelta: {
+		randomBattleMoves: ["earthquake", "glare", "gunkshot", "outrage", "stealthrock", "suckerpunch", "superpower"],
+		randomBattleLevel: 84,
+		tier: "OU",
+	},
 	golett: {
 		tier: "LC",
 	},
