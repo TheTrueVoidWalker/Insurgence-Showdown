@@ -6981,9 +6981,4 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Zombie Strike",
 		shortDesc: "No additional effect.",
 	},
-      megasplash: {
-		name: "Mega Splash",
-            desc: "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. Pokemon with the Sturdy Ability are immune.",
-		shortDesc: "OHKOs the target. Never misses. Nearly always goes first.",
-	},
 };

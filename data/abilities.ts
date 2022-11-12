@@ -5553,22 +5553,4 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -4,
 	},
-	absolutezero: {
-		onModifySpAPriority: 5,
-		onModifySpA(spa, pokemon) {
-			if (['hail'].includes(pokemon.effectiveWeather())) {
-				return this.chainModify(2);
-			}
-		},
-		onImmunity(type, pokemon) {
-			if (type === 'hail') return false;
-		},
-		onStart(source) {
-			this.field.setWeather('hail');
-		},
-		name: "Absolute Zero",
-		gen: 6,
-		rating: 5,
-		num: -10,
-	},
 };
