@@ -13227,7 +13227,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 537,
 		name: "Seismitoad",
 		types: ["Water", "Ground"],
-		baseStats: {hp: 105, atk: 95, def: 75, spa: 85, spd: 75, spe: 74},
+		baseStats: {hp: 110, atk: 100, def: 105, spa: 100, spd: 100, spe: 85},
 		abilities: {0: "Swift Swim", 1: "Poison Touch", H: "Water Absorb"},
 		heightm: 1.5,
 		weightkg: 62,

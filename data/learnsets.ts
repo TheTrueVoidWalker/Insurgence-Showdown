@@ -66529,6 +66529,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			venoshock: ["8M", "7M", "6M", "5M"],
 			waterpulse: ["7T", "6T"],
 			weatherball: ["8M"],
+				icebeam: ["8M"],
+				slackoff: ["8E"],
+				closecombat: ["8E"],
 		},
 		encounters: [
 			{generation: 5, level: 15},
