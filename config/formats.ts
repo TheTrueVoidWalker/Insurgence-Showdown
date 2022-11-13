@@ -354,7 +354,7 @@ export const Formats: FormatList = [
 		gameType: 'doubles',
 		ruleset: [
 			'Flat Rules', '!! Adjust Level = 50', 'VGC Timer', 'Limit Two Restricted',
-			'Max Level = 120', '+Unobtainable', '+Past', '+PastMove', 'Z-Move Clause',
+			'Max Level = 120', '+Unobtainable', '+Past', '+PastMove',
 		],
 		restricted: ['Restricted Legendary'],
 	},
@@ -365,7 +365,7 @@ export const Formats: FormatList = [
 		gameType: 'doubles',
 		ruleset: [
 			'Flat Rules', '!! Adjust Level = 50', 'VGC Timer', 'Max Level = 120',
-			'+Unobtainable', '+Past', '+PastMove', 'Z-Move Clause',
+			'+Unobtainable', '+Past', '+PastMove',
 		],
 	},
 	{
