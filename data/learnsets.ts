@@ -3281,7 +3281,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			curse: ["7V"],
 			defog: ["7T", "4M"],
 			detect: ["7V"],
-			doubleedge: ["7V", "3T"],
 			doubleteam: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			drillpeck: ["8V", "7L36", "7V", "6L37", "5L37", "4L37", "3L37"],
 			drillrun: ["8V", "7T", "6T", "5T"],
