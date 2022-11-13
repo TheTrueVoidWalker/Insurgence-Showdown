@@ -254,6 +254,9 @@ export const Formats: FormatList = [
 		name: "[Gen 8] NatDex Anything Goes",
 		mod: 'gen8',
 		ruleset: ['Standard NatDex'],
+		banlist: [
+			'Exeggutor + Trick Rock',
+		],
 	},
 	{
 		name: "[Gen 8] NatDex ZU",

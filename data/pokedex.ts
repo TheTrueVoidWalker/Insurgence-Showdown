@@ -2967,7 +2967,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Exeggutor",
 		types: ["Grass", "Psychic"],
 		baseStats: {hp: 95, atk: 95, def: 85, spa: 125, spd: 75, spe: 55},
-		abilities: {0: "Chlorophyll", H: "Harvest"},
+		abilities: {0: "Chlorophyll", 1: "Harvest", H: "Trick House"},
 		heightm: 2,
 		weightkg: 120,
 		color: "Yellow",
@@ -13233,7 +13233,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 62,
 		color: "Blue",
 		prevo: "Palpitoad",
-		evoLevel: 36,
+		evoLevel: 55,
 		eggGroups: ["Water 1"],
 	},
 	throh: {
