@@ -6277,7 +6277,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Hitmontop",
 		types: ["Fighting"],
 		gender: "M",
-		baseStats: {hp: 100, atk: 95, def: 110, spa: 20, spd: 110, spe: 75},
+		baseStats: {hp: 90, atk: 95, def: 110, spa: 20, spd: 110, spe: 75},
 		abilities: {0: "Intimidate", 1: "Technician", H: "Scrappy"},
 		heightm: 1.4,
 		weightkg: 48,
