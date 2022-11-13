@@ -4077,7 +4077,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Ice", "Flying"],
 		gender: "N",
 		baseStats: {hp: 90, atk: 85, def: 100, spa: 95, spd: 125, spe: 85},
-		abilities: {0: "Pressure", 1: "Absolute Zero", H: "Snow Cloak"},
+		abilities: {0: "Pressure", H: "Snow Cloak"},
 		heightm: 1.7,
 		weightkg: 55.4,
 		color: "Blue",
