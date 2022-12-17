@@ -14640,7 +14640,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			whirlpool: ["7V", "4M"],
 				auroraveil: ["8E"],
 				wish: ["8E"],
-				flipturn: ["8T"],
 		},
 		encounters: [
 			{generation: 1, level: 15},
@@ -28579,6 +28578,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			uproar: ["7T", "6T", "5T", "4T"],
 			uturn: ["7M", "6M", "5M", "4M"],
 				closecombat: ["8M"],
+				lunge: ["8M"],
 		},
 		encounters: [
 			{generation: 2, level: 7},
@@ -30650,7 +30650,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	aipomdelta: {
 		learnset: {
-			achillesheel: ["6M"],
 			astonish: ["6L1"],
 			screech: ["8M", "6L1"],
 			playnice: ["6L4"],
@@ -30872,7 +30871,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	ambipomdelta: {
 		learnset: {
-			achillesheel: ["6M"],
 			astonish: ["6L1"],
 			screech: ["8M", "6L1", "6L4"],
 			playnice: ["6L1"],
@@ -69024,7 +69022,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	dwebbledeltac: {
 		learnset: {
-			achillesheel: ["6M"],
 			pound: ["6L1"],
 			fairywind: ["6L5"],
 			sweetscent: ["6L7"],
@@ -69037,7 +69034,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			facade: ["6M", "6L29"],
 			aurorabeam: ["6L31"],
 			playrough: ["8M", "6L35"],
-			shellsmash: ["6L37"],
 			flail: ["6L41"],
 			gigaimpact: ["6M", "6L43"],
 			bulldoze: ["6M"],
@@ -69268,7 +69264,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	crustledeltac: {
 		learnset: {
-			achillesheel: ["6M"],
 			autotomize: ["6L1"],
 			fairywind: ["6L1", "6L5"],
 			sweetscent: ["6L1", "6L7"],
@@ -69283,7 +69278,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			aurorabeam: ["6L31"],
 			metalclaw: ["6L34"],
 			playrough: ["8M", "6L38"],
-            shellsmash: ["6L43"],
 			flail: ["6L50"],
 			gigaimpact: ["6M", "6L55"],
 			bulldoze: ["6M"],

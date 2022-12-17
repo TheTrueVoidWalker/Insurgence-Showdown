@@ -2514,7 +2514,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 87,
 		name: "Dewgong",
 		types: ["Water", "Ice"],
-		baseStats: {hp: 100, atk: 40, def: 85, spa: 80, spd: 105, spe: 60},
+		baseStats: {hp: 100, atk: 60, def: 50, spa: 80, spd: 105, spe: 70},
 		abilities: {0: "Thick Fat", 1: "Hydration", H: "Snow Warning"},
 		heightm: 1.7,
 		weightkg: 120,
