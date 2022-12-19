@@ -951,6 +951,15 @@ export class BattleActions {
 			}
 		}
 
+		for (const [i, target] of targetsCopy.entries()) {
+			if (target && pokemon !== target) {
+				target.gotAttacked(move, moveDamage[i] as number | false | undefined, pokemon);
+				if (typeof moveDamage[i] === 'number') {
+					target.timesAttacked += hit - 1;
+				}
+			}
+		}
+
 		if (move.ohko && !targets[0].hp) this.battle.add('-ohko');
 
 		if (!damage.some(val => !!val || val === 0)) return damage;
