@@ -289,6 +289,10 @@ interface MoveHitData {
 
 type MutableMove = BasicEffect & MoveData;
 export interface ActiveMove extends MutableMove {
+	ruinedSpA: any;
+	ruinedAtk: any;
+	ruinedDef: any;
+	ruinedSpD: any;
 	readonly effectType: 'Move';
 	readonly id: ID;
 	name: string;

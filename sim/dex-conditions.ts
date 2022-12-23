@@ -450,6 +450,7 @@ export interface EventMethods {
 	onFoeTrapPokemonPriority?: number;
 	onFractionalPriorityPriority?: number;
 	onHitPriority?: number;
+	onInvulnerabilityPriority?: number;
 	onModifyAccuracyPriority?: number;
 	onModifyAtkPriority?: number;
 	onModifyCritRatioPriority?: number;
@@ -551,6 +552,7 @@ export interface PokemonEventMethods extends EventMethods {
 	onAllySetStatus?: (
 		this: Battle, status: Condition, target: Pokemon, source: Pokemon, effect: Effect
 	) => boolean | null | void;
+	onAllySideConditionStart?: (this: Battle, target: Pokemon, source: Pokemon, sideCondition: Condition) => void;
 	onAllySetWeather?: (this: Battle, target: Pokemon, source: Pokemon, weather: Condition) => boolean | void;
 	onAllyStallMove?: (this: Battle, pokemon: Pokemon) => boolean | void;
 	onAllySwitchIn?: (this: Battle, pokemon: Pokemon) => void;

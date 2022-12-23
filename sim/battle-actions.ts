@@ -821,6 +821,9 @@ export class BattleActions {
 				if (this.battle.gen >= 5) {
 					// 35-35-15-15 out of 100 for 2-3-4-5 hits
 					targetHits = this.battle.sample([2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5, 5, 5]);
+					if (targetHits < 4 && pokemon.hasItem('loadeddice')) {
+						targetHits = 5 - this.battle.random(2);
+					}
 				} else {
 					targetHits = this.battle.sample([2, 2, 2, 3, 3, 3, 4, 5]);
 				}

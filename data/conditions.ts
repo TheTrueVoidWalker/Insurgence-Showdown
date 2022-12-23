@@ -167,7 +167,8 @@ export const Conditions: {[k: string]: ConditionData} = {
 			} else {
 				this.add('-start', target, 'confusion');
 			}
-			this.effectState.time = this.random(2, 6);
+			const min = sourceEffect?.id === 'axekick' ? 3 : 2;
+			this.effectState.time = this.random(min, 6);
 		},
 		onEnd(target) {
 			this.add('-end', target, 'confusion');
@@ -287,7 +288,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 			// note that this is not updated for moves called by other moves
 			// i.e. if Dig is called by Metronome, lastMoveTargetLoc will still be the user's location
 			let moveTargetLoc: number = attacker.lastMoveTargetLoc!;
-			if (effect.sourceEffect && this.dex.moves.get(effect.id).target === 'normal') {
+			if (effect.sourceEffect && this.dex.moves.get(effect.id).target !== 'self') {
 				// this move was called by another move such as Metronome
 				// and needs a random target to be determined this turn
 				// it will already have one by now if there is any valid target
@@ -795,6 +796,58 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-weather', 'none');
 		},
 	},
+	snow: {
+		name: 'Snow',
+		effectType: 'Weather',
+		duration: 5,
+		durationCallback(source, effect) {
+			if (source?.hasItem('icyrock')) {
+				return 8;
+			}
+			return 5;
+		},
+		// This should be applied directly to the stat before any of the other modifiers are chained
+		// So we give it increased priority.
+		onModifyDefPriority: 10,
+		onModifyDef(def, pokemon) {
+			let sleet = false;
+			for (const pokemon of this.getAllActive()) {
+				if (pokemon.hasAbility('sleet')) {
+					sleet = true;
+				}
+			}
+			if (pokemon.hasType('Ice') && this.field.isWeather('snow') && !sleet) {
+				return this.modify(def, 1.5);
+			}
+		},
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				if (this.gen <= 5) this.effectState.duration = 0;
+				this.add('-weather', 'Snow', '[from] ability: ' + effect.name, '[of] ' + source);
+			} else {
+				this.add('-weather', 'Snow');
+			}
+		},
+		onFieldResidualOrder: 1,
+		onFieldResidual() {
+			this.add('-weather', 'Snow', '[upkeep]');
+			if (this.field.isWeather('snow')) this.eachEvent('Weather');
+		},
+		onWeather(target) {
+			let sleet = false;
+			for (const pokemon of this.getAllActive()) {
+				if (pokemon.hasAbility('sleet')) {
+					sleet = true;
+				}
+			}
+			if (sleet) {
+				this.damage(target.baseMaxhp / 5);
+			}
+		},
+		onFieldEnd() {
+			this.add('-weather', 'none');
+		},
+	},
 	deltastream: {
 		name: 'DeltaStream',
 		effectType: 'Weather',
@@ -872,7 +925,49 @@ export const Conditions: {[k: string]: ConditionData} = {
 			this.add('-heal', pokemon, pokemon.getHealth, '[silent]');
 		},
 	},
-
+	// Commander needs two conditions so they are implemented here
+	// Dondozo
+	commanded: {
+		name: "Commanded",
+		noCopy: true,
+		onStart(pokemon) {
+			this.boost({atk: 2, spa: 2, spe: 2, def: 2, spd: 2}, pokemon);
+		},
+		onDragOutPriority: 2,
+		onDragOut() {
+			return false;
+		},
+		// Prevents Shed Shell allowing a swap
+		onTrapPokemonPriority: -11,
+		onTrapPokemon(pokemon) {
+			pokemon.trapped = true;
+		},
+	},
+	// Tatsugiri
+	commanding: {
+		name: "Commanding",
+		noCopy: true,
+		onStart(pokemon) {
+			this.add('-activate', pokemon, 'ability: Commander');
+		},
+		onDragOutPriority: 2,
+		onDragOut() {
+			return false;
+		},
+		// Prevents Shed Shell allowing a swap
+		onTrapPokemonPriority: -11,
+		onTrapPokemon(pokemon) {
+			pokemon.trapped = true;
+		},
+		// Override No Guard
+		onInvulnerabilityPriority: 2,
+		onInvulnerability(target, source, move) {
+			return false;
+		},
+		onBeforeTurn(pokemon) {
+			this.queue.cancelAction(pokemon);
+		},
+	},
 	// Arceus and Silvally's actual typing is implemented here.
 	// Their true typing for all their formes is Normal, and it's only
 	// Multitype and RKS System, respectively, that changes their type,
@@ -907,6 +1002,19 @@ export const Conditions: {[k: string]: ConditionData} = {
 				}
 			}
 			return [type];
+		},
+	},
+	rolloutstorage: {
+		name: 'rolloutstorage',
+		duration: 2,
+		onBasePower(relayVar, source, target, move) {
+			let bp = Math.max(1, move.basePower);
+			bp *= Math.pow(2, source.volatiles['rolloutstorage'].contactHitCount);
+			if (source.volatiles['defensecurl']) {
+				bp *= 2;
+			}
+			source.removeVolatile('rolloutstorage');
+			return bp;
 		},
 	},
 };

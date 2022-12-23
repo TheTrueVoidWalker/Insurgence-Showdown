@@ -1,4 +1,21 @@
 export const Items: {[itemid: string]: ItemData} = {
+	/*abilityshield: {
+		name: "Ability Shield",
+		spritenum: 0, // TODO
+		ignoreKlutz: true,
+		// Neutralizing Gas protection implemented in Pokemon.ignoringAbility() within sim/pokemon.ts
+		// and in Neutralizing Gas itself within data/abilities.ts
+		onSetAbility(ability, target, source, effect) {
+			if (effect && effect.effectType === 'Ability' && !effect.fullname?.endsWith('Trace')) {
+				this.add('-ability', source, effect);
+			}
+			this.add('-block', target, 'item: Ability Shield');
+			return null;
+		},
+		// Mold Breaker protection implemented in Battle.suppressingAbility() within sim/battle.ts
+		num: 1881,
+		gen: 9,
+	},*/
 	abomasite: {
 		name: "Abomasite",
 		spritenum: 575,
@@ -313,6 +330,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	auspiciousarmor: {
+		name: "Auspicious Armor",
+		spritenum: 0, // TODO
+		num: 2344,
+		gen: 8,
+	},
 	babiriberry: {
 		name: "Babiri Berry",
 		spritenum: 17,
@@ -568,6 +591,27 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 1121,
 		gen: 8,
 	},
+	/*boosterenergy: {
+		name: "Booster Energy",
+		spritenum: 0, // TODO
+		onUpdate(pokemon) {
+			if (pokemon.transformed) return;
+			if (this.queue.peek(true)?.choice === 'runSwitch') return;
+
+			if (pokemon.hasAbility('protosynthesis') && !this.field.isWeather('sunnyday') && pokemon.useItem()) {
+				pokemon.addVolatile('protosynthesis');
+			}
+			if (pokemon.hasAbility('quarkdrive') && !this.field.isTerrain('electricterrain') && pokemon.useItem()) {
+				pokemon.addVolatile('quarkdrive');
+			}
+		},
+		onTakeItem(item, source) {
+			if (source.baseSpecies.tags.includes("Paradox")) return false;
+			return true;
+		},
+		num: 1880,
+		gen: 9,
+	},*/
 	bottlecap: {
 		name: "Bottle Cap",
 		spritenum: 696,
@@ -977,6 +1021,26 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 3,
 		isNonstandard: "Past",
 	},
+	clearamulet: {
+		name: "Clear Amulet",
+		spritenum: 0, // TODO
+		onBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+				this.add('-fail', target, 'unboost', '[from] item: Clear Amulet', '[of] ' + target);
+			}
+		},
+		num: 1882,
+		gen: 8,
+	},
 	cloversweet: {
 		name: "Clover Sweet",
 		spritenum: 707,
@@ -1056,6 +1120,19 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 572,
 		gen: 5,
 		isNonstandard: "Past",
+	},
+	covertcloak: {
+		name: "Covert Cloak",
+		fling: {
+			basePower: 10,
+		},
+		spritenum: 0, // TODO
+		onModifySecondaries(secondaries) {
+			this.debug('Covert Cloak prevent secondary');
+			return secondaries.filter(effect => !!(effect.self || effect.dustproof));
+		},
+		num: 1885,
+		gen: 8,
 	},
 	crackedpot: {
 		name: "Cracked Pot",
@@ -1915,6 +1992,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onAfterMoveSecondary(target, source, move) {
 			if (source && source !== target && target.hp && move && move.category !== 'Status' && !move.isFutureMove) {
 				if (!this.canSwitch(target.side) || target.forceSwitchFlag || target.beingCalledBack || target.isSkyDropped()) return;
+				if (target.volatiles['commanding'] || target.volatiles['commanded']) return;
 				for (const pokemon of this.getAllActive()) {
 					if (pokemon.switchFlag === true) return;
 				}
@@ -1947,6 +2025,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (eject) {
 				if (target.hp) {
 					if (!this.canSwitch(target.side)) return;
+					if (target.volatiles['commanding'] || target.volatiles['commanded']) return;
 					for (const pokemon of this.getAllActive()) {
 						if (pokemon.switchFlag === true) return;
 					}
@@ -3608,6 +3687,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 269,
 		gen: 4,
 	},
+	loadeddice: {
+		name: "Loaded Dice",
+		spritenum: 0, // TODO
+		// partially implemented in sim/battle-actions.ts:BattleActions#hitStepMoveHitLoop
+		onModifyMove(move) {
+			if (move.multiaccuracy) {
+				delete move.multiaccuracy;
+			}
+		},
+		num: 1886,
+		gen: 8,
+	},
 	lopunnite: {
 		name: "Lopunnite",
 		spritenum: 626,
@@ -3860,6 +3951,12 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 137,
 		gen: 2,
 		isNonstandard: "Past",
+	},
+	maliciousarmor: {
+		name: "Malicious Armor",
+		spritenum: 0, // TODO
+		num: 1861,
+		gen: 8,
 	},
 	manectite: {
 		name: "Manectite",
@@ -4276,6 +4373,31 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 239,
 		gen: 2,
+	},
+	mirrorherb: {
+		name: "Mirror Herb",
+		fling: {
+			basePower: 10,
+		},
+		spritenum: 0, // TODO
+		onFoeAfterBoost(boost, target, source, effect) {
+			if (effect?.fullname?.endsWith('Opportunist') || effect?.fullname?.endsWith('Mirror Herb')) return;
+			const boostPlus: SparseBoostsTable = {};
+			let statsRaised = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! > 0) {
+					boostPlus[i] = boost[i];
+					statsRaised = true;
+				}
+			}
+			if (!statsRaised) return;
+			const pokemon: Pokemon = this.effectState.target;
+			pokemon.useItem();
+			this.boost(boostPlus, pokemon);
+		},
+		num: 1883,
+		gen: 8,
 	},
 	mistyseed: {
 		name: "Misty Seed",
@@ -5049,6 +5171,22 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 786,
 		gen: 7,
 		isNonstandard: "Past",
+	},
+	punchingglove: {
+		name: "Punching Glove",
+		spritenum: 0, // TODO
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				this.debug('Punching Glove boost');
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onModifyMove(move) {
+			if (move.flags['punch']) delete move.flags['contact'];
+		},
+		num: 1884,
+		gen: 8,
 	},
 	qualotberry: {
 		name: "Qualot Berry",
