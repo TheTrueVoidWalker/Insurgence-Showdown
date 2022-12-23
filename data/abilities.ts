@@ -4775,7 +4775,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (type === 'hail') return false;
 		},
 		onStart(source) {
-			this.field.setWeather('snow');
+			this.field.setWeather('hail');
 		},
 		name: "Sleet",
 		gen: 6,
@@ -4855,7 +4855,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (type === 'hail') return false;
 		},
 		onStart(source) {
-			this.field.setWeather('snow');
+			this.field.setWeather('hail');
 		},
 		name: "Snow Warning",
 		rating: 4,

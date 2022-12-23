@@ -766,6 +766,20 @@ export const Conditions: {[k: string]: ConditionData} = {
 			}
 			return 5;
 		},
+		// This should be applied directly to the stat before any of the other modifiers are chained
+		// So we give it increased priority.
+		onModifyDefPriority: 10,
+		onModifyDef(def, pokemon) {
+			let sleet = false;
+			for (const pokemon of this.getAllActive()) {
+				if (pokemon.hasAbility('sleet')) {
+					sleet = true;
+				}
+			}
+			if (pokemon.hasType('Ice') && this.field.isWeather('snow') && !sleet) {
+				return this.modify(def, 1.5);
+			}
+		},
 		onFieldStart(field, source, effect) {
 			if (effect?.effectType === 'Ability') {
 				if (this.gen <= 5) this.effectState.duration = 0;
@@ -790,58 +804,6 @@ export const Conditions: {[k: string]: ConditionData} = {
 				this.damage(target.baseMaxhp / 5);
 			} else {
 				this.damage(target.baseMaxhp / 16);
-			}
-		},
-		onFieldEnd() {
-			this.add('-weather', 'none');
-		},
-	},
-	snow: {
-		name: 'Snow',
-		effectType: 'Weather',
-		duration: 5,
-		durationCallback(source, effect) {
-			if (source?.hasItem('icyrock')) {
-				return 8;
-			}
-			return 5;
-		},
-		// This should be applied directly to the stat before any of the other modifiers are chained
-		// So we give it increased priority.
-		onModifyDefPriority: 10,
-		onModifyDef(def, pokemon) {
-			let sleet = false;
-			for (const pokemon of this.getAllActive()) {
-				if (pokemon.hasAbility('sleet')) {
-					sleet = true;
-				}
-			}
-			if (pokemon.hasType('Ice') && this.field.isWeather('snow') && !sleet) {
-				return this.modify(def, 1.5);
-			}
-		},
-		onFieldStart(field, source, effect) {
-			if (effect?.effectType === 'Ability') {
-				if (this.gen <= 5) this.effectState.duration = 0;
-				this.add('-weather', 'Snow', '[from] ability: ' + effect.name, '[of] ' + source);
-			} else {
-				this.add('-weather', 'Snow');
-			}
-		},
-		onFieldResidualOrder: 1,
-		onFieldResidual() {
-			this.add('-weather', 'Snow', '[upkeep]');
-			if (this.field.isWeather('snow')) this.eachEvent('Weather');
-		},
-		onWeather(target) {
-			let sleet = false;
-			for (const pokemon of this.getAllActive()) {
-				if (pokemon.hasAbility('sleet')) {
-					sleet = true;
-				}
-			}
-			if (sleet) {
-				this.damage(target.baseMaxhp / 5);
 			}
 		},
 		onFieldEnd() {

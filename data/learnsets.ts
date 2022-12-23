@@ -9903,7 +9903,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swift: ["8M"],
 			takedown: ["8M"],
 			taunt: ["8M"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			thrash: ["8L30"],
 			thunder: ["8M"],
@@ -10050,7 +10050,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			substitute: ["8M"],
 			sunnyday: ["8M"],
 			takedown: ["8M", "8L36"],
-			terablast: ["8M"],
+			  
 			thrash: ["8E"],
 			thunderfang: ["8M"],
 			willowisp: ["8M"],
@@ -10309,7 +10309,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			substitute: ["8M"],
 			sunnyday: ["8M"],
 			takedown: ["8M", "8L1"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			thunderfang: ["8M"],
 			wildcharge: ["8M"],
@@ -16648,7 +16648,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L1"],
 			takedown: ["8M"],
 			taunt: ["8M"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			thunder: ["8M"],
 			thunderbolt: ["8M"],
@@ -16774,7 +16774,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L1"],
 			takedown: ["8M"],
 			taunt: ["8M"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			thunder: ["8M"],
 			thunderbolt: ["8M"],
@@ -21206,7 +21206,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swordsdance: ["8M", "8L44"],
 			tailwind: ["8M"],
 			takedown: ["8M"],
-			terablast: ["8M"],
+
 			thief: ["8M"],
 			trailblaze: ["8M"],
 			uturn: ["8M"],
@@ -22842,7 +22842,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L1"],
 			tailwhip: ["8L1"],
 			takedown: ["8M"],
-			terablast: ["8M"],
+
 			thief: ["8M"],
 			thrash: ["8L50"],
 			trailblaze: ["8M"],
@@ -22896,7 +22896,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L1"],
 			tailwhip: ["8L1"],
 			takedown: ["8M"],
-			terablast: ["8M"],
+
 			thief: ["8M"],
 			thrash: ["8L50"],
 			trailblaze: ["8M"],
@@ -22949,7 +22949,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L1"],
 			tailwhip: ["8L1"],
 			takedown: ["8M"],
-			terablast: ["8M"],
+
 			thief: ["8M"],
 			thrash: ["8L50"],
 			trailblaze: ["8M"],
@@ -28149,7 +28149,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swift: ["8M", "8L31"],
 			tackle: ["8L1"],
 			takedown: ["8M"],
-			terablast: ["8M"],
+
 			thunderpunch: ["8M"],
 			wildcharge: ["8M"],
 			willowisp: ["8M"],
@@ -32393,7 +32393,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L4"],
 			tailwhip: ["8L1"],
 			takedown: ["8M"],
-			terablast: ["8M"],
+
 			toxic: ["8L36"],
 			toxicspikes: ["8M", "8L12"],
 			trailblaze: ["8M"],
@@ -32763,7 +32763,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			surf: ["8M"],
 			tailwhip: ["8L1"],
 			takedown: ["8M"],
-			terablast: ["8M"],
+
 			toxic: ["8L40"],
 			toxicspikes: ["8M", "8L4"],
 			trailblaze: ["8M"],
@@ -34022,7 +34022,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			sunnyday: ["8M"],
 			tailwind: ["8M"],
 			takedown: ["8M"],
-			terablast: ["8M"],
+
 			thief: ["8M"],
 			thunder: ["8M"],
 			thunderbolt: ["8M"],
@@ -34590,7 +34590,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L1"],
 			takedown: ["8M"],
 			taunt: ["8M"],
-			terablast: ["8M"],
+
 			toxic: ["8L44"],
 			toxicspikes: ["8M", "8L36"],
 			venoshock: ["8M"],
@@ -34645,7 +34645,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L1"],
 			takedown: ["8M"],
 			taunt: ["8M"],
-			terablast: ["8M"],
 			toxic: ["8L44"],
 			toxicspikes: ["8M", "8L36"],
 			venoshock: ["8M"],
@@ -35099,7 +35098,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swordsdance: ["8M"],
 			takedown: ["8M"],
 			taunt: ["8M", "8L6"],
-			terablast: ["8M"],
+
 			thief: ["8M"],
 			toxicspikes: ["8M"],
 			trailblaze: ["8M"],
@@ -35267,7 +35266,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swordsdance: ["8M"],
 			takedown: ["8M"],
 			taunt: ["8M", "8L6"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			toxicspikes: ["8M"],
 			trailblaze: ["8M"],
@@ -35548,7 +35547,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swordsdance: ["8M"],
 			takedown: ["8M"],
 			taunt: ["8M"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			thrash: ["8L56"],
 			thunderpunch: ["8M"],
@@ -37383,7 +37382,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swift: ["8M"],
 			tackle: ["8L1"],
 			takedown: ["8M", "8L21"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			thunder: ["8M"],
 			thunderbolt: ["8M"],
@@ -64952,7 +64951,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tailwhip: ["8L1"],
 			takedown: ["8M"],
 			taunt: ["8M"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			waterfall: ["8M"],
 			watergun: ["8L1"],
@@ -69162,7 +69161,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L4"],
 			tailwhip: ["8L1"],
 			takedown: ["8M", "8L36"],
-			terablast: ["8M"],
+			  
 			thrash: ["8L48"],
 			uproar: ["8L40"],
 			waterfall: ["8M"],
@@ -69213,7 +69212,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L4"],
 			tailwhip: ["8L1"],
 			takedown: ["8M", "8L36"],
-			terablast: ["8M"],
+			  
 			thrash: ["8L48"],
 			uproar: ["8L40"],
 			waterfall: ["8M"],
@@ -72184,7 +72183,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swift: ["8M"],
 			takedown: ["8M"],
 			taunt: ["8M", "8L20"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			torment: ["8L4"],
 			trick: ["8M"],
@@ -72347,7 +72346,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swordsdance: ["8M"],
 			takedown: ["8M"],
 			taunt: ["8M", "8L20"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			torment: ["8L1"],
 			trick: ["8M"],
@@ -78182,7 +78181,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swordsdance: ["8M", "8L64"],
 			takedown: ["8M"],
 			taunt: ["8M"],
-			terablast: ["8M"],
+			  
 			thief: ["8M"],
 			thunderwave: ["8M"],
 			torment: ["8L15"],
@@ -78464,7 +78463,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swift: ["8M"],
 			tailwind: ["8M", "8L18"],
 			takedown: ["8M"],
-			terablast: ["8M"],
+			  
 			thrash: ["8L72"],
 			uturn: ["8M"],
 			whirlwind: ["8L42"],
@@ -86350,7 +86349,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			sunnyday: ["8M"],
 			tackle: ["8L1"],
 			takedown: ["8M"],
-			terablast: ["8M"],
+			  
 			thunder: ["8M"],
 			thunderbolt: ["8M"],
 			watergun: ["8L1"],
@@ -86497,7 +86496,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tackle: ["8L1"],
 			takedown: ["8M"],
 			tearfullook: ["8L1"],
-			terablast: ["8M"],
+			  
 			thunder: ["8M"],
 			thunderbolt: ["8M"],
 			thunderpunch: ["8M"],
@@ -87504,7 +87503,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			substitute: ["8M"],
 			tackle: ["8L1"],
 			takedown: ["8M", "8L36"],
-			terablast: ["8M"],
+			  
 			wideguard: ["8L1"],
 		},
 	},
@@ -89099,7 +89098,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			tailwind: ["8M"],
 			takedown: ["8M"],
 			taunt: ["8M"],
-			terablast: ["8M"],
+			  
 			trailblaze: ["8M"],
 			triplearrows: ["8L0"],
 			uturn: ["8M", "8L1"],
@@ -100535,7 +100534,7 @@ enamorus: {
 		tailwind: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		torment: ["8L5"],
 		twister: ["8L15"],
 		uproar: ["8L50"],
@@ -100586,7 +100585,7 @@ enamorustherian: {
 		tailwind: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		torment: ["8L5"],
 		twister: ["8L15"],
 		uproar: ["8L50"],
@@ -100636,7 +100635,7 @@ sprigatito: {
 		tailwhip: ["8L1"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		trailblaze: ["8M"],
 		uturn: ["8M", "8L21"],
 		worryseed: ["8L25"],
@@ -100684,7 +100683,7 @@ floragato: {
 		tailwhip: ["8L1"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thunderpunch: ["8M"],
 		trailblaze: ["8M"],
 		uturn: ["8M", "8L24"],
@@ -100750,7 +100749,7 @@ meowscarada: {
 		tailwhip: ["8L1"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderpunch: ["8M"],
 		toxicspikes: ["8M"],
@@ -100802,7 +100801,7 @@ fuecoco: {
 		sunnyday: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunderfang: ["8M"],
 		willowisp: ["8M"],
 		yawn: ["8L17"],
@@ -100847,7 +100846,7 @@ crocalor: {
 		sunnyday: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunderfang: ["8M"],
 		willowisp: ["8M", "8L42"],
 		yawn: ["8L15"],
@@ -100906,7 +100905,7 @@ skeledirge: {
 		sunnyday: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunderfang: ["8M"],
 		torchsong: ["8L0"],
 		willowisp: ["8M", "8L47"],
@@ -100947,7 +100946,7 @@ quaxly: {
 		surf: ["8M"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		watergun: ["8L1"],
 		waterpledge: ["8M"],
 		wingattack: ["8L10"],
@@ -100986,7 +100985,7 @@ quaxwell: {
 		surf: ["8M"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		watergun: ["8L1"],
 		waterpledge: ["8M"],
 		waterpulse: ["8M", "8L17"],
@@ -101045,7 +101044,7 @@ quaquaval: {
 		swordsdance: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		uturn: ["8M"],
 		watergun: ["8L1"],
 		waterpledge: ["8M"],
@@ -101090,7 +101089,7 @@ lechonk: {
 		tackle: ["8L1"],
 		tailwhip: ["8L1"],
 		takedown: ["8M", "8L27"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trailblaze: ["8M"],
 		uproar: ["8L32"],
@@ -101136,7 +101135,7 @@ oinkologne: {
 		tackle: ["8L1"],
 		tailwhip: ["8L1"],
 		takedown: ["8M", "8L26"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trailblaze: ["8M"],
 		uproar: ["8L38"],
@@ -101182,7 +101181,7 @@ oinkolognef: {
 		tackle: ["8L1"],
 		tailwhip: ["8L1"],
 		takedown: ["8M", "8L28"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trailblaze: ["8M"],
 		uproar: ["8L34"],
@@ -101230,7 +101229,7 @@ tarountula: {
 		sunnyday: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		throatchop: ["8L40"],
 		toxicspikes: ["8M"],
@@ -101283,7 +101282,7 @@ spidops: {
 		tackle: ["8L1"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		throatchop: ["8L45"],
 		toxicspikes: ["8M"],
@@ -101320,7 +101319,7 @@ nymble: {
 		sunnyday: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trailblaze: ["8M"],
 		uturn: ["8M"],
@@ -101368,7 +101367,7 @@ lokix: {
 		tackle: ["8L1"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		throatchop: ["8L36"],
 		trailblaze: ["8M"],
@@ -101406,7 +101405,7 @@ rellor: {
 		substitute: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M", "8L24"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		weatherball: ["8E"],
 		xscissor: ["8M"],
@@ -101469,7 +101468,7 @@ rabsca: {
 		sunnyday: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M", "8L24"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trick: ["8M"],
 		trickroom: ["8M"],
@@ -101522,7 +101521,7 @@ greavard: {
 		tackle: ["8L1"],
 		tailwhip: ["8L6"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderfang: ["8M"],
 		trick: ["8M"],
@@ -101572,7 +101571,7 @@ houndstone: {
 		tackle: ["8L1"],
 		tailwhip: ["8L6"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderfang: ["8M"],
 		trick: ["8M"],
@@ -101619,7 +101618,7 @@ flittle: {
 		sunnyday: ["8M"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trick: ["8M"],
 		trickroom: ["8M"],
@@ -101682,7 +101681,7 @@ espathra: {
 		sunnyday: ["8M"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trick: ["8M"],
 		trickroom: ["8M"],
@@ -101746,7 +101745,7 @@ farigiraf: {
 		swift: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
@@ -101792,7 +101791,7 @@ wiglett: {
 		surf: ["8M"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		throatchop: ["8L36"],
 		watergun: ["8L1"],
 		waterpulse: ["8M", "8L20"],
@@ -101833,7 +101832,7 @@ wugtrio: {
 		surf: ["8M"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		throatchop: ["8L48"],
 		tripledive: ["8L30"],
 		watergun: ["8L1"],
@@ -101880,7 +101879,7 @@ dondozo: {
 		surf: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thrash: ["8E"],
 		tickle: ["8L5"],
 		waterfall: ["8M"],
@@ -101930,7 +101929,7 @@ veluza: {
 		surf: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thrash: ["8E"],
 		waterfall: ["8M"],
 		waterpulse: ["8M", "8L11"],
@@ -101976,7 +101975,7 @@ finizen: {
 		surf: ["8M"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		tickle: ["8E"],
 		waterfall: ["8M"],
 		watergun: ["8L1"],
@@ -102036,7 +102035,7 @@ palafin: {
 		swift: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		waterfall: ["8M"],
 		watergun: ["8L1"],
 		waterpulse: ["8M"],
@@ -102077,7 +102076,7 @@ smoliv: {
 		swift: ["8M"],
 		synthesis: ["8E"],
 		tackle: ["8L1"],
-		terablast: ["8M"],
+		  
 		terrainpulse: ["8L38"],
 		trailblaze: ["8M"],
 		weatherball: ["8E"],
@@ -102113,7 +102112,7 @@ dolliv: {
 		sweetscent: ["8L1"],
 		swift: ["8M"],
 		tackle: ["8L1"],
-		terablast: ["8M"],
+		  
 		terrainpulse: ["8L42"],
 		trailblaze: ["8M"],
 	},
@@ -102162,7 +102161,7 @@ arboliva: {
 		sweetscent: ["8L1"],
 		swift: ["8M"],
 		tackle: ["8L1"],
-		terablast: ["8M"],
+		  
 		terrainpulse: ["8L46"],
 		trailblaze: ["8M"],
 	},
@@ -102200,7 +102199,7 @@ capsakid: {
 		substitute: ["8M"],
 		sunnyday: ["8M", "8L17"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trailblaze: ["8M"],
 		worryseed: ["8E"],
@@ -102244,7 +102243,7 @@ scovillain: {
 		substitute: ["8M"],
 		sunnyday: ["8M", "8L17"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trailblaze: ["8M"],
 		willowisp: ["8M"],
@@ -102282,7 +102281,7 @@ tadbulb: {
 		suckerpunch: ["8L45"],
 		swift: ["8M"],
 		tackle: ["8L1"],
-		terablast: ["8M"],
+		  
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
 		thundershock: ["8L7"],
@@ -102325,7 +102324,7 @@ bellibolt: {
 		suckerpunch: ["8L45"],
 		swift: ["8M"],
 		tackle: ["8L1"],
-		terablast: ["8M"],
+		  
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
 		thundershock: ["8L7"],
@@ -102374,7 +102373,7 @@ varoom: {
 		swagger: ["8L32"],
 		takedown: ["8M"],
 		taunt: ["8M", "8L7"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		torment: ["8E"],
 		toxic: ["8E"],
@@ -102424,7 +102423,7 @@ revavroom: {
 		swagger: ["8L32"],
 		takedown: ["8M"],
 		taunt: ["8M", "8L7"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		toxicspikes: ["8M"],
 		uproar: ["8L46"],
@@ -102472,7 +102471,7 @@ orthworm: {
 		substitute: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M", "8L26"],
-		terablast: ["8M"],
+		  
 		wrap: ["8L1"],
 	},
 },
@@ -102520,7 +102519,7 @@ tandemaus: {
 		switcheroo: ["8E"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderwave: ["8M"],
 		tickle: ["8E"],
@@ -102571,7 +102570,7 @@ maushold: {
 		swift: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderwave: ["8M"],
 		tidyup: ["8L1"],
@@ -102623,7 +102622,7 @@ mausholdfour: {
 		swift: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderwave: ["8M"],
 		tidyup: ["8L1"],
@@ -102675,7 +102674,7 @@ cetoddle: {
 		superpower: ["8E"],
 		tackle: ["8L1"],
 		takedown: ["8M", "8L19"],
-		terablast: ["8M"],
+		  
 		waterpulse: ["8M"],
 		yawn: ["8E"],
 	},
@@ -102721,7 +102720,7 @@ cetitan: {
 		substitute: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M", "8L19"],
-		terablast: ["8M"],
+		  
 		waterpulse: ["8M"],
 	},
 },
@@ -102761,7 +102760,7 @@ frigibax: {
 		swordsdance: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M", "8L36"],
-		terablast: ["8M"],
+		  
 	},
 },
 arctibax: {
@@ -102800,7 +102799,7 @@ arctibax: {
 		swordsdance: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M", "8L40"],
-		terablast: ["8M"],
+		  
 	},
 },
 baxcalibur: {
@@ -102850,7 +102849,7 @@ baxcalibur: {
 		swordsdance: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M", "8L42"],
-		terablast: ["8M"],
+		  
 		thunderfang: ["8M"],
 		zenheadbutt: ["8M"],
 	},
@@ -102887,7 +102886,7 @@ tatsugiri: {
 		surf: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M", "8L28"],
-		terablast: ["8M"],
+		  
 		watergun: ["8L1"],
 		waterpulse: ["8M", "8L17"],
 	},
@@ -102937,7 +102936,7 @@ cyclizar: {
 		tackle: ["8L1"],
 		takedown: ["8M"],
 		taunt: ["8M", "8L11"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderbolt: ["8M"],
 		thunderfang: ["8M"],
@@ -102985,7 +102984,7 @@ pawmi: {
 		sweetkiss: ["8E"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
@@ -103036,7 +103035,7 @@ pawmo: {
 		sunnyday: ["8M"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
@@ -103102,7 +103101,7 @@ pawmot: {
 		sunnyday: ["8M"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
@@ -103150,7 +103149,7 @@ wattrel: {
 		swift: ["8M"],
 		tailwind: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
 		thundershock: ["8L4"],
@@ -103196,7 +103195,7 @@ kilowattrel: {
 		swift: ["8M"],
 		tailwind: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
 		thundershock: ["8L4"],
@@ -103259,7 +103258,7 @@ bombirdier: {
 		tailwind: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M", "8L7"],
 		torment: ["8L24"],
 		uturn: ["8M"],
@@ -103307,7 +103306,7 @@ squawkabilly: {
 		tailwind: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M", "8L20"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		torment: ["8L10"],
 		uproar: ["8L24"],
@@ -103357,7 +103356,7 @@ flamigo: {
 		tailwind: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		throatchop: ["8L48"],
 		uturn: ["8M"],
@@ -103412,7 +103411,7 @@ klawf: {
 		sunnyday: ["8M"],
 		swordsdance: ["8M", "8L33"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trailblaze: ["8M"],
 		visegrip: ["8L1"],
@@ -103457,7 +103456,7 @@ nacli: {
 		sunnyday: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		zenheadbutt: ["8M"],
 	},
 },
@@ -103500,7 +103499,7 @@ naclstack: {
 		sunnyday: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		zenheadbutt: ["8M"],
 	},
 },
@@ -103552,7 +103551,7 @@ garganacl: {
 		sunnyday: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunderpunch: ["8M"],
 		wideguard: ["8L1"],
 		zenheadbutt: ["8M"],
@@ -103595,7 +103594,7 @@ glimmet: {
 		stoneedge: ["8M"],
 		substitute: ["8M"],
 		sunnyday: ["8M"],
-		terablast: ["8M"],
+		  
 		toxic: ["8E"],
 		toxicspikes: ["8M"],
 		venoshock: ["8M", "8L22"],
@@ -103644,7 +103643,7 @@ glimmora: {
 		stoneedge: ["8M"],
 		substitute: ["8M"],
 		sunnyday: ["8M"],
-		terablast: ["8M"],
+		  
 		toxicspikes: ["8M", "8L1"],
 		venoshock: ["8M", "8L22"],
 	},
@@ -103692,7 +103691,7 @@ shroodle: {
 		swordsdance: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M", "8L33"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		toxic: ["8E"],
 		trailblaze: ["8M"],
@@ -103744,7 +103743,7 @@ grafaiai: {
 		swordsdance: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M", "8L37"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trailblaze: ["8M"],
 		uturn: ["8M", "8L25"],
@@ -103793,7 +103792,7 @@ fidough: {
 		tackle: ["8L1"],
 		tailwhip: ["8L6"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunderfang: ["8M"],
 		trailblaze: ["8M"],
 		wish: ["8E"],
@@ -103844,7 +103843,7 @@ dachsbun: {
 		tackle: ["8L1"],
 		tailwhip: ["8L6"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunderfang: ["8M"],
 		trailblaze: ["8M"],
 		workup: ["8L22"],
@@ -103890,7 +103889,7 @@ maschiff: {
 		tackle: ["8L1"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderfang: ["8M"],
 		trailblaze: ["8M"],
@@ -103938,7 +103937,7 @@ mabosstiff: {
 		tackle: ["8L1"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderfang: ["8M"],
 		trailblaze: ["8M"],
@@ -103985,7 +103984,7 @@ bramblin: {
 		spikes: ["8M"],
 		strengthsap: ["8E"],
 		substitute: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trailblaze: ["8M"],
 	},
@@ -104027,7 +104026,7 @@ brambleghast: {
 		solarbeam: ["8M"],
 		spikes: ["8M"],
 		substitute: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		trailblaze: ["8M"],
 	},
@@ -104050,7 +104049,7 @@ gimmighoul: {
 		substitute: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 	},
 },
@@ -104092,7 +104091,7 @@ gholdengo: {
 		substitute: ["8M", "8L21"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
@@ -104151,7 +104150,7 @@ greattusk: {
 		sunnyday: ["8M", "8L1"],
 		takedown: ["8M"],
 		taunt: ["8M", "8L14"],
-		terablast: ["8M"],
+		  
 		thunderfang: ["8M"],
 		zenheadbutt: ["8M"],
 	},
@@ -104201,7 +104200,7 @@ brutebonnet: {
 		sunnyday: ["8M", "8L1"],
 		synthesis: ["8L21"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thrash: ["8L42"],
 		trailblaze: ["8M"],
@@ -104250,7 +104249,7 @@ sandyshocks: {
 		supersonic: ["8L1"],
 		swift: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
 		thundershock: ["8L1"],
@@ -104325,7 +104324,7 @@ screamtail: {
 		substitute: ["8M"],
 		sunnyday: ["8M", "8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
 		thunderfang: ["8M"],
@@ -104382,7 +104381,7 @@ fluttermane: {
 		sunnyday: ["8M", "8L1"],
 		swift: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
 		thunderwave: ["8M"],
@@ -104435,7 +104434,7 @@ slitherwing: {
 		sunnyday: ["8M", "8L1"],
 		superpower: ["8L49"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thrash: ["8L91"],
 		trailblaze: ["8M"],
 		uturn: ["8M"],
@@ -104505,7 +104504,7 @@ roaringmoon: {
 		tailwind: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		throatchop: ["8L77"],
 		thunderfang: ["8M"],
 		uturn: ["8M"],
@@ -104554,7 +104553,7 @@ irontreads: {
 		stoneedge: ["8M"],
 		substitute: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunder: ["8M"],
 		thunderfang: ["8M"],
 		voltswitch: ["8M"],
@@ -104609,7 +104608,7 @@ ironmoth: {
 		sunnyday: ["8M"],
 		swift: ["8M"],
 		takedown: ["8M", "8L21"],
-		terablast: ["8M"],
+		  
 		toxicspikes: ["8M"],
 		uturn: ["8M"],
 		venoshock: ["8M"],
@@ -104664,7 +104663,7 @@ ironhands: {
 		swordsdance: ["8M"],
 		tackle: ["8L1"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
 		thunderpunch: ["8M", "8L21"],
@@ -104719,7 +104718,7 @@ ironjugulis: {
 		tailwind: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		triattack: ["8L1"],
 		uturn: ["8M"],
 		workup: ["8L1"],
@@ -104786,7 +104785,7 @@ ironthorns: {
 		swordsdance: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thunder: ["8M"],
 		thunderbolt: ["8M"],
 		thunderfang: ["8M", "8L1"],
@@ -104834,7 +104833,7 @@ ironbundle: {
 		swift: ["8M"],
 		takedown: ["8M", "8L21"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		uturn: ["8M"],
 		waterpulse: ["8M"],
@@ -104909,7 +104908,7 @@ ironvaliant: {
 		swift: ["8M"],
 		swordsdance: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		thunderbolt: ["8M"],
 		thunderpunch: ["8M"],
 		thunderwave: ["8M"],
@@ -104961,7 +104960,7 @@ tinglu: {
 		sunnyday: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M", "8L30"],
-		terablast: ["8M"],
+		  
 		thrash: ["8L35"],
 		throatchop: ["8L55"],
 		whirlwind: ["8L25"],
@@ -105012,7 +105011,7 @@ chienpao: {
 		swordsdance: ["8M", "8L25"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		throatchop: ["8L70"],
 	},
 },
@@ -105064,7 +105063,7 @@ wochien: {
 		sunnyday: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		tickle: ["8L5"],
 		trailblaze: ["8M"],
 		zenheadbutt: ["8M"],
@@ -105112,7 +105111,7 @@ chiyu: {
 		swagger: ["8L60"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		willowisp: ["8M", "8L15"],
 		zenheadbutt: ["8M"],
 	},
@@ -105176,14 +105175,13 @@ koraidon: {
 		swordsdance: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M", "8S0"],
 		thunderfang: ["8M"],
 		uturn: ["8M"],
 		wildcharge: ["8M"],
 		zenheadbutt: ["8M"],
 	},
 	eventData: [
-		{generation: 9, level: 68, nature: "Quirky", ivs: {hp: 31, atk: 31, def: 28, spa: 31, spd: 28, spe: 31}, moves: ["flamethrower", "collisioncourse", "endure", "terablast"], pokeball: "pokeball"},
+		{generation: 9, level: 68, nature: "Quirky", ivs: {hp: 31, atk: 31, def: 28, spa: 31, spd: 28, spe: 31}, moves: ["flamethrower", "collisioncourse", "endure"], pokeball: "pokeball"},
 		{generation: 9, level: 72, nature: "Adamant", ivs: {hp: 25, atk: 31, def: 25, spa: 31, spd: 25, spe: 31}, moves: ["gigaimpact", "bulkup", "collisioncourse", "flamethrower"]},
 	],
 	eventOnly: true,
@@ -105235,7 +105233,7 @@ miraidon: {
 		swordsdance: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M", "8S0"],
+
 		thunder: ["8M", "8L84"],
 		thunderbolt: ["8M"],
 		thundershock: ["8L1"],
@@ -105246,7 +105244,7 @@ miraidon: {
 		zenheadbutt: ["8M"],
 	},
 	eventData: [
-		{generation: 9, level: 68, nature: "Quirky", ivs: {hp: 31, atk: 31, def: 28, spa: 31, spd: 28, spe: 31}, moves: ["powergem", "electrodrift", "endure", "terablast"], pokeball: "pokeball"},
+		{generation: 9, level: 68, nature: "Quirky", ivs: {hp: 31, atk: 31, def: 28, spa: 31, spd: 28, spe: 31}, moves: ["powergem", "electrodrift", "endure"], pokeball: "pokeball"},
 		{generation: 9, level: 72, nature: "Modest", ivs: {hp: 25, atk: 31, def: 25, spa: 31, spd: 25, spe: 31}, moves: ["hyperbeam", "charge", "electrodrift", "powergem"]},
 	],
 	eventOnly: true,
@@ -105294,7 +105292,7 @@ tinkatink: {
 		substitute: ["8M"],
 		sweetkiss: ["8L21"],
 		swordsdance: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderwave: ["8M"],
 	},
@@ -105340,7 +105338,7 @@ tinkatuff: {
 		substitute: ["8M"],
 		sweetkiss: ["8L21"],
 		swordsdance: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderwave: ["8M"],
 	},
@@ -105389,7 +105387,7 @@ tinkaton: {
 		substitute: ["8M"],
 		sweetkiss: ["8L21"],
 		swordsdance: ["8M"],
-		terablast: ["8M"],
+		  
 		thief: ["8M"],
 		thunderwave: ["8M"],
 	},
@@ -105422,7 +105420,7 @@ charcadet: {
 		substitute: ["8M"],
 		sunnyday: ["8M"],
 		takedown: ["8M"],
-		terablast: ["8M"],
+		  
 		willowisp: ["8M", "8L16"],
 	},
 },
@@ -105476,7 +105474,7 @@ armarouge: {
 		sunnyday: ["8M"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		trick: ["8M"],
 		trickroom: ["8M"],
 		wideguard: ["8L1"],
@@ -105534,7 +105532,7 @@ ceruledge: {
 		swordsdance: ["8M", "8L37"],
 		takedown: ["8M"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		willowisp: ["8M", "8L16"],
 		xscissor: ["8M"],
 	},
@@ -105588,7 +105586,7 @@ toedscool: {
 		swift: ["8M"],
 		tackle: ["8L15"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		tickle: ["8E"],
 		toxic: ["8E"],
 		toxicspikes: ["8M"],
@@ -105644,7 +105642,7 @@ toedscruel: {
 		swift: ["8M"],
 		tackle: ["8L15"],
 		taunt: ["8M"],
-		terablast: ["8M"],
+		  
 		toxicspikes: ["8M"],
 		trailblaze: ["8M"],
 		trickroom: ["8M"],
