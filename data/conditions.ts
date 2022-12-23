@@ -776,7 +776,7 @@ export const Conditions: {[k: string]: ConditionData} = {
 					sleet = true;
 				}
 			}
-			if (pokemon.hasType('Ice') && this.field.isWeather('snow') && !sleet) {
+			if (pokemon.hasType('Ice') && this.field.isWeather('hail') && !sleet) {
 				return this.modify(def, 1.5);
 			}
 		},
@@ -802,9 +802,9 @@ export const Conditions: {[k: string]: ConditionData} = {
 			}
 			if (sleet) {
 				this.damage(target.baseMaxhp / 5);
-			} else {
+			}/* else {
 				this.damage(target.baseMaxhp / 16);
-			}
+			}*/
 		},
 		onFieldEnd() {
 			this.add('-weather', 'none');

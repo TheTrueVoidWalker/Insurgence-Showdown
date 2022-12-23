@@ -283,11 +283,11 @@ export const DefaultText: {[k: string]: DefaultText} = {
 		upkeep: "  (Rain continues to fall.)",
 	},
 	hail: {
-		weatherName: "Hail",
-		start: "  It started to hail!",
-		end: "  The hail stopped.",
-		upkeep: "  (The hail is crashing down.)",
-		damage: "  [POKEMON] is buffeted by the hail!",
+		weatherName: "Snow",
+		start: "  It started to snow!",
+		end: "  The snow stopped.",
+		upkeep: "  (The snow is falling gently.)",
+		damage: "  [POKEMON] is buffeted by Sleet!",
 	},
 	desolateland: {
 		weatherName: "Intense Sun",
