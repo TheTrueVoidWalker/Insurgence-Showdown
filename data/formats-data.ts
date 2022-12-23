@@ -2102,6 +2102,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	wooper: {
 		tier: "LC",
 	},
+	wooperpaldea: {
+		tier: "LC",
+	},
 	wooperdelta: {
 		tier: "LC",
 	},
@@ -2198,6 +2201,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleMoves: ["firstimpression", "liquidation", "iciclespear", "pinmissile", "aquajet", "rockblast", "watershuriken"],
 		randomBattleLevel: 90,
 		tier: "PU",
+	},
+	dudunsparce: {
+		tier: "UU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
 	},
 	gligar: {
 		isNonstandard: "Past",
