@@ -918,6 +918,9 @@ export const Aliases: {[alias: string]: string} = {
 	snorlaxdeltasakura: "Snorlax-Delta",
 	mewspace: "Mew",
 
+	tatsugiridroopy: "Tatsugiri",
+	tatsugiristretchy: "Tatsugiri",
+
 	pokestargiant2: "Pokestar Giant",
 	pokestarmonica2: "Pokestar Giant",
 	pokestarufopropu1: "Pokestar UFO",
