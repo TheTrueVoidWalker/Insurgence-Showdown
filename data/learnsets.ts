@@ -19987,6 +19987,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			waterpulse: ["7T", "6T", "4M", "3M"],
 			whirlpool: ["8M", "8L1", "7V", "4M"],
 			yawn: ["8L1", "7L1", "6L1", "5L1", "4L1"],
+
+			aurasphere: ["8M"],
+			terrainpulse: ["8T"],
 		},
 		eventData: [
 			{generation: 3, level: 50, abilities: ["swiftswim"], moves: ["leer", "watergun", "twister", "agility"], pokeball: "pokeball"},
@@ -48693,6 +48696,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			trick: ["7T", "6T", "5T", "4T"],
 			trickroom: ["7M", "6M", "5M", "4M"],
 			zenheadbutt: ["7T", "7L26", "6T", "6L26", "5T", "5L26", "4T", "4L26"],
+
+			slackoff: ["8E"],
+			irondefense: ["8E"],
+			cosmicpower: ["8E"],
+			expandingforce: ["8E"],
 		},
 		encounters: [
 			{generation: 6, level: 30},
@@ -50023,6 +50031,14 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			weatherball: ["8M"],
 			whirlpool: ["8M", "4M"],
 			zenheadbutt: ["8M", "8L1", "7T", "7L1", "6T", "6L1", "5T", "5L1", "4T", "4L1", "4S0"],
+
+			dragonrush: ["8L35"],
+			dragonhammer: ["8L40"],
+			wavecrash: ["8L45"],
+			icefang: ["8L30"],
+			powerwhip: ["8E"],
+			irondefense: ["8E"],
+			bodypress: ["8E"],
 		},
 		eventData: [
 			{generation: 4, level: 51, gender: "F", nature: "Gentle", abilities: ["oblivious"], moves: ["earthquake", "aquatail", "zenheadbutt", "gigaimpact"], pokeball: "cherishball"},
@@ -50577,6 +50593,15 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			worryseed: ["7T", "6T", "5T", "4T"],
 			wrap: ["8L1"],
 			wringout: ["7L1", "6L1", "5L76", "4L76"],
+
+			leafstorm: ["8L46"],
+			powergem: ["8L39"],
+			strengthsap: ["8E"],
+			corrode: ["8M"],
+			nastyplot: ["8M"],
+			calmmind: ["8M"],
+			ancientroar: ["8M"],
+			spikes: ["8M"],
 		},
 	},
 	anorith: {
@@ -50648,6 +50673,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			watergun: ["8L4", "7L7", "6L7", "5L13", "5S0", "4L13", "3L19"],
 			waterpulse: ["8E", "7T", "7E", "6T", "6E", "5E", "4M", "3M"],
 			xscissor: ["8M", "8L44", "7M", "7L44", "6M", "6L44", "5M", "5L61", "4M", "4L61"],
+
+			magnitude: ["8L26"],
 		},
 		eventData: [
 			{generation: 5, level: 15, gender: "M", moves: ["harden", "mudsport", "watergun", "crosspoison"], pokeball: "cherishball"},
@@ -50735,6 +50762,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			watergun: ["8L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
 			waterpulse: ["7T", "6T", "4M", "3M"],
 			xscissor: ["8M", "8L48", "7M", "7L46", "6M", "6L46", "5M", "5L73", "4M", "4L73"],
+
+			highhorsepower: ["8L52"],
+			flipturn: ["8T"],
+			drillrun: ["8M"],
+			spikes: ["8M"],
 		},
 	},
 	feebas: {
@@ -51266,6 +51298,15 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			brushfire: ["6M"],
 			wonderroom: ["7T", "6T", "5T"],
 			workup: ["7M", "5M"],
+
+			extremespeed: ["8L50"],
+			vacuumwave: ["8L15"],
+			machpunch: ["8L25"],
+			aquajet: ["8L13"],
+			bulletpunch: ["8L30"],
+			accelerock: ["8E"],
+			swordsdance: ["8M"],
+			closecombat: ["8M"],
 		},
 	},
 	shuppet: {
@@ -51775,7 +51816,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			doubleedge: ["3T"],
 			doubleteam: ["7M", "6M", "5M", "4M", "3M"],
 			dracojet: ["6M"],
-			dragondance: ["7E", "6E", "5E", "4E"],
+			dragondance: ["8M", "7E", "6E", "5E", "4E"],
 			dragonhammer: ["7E"],
 			dragonify: ["6M"],
 			dragonpulse: ["7T", "6T", "5T"],
@@ -51806,7 +51847,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			naturalgift: ["7L30", "7E", "6L1", "6E", "5L67", "5E", "4M", "4L57"],
 			naturepower: ["7M", "7E", "6M", "6E", "5E", "4E", "3E"],
 			ominouswind: ["4T"],
-			outrage: ["7T", "6T", "5T", "4T"],
+			outrage: ["8L50", "7T", "6T", "5T", "4T"],
 			protect: ["7M", "6M", "5M", "4M", "3M"],
 			razorleaf: ["7L1", "6L1", "5L11", "4L11", "3L11"],
 			razorwind: ["7E", "6E", "5E", "4E", "3E"],
@@ -51836,9 +51877,13 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			synthesis: ["7T", "7L50", "7E", "6T", "6L41", "6E", "5T", "5L41", "5E", "4T", "4L41", "4E", "4S0", "3L47"],
 			tailwind: ["7T", "6T", "5T", "4T"],
 			toxic: ["7M", "6M", "5M", "4M", "3M"],
-			twister: ["4T"],
+			twister: ["8L10"],
 			whirlwind: ["7L21", "6L21", "5L27", "4L27", "3L27"],
 			worryseed: ["7T", "6T", "5T", "4T"],
+
+			dragonrage: ["8L15"],
+			dragonclaw: ["8L36"],
+			dracometeor: ["8T"],
 		},
 		eventData: [
 			{generation: 4, level: 53, gender: "F", nature: "Jolly", abilities: ["chlorophyll"], moves: ["airslash", "synthesis", "sunnyday", "solarbeam"], pokeball: "cherishball"},
