@@ -14241,7 +14241,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		forme: "Hisui",
 		types: ["Normal", "Ghost"],
 		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 55, atk: 100, def: 60, spa: 125, spd: 60, spe: 110},
+		baseStats: {hp: 55, atk: 100, def: 60, spa: 120, spd: 60, spe: 105},
 		abilities: {0: "Illusion"},
 		heightm: 1.6,
 		weightkg: 73,
