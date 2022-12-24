@@ -1877,6 +1877,11 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5.",
 		shortDesc: "While this Pokemon is poisoned, its physical attacks have 1.5x power.",
 	},
+	blackmamba: {
+		name: "Black Mamba",
+		desc: "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5. It takes no damage from poison.",
+		shortDesc: "While this Pokemon is poisoned, its physical attacks have 1.5x power; no HP loss.",
+	},
 	toxicdebris: {
 		name: "Toxic Debris",
 		desc: "When this Pokemon is hit by a physical attack, Toxic Spikes are set on the opposing side of the field.",
