@@ -51305,6 +51305,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			aquajet: ["8L13"],
 			bulletpunch: ["8L30"],
 			accelerock: ["8E"],
+			jetpunch: ["8E"],
 			swordsdance: ["8M"],
 			closecombat: ["8M"],
 		},
