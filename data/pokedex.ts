@@ -1833,7 +1833,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Fire", "Rock"],
 		genderRatio: {M: 0.75, F: 0.25},
 		baseStats: {hp: 95, atk: 115, def: 80, spa: 95, spd: 80, spe: 90},
-		abilities: {0: "Intimidate", 1: "Flash Fire", H: "Head Smash"},
+		abilities: {0: "Intimidate", 1: "Flash Fire", H: "Rock Head"},
 		heightm: 2,
 		weightkg: 168,
 		color: "Brown",
