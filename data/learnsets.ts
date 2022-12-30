@@ -16876,7 +16876,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			synthesis: ["8L25", "7T", "7E", "7V", "6T", "6E", "5T", "5E", "5D", "4T", "4E", "3E"],
 			takedown: ["7V"],
 			telekinesis: ["7T", "5M"],
-			teleport: ["8V", "7V"],
+			//teleport: ["8V", "7V"],
 			thief: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			toxic: ["8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			trickroom: ["8M", "7M", "6M", "5M", "4M"],
@@ -16975,7 +16975,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			synthesis: ["8L1", "7T", "6T", "5T", "4T"],
 			takedown: ["7V"],
 			telekinesis: ["7T", "5M"],
-			teleport: ["8V", "7V"],
+			//teleport: ["8V", "7V"],
 			terrainpulse: ["8T"],
 			thief: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			toxic: ["8V", "7M", "7V", "6M", "5M", "4M", "3M"],
@@ -43276,6 +43276,9 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			waterpulse: ["7T", "6T", "4M", "3M"],
 			watersport: ["7L1", "6L1", "5L1", "4L1", "3L1"],
 			whirlwind: ["7L1", "6L1", "5L54", "4L54", "3L53"],
+
+			sparklingaria: ["8E"],
+			boomburst: ["8L50"],
 		},
 		encounters: [
 			{generation: 6, level: 21, maxEggMoves: 1},
@@ -43609,6 +43612,13 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			waterpulse: ["7T", "6T", "4M", "3M"],
 			brushfire: ["6M"],
 			workup: ["7M", "5M"],
+
+			psychicfangs: ["8E"],
+			bodypress: ["8M"],
+			closecombat: ["8M"],
+			acrobatics: ["8M"],
+			uturn: ["8M"],
+			swordsdance: ["8M"],
 		},
 	},
 	slaking: {
@@ -44383,6 +44393,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			whirlpool: ["4M"],
 			whirlwind: ["7L16", "6L16", "5L16", "4L16", "3L22"],
 			workup: ["7M", "5M"],
+
+			tripleaxel: ["8M"],
+			saltcure: ["8L0"],
+			rockblast: ["8L0"],
+			bulletseed: ["8L0"],
+			slackoff: ["8L0"],
 		},
 		encounters: [
 			{generation: 6, level: 22},
@@ -47609,6 +47625,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			waterpulse: ["7T", "6T", "4M", "3M"],
 			wringout: ["7L1", "6L1", "5L66", "4L59"],
 			yawn: ["7L1", "6L1", "5L1", "4L1", "3L1"],
+
+			irondefense: ["8L0"],
+			spikes: ["8M"],
+			avalanche: ["8E"],
+			slackoff: ["8E"],
+			defog: ["8E"],
 		},
 	},
 	carvanha: {
@@ -50431,6 +50453,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			trickroom: ["8M", "7M", "6M", "5M", "4M"],
 			wonderroom: ["8M", "7T", "6T", "5T"],
 			zenheadbutt: ["8M", "7T", "6T", "5T", "4T"],
+
+			recover: ["8L45"],
+			spikes: ["8M"],
+			flamethrower: ["8M"],
+			powergem: ["8M"],
+			closecombat: ["8M"],
 		},
 	},
 	lileep: {
