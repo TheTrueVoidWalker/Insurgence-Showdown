@@ -49697,6 +49697,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			leafblade: ["8M"],
 			earthpower: ["8M"],
 			fireblast: ["8M"],
+			crosspoison: ["8M"],
 		},
 		eventData: [
 			{generation: 3, level: 18, moves: ["wrap", "lick", "bite", "poisontail"], pokeball: "pokeball"},
