@@ -1816,7 +1816,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Normal", "Dragon"],
 		genderRatio: {M: 0.75, F: 0.25},
 		baseStats: {hp: 90, atk: 110, def: 80, spa: 100, spd: 80, spe: 95},
-		abilities: {0: "Intimidate", 1: "Flash Fire", H: "Rock Head"},
+		abilities: {0: "Inner Focus", 1: "Intimidate", H: "Multiscale"},
 		weightkg: 155,
 		heightm: 1,
 		color: "Red",
