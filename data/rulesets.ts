@@ -139,6 +139,7 @@ export const Rulesets: {[k: string]: FormatData} = {
 		ruleset: [
 			'Obtainable', '+Unobtainable', '+Past', 'Sketch Gen 8 Moves', '+PastMove', 'Team Preview', 'Nickname Clause', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause',
 		],
+		banlist: ['Permafrost'],
 		onValidateSet(set) {
 			// These Pokemon are still unobtainable
 			const unobtainables = [
