@@ -1995,7 +1995,8 @@ export const Chat = new class {
 		if (plugin.crqHandlers) {
 			Object.assign(Chat.crqHandlers, plugin.crqHandlers);
 		}
-		if (plugin.roomSettings) {
+		const noSettings = ["uno", "mafia", "jeopardy", "hangman", "blackjack"]
+		if (plugin.roomSettings && !noSettings.includes(name)) {
 			if (!Array.isArray(plugin.roomSettings)) plugin.roomSettings = [plugin.roomSettings];
 			Chat.roomSettings = Chat.roomSettings.concat(plugin.roomSettings);
 		}
