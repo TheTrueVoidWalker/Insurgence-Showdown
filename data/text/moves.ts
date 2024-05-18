@@ -7392,4 +7392,9 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Zombie Strike",
 		shortDesc: "No additional effect.",
 	},
+	peerlessslash: {
+		name: "Peerless Slash",
+		desc: "If this move is successful and the user has not fainted, the effects of Leech Seed and binding moves end for the user, and all hazards are removed from the user's side of the field.",
+		shortDesc: "Free user from hazards/bind/Leech Seed.",
+	}
 };

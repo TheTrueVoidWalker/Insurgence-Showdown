@@ -22072,4 +22072,50 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Ghost",
 	},
+	peerlessslash: {
+		num: 2001,
+		accuracy: 90,
+		basePower: 65,
+		category: "Special",
+		//isNonstandard: "Unobtainable",
+		name: "Peerless Slash",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 0, protect: 1, mirror: 1, slicing: 1},
+		onAfterHit(target, pokemon) {
+			if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+				this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+			}
+			const sideConditions = [
+				'spikes', 'toxicspikes', 'livewire', 'permafrost', 'stealthrock', 'stealthcoal', 'stickyweb', 'gmaxsteelsurge',
+			];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+			}
+			if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+				pokemon.removeVolatile('partiallytrapped');
+			}
+		},
+		onAfterSubDamage(damage, target, pokemon) {
+			if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+				this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
+			}
+			const sideConditions = [
+				'spikes', 'toxicspikes', 'livewire', 'permafrost', 'stealthrock', 'stealthcoal', 'stickyweb', 'gmaxsteelsurge',
+			];
+			for (const condition of sideConditions) {
+				if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+					this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
+				}
+			}
+			if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+				pokemon.removeVolatile('partiallytrapped');
+			}
+		},
+		secondary: {}, // allows sheer force to trigger
+		target: "normal",
+		type: "Fighting",
+	},
 };
