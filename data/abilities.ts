@@ -1260,7 +1260,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	etherealshroud: {
 		onTryHit(target, source, move) {
-			if (move.category === 'Status' || source.hasAbility('scrappy') || target === source) return;
+			if (move.category === 'Status' || source.hasAbility('scrappy') || source.hasAbility('mindseye') || target === source) return;
 			if (target.volatiles['miracleeye'] || target.volatiles['foresight']) return;
 			if (move.type === 'Normal' || move.type === 'Fighting') {
 				this.add('-immune', target, '[from] ability: Ethereal Shroud');
@@ -1268,7 +1268,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onAllyTryHitSide(target, source, move) {
-			if (move.category === 'Status' || source.hasAbility('scrappy') || target === source) return;
+			if (move.category === 'Status' || source.hasAbility('scrappy') || source.hasAbility('mindseye') || target === source) return;
 			if (target.volatiles['miracleeye'] || target.volatiles['foresight']) return;
 			if (move.type === 'Normal' || move.type === 'Fighting') {
 				this.add('-immune', this.effectState.target, '[from] ability: Ethereal Shroud');
@@ -3190,7 +3190,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.add('-immune', this.effectState.target, '[from] ability: Omnitype');
 				return null;
 			}
-			if (target.volatiles['foresight'] || source.hasAbility('scrappy')) return;
+			if (target.volatiles['foresight'] || source.hasAbility('scrappy') || source.hasAbility('mindseye')) return;
 			if (move.type === 'Normal' || move.type === 'Fighting') {
 				this.add('-immune', this.effectState.target, '[from] ability: Omnitype');
 				return null;
@@ -3219,7 +3219,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				this.add('-immune', this.effectState.target, '[from] ability: Omnitype');
 				return null;
 			}
-			if (target.volatiles['foresight'] || source.hasAbility('scrappy')) return;
+			if (target.volatiles['foresight'] || source.hasAbility('scrappy') || source.hasAbility('mindseye')) return;
 			if (move.type === 'Normal' || move.type === 'Fighting') {
 				this.add('-immune', this.effectState.target, '[from] ability: Omnitype');
 				return null;
@@ -6301,5 +6301,118 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		// implemented in the corresponding move
 		rating: 3,
 		num: -4,
+	},
+	hospitality: {
+		onStart(pokemon) {
+			for (const ally of pokemon.adjacentAllies()) {
+				this.heal(ally.baseMaxhp / 4, ally, pokemon);
+			}
+		},
+		name: "Hospitality",
+		rating: 0,
+		num: 299,
+	},
+	mindseye: {
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			move.ignoreEvasion = true;
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Fighting'] = true;
+				move.ignoreImmunity['Normal'] = true;
+			}
+		},
+		onBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			if (boost.accuracy && boost.accuracy < 0) {
+				delete boost.accuracy;
+				if (!(effect as ActiveMove).secondaries) {
+					this.add("-fail", target, "unboost", "accuracy", "[from] ability: Keen Eye", "[of] " + target);
+				}
+			}
+		},
+		name: "Mind's Eye",
+		rating: 0,
+		num: 300,
+	},
+	toxicchain: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Toxic Chain's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+
+			if (this.randomChance(3, 10)) {
+				target.trySetStatus('tox', source);
+			}
+		},
+		name: "Toxic Chain",
+		rating: 4.5,
+		num: 305,
+	},
+	supersweetsyrup: {
+		onStart(pokemon) {
+			if (pokemon.syrupTriggered) return;
+			pokemon.syrupTriggered = true;
+			this.add('-ability', pokemon, 'Supersweet Syrup');
+			for (const target of pokemon.adjacentFoes()) {
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({evasion: -1}, target, pokemon, null, true);
+				}
+			}
+		},
+		name: "Supersweet Syrup",
+		rating: 1.5,
+		num: 306,
+	},
+	terashift: {
+		onPreStart(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Terapagos') return;
+			if (pokemon.species.forme !== 'Terastal') {
+				this.add('-activate', pokemon, 'ability: Tera Shift');
+				pokemon.formeChange('Terapagos-Terastal', this.effect, true);
+				pokemon.baseMaxhp = Math.floor(Math.floor(
+					2 * pokemon.species.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100
+				) * pokemon.level / 100 + 10);
+				const newMaxHP = pokemon.baseMaxhp;
+				pokemon.hp = newMaxHP - (pokemon.maxhp - pokemon.hp);
+				pokemon.maxhp = newMaxHP;
+				this.add('-heal', pokemon, pokemon.getHealth, '[silent]');
+			}
+		},
+		name: "Tera Shift",
+		rating: 3,
+		num: 307,
+	},
+	terashell: {
+		onEffectiveness(typeMod, target, type, move) {
+			if (!target || target.species.name !== 'Terapagos-Terastal') return;
+			if (this.effectState.resisted) return -1; // all hits of multi-hit move should be not very effective
+			if (move.category === 'Status') return;
+			if (!target.runImmunity(move.type)) return; // immunity has priority
+			if (target.hp < target.maxhp) return;
+
+			this.add('-activate', target, 'ability: Tera Shell');
+			this.effectState.resisted = true;
+			return -1;
+		},
+		onAnyAfterMove() {
+			this.effectState.resisted = false;
+		},
+		name: "Tera Shell",
+		rating: 3.5,
+		num: 308,
+	},
+	poisonpuppeteer: {
+		onAnyAfterSetStatus(status, target, source, effect) {
+			if (source.baseSpecies.name !== "Pecharunt") return;
+			if (source !== this.effectState.target || target === source || effect.effectType !== 'Move') return;
+			if (status.id === 'psn' || status.id === 'tox') {
+				target.addVolatile('confusion');
+			}
+		},
+		name: "Poison Puppeteer",
+		rating: 3,
+		num: 310,
 	},
 };
