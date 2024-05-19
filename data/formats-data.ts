@@ -8751,4 +8751,97 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	walkingwake: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	ironleaves: {
+		tier: "RUBL",
+		doublesTier: "(DUU)",
+		natDexTier: "RUBL",
+	},
+	poltchageist: {
+		tier: "LC",
+	},
+	sinistcha: {
+		tier: "UU",
+		doublesTier: "DOU",
+		natDexTier: "UU",
+	},
+	okidogi: {
+		tier: "RU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	munkidori: {
+		tier: "NU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	fezandipiti: {
+		tier: "RU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	ogerpon: {
+		tier: "UU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	ogerponwellspring: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	ogerponhearthflame: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "Uber",
+	},
+	ogerponcornerstone: {
+		tier: "UU",
+		doublesTier: "DUU",
+		natDexTier: "UUBL",
+	},
+	archaludon: {
+		tier: "Uber",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	hydrapple: {
+		tier: "UU",
+		doublesTier: "(DUU)",
+		natDexTier: "UU",
+	},
+	gougingfire: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	ragingbolt: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
+	ironboulder: {
+		tier: "UUBL",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	ironcrown: {
+		tier: "UU",
+		doublesTier: "DUU",
+		natDexTier: "OU",
+	},
+	terapagos: {
+		tier: "Uber",
+		doublesTier: "DUber",
+		natDexTier: "Uber",
+	},
+	pecharunt: {
+		tier: "UU",
+		doublesTier: "DUU",
+		natDexTier: "RU",
+	},
 };
