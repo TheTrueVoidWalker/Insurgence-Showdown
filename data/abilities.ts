@@ -3740,12 +3740,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	protean: {
 		onPrepareHit(source, target, move) {
+			if (this.effectState.protean) return;
 			if (move.hasBounced || move.isFutureMove || move.sourceEffect === 'snatch') return;
 			const type = move.type;
 			if (type && type !== '???' && source.getTypes().join() !== type) {
 				if (!source.setType(type)) return;
+				this.effectState.protean = true;
 				this.add('-start', source, 'typechange', type, '[from] ability: Protean');
 			}
+		},
+		onSwitchIn(pokemon) {
+			delete this.effectState.protean;
 		},
 		name: "Protean",
 		rating: 4.5,
@@ -5234,7 +5239,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onBasePowerPriority: 21,
 		onBasePower(basePower, attacker, defender, move) {
 			if (this.effectState.fallen) {
-				const powMod = [4096, 4506, 4915, 5325, 5734, 6144];
+				const powMod = [4096 + (5/10)*0, 4096 + (5/10)*410, 4096 + (5/10)*819,
+				4096 + (5/10)*1229, 4096 + (5/10)*1638, 4096 + (5/10)*2048];
 				this.debug(`Supreme Overlord boost: ${powMod[this.effectState.fallen]}/4096`);
 				return this.chainModify([powMod[this.effectState.fallen], 4096]);
 			}
@@ -5242,6 +5248,31 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Supreme Overlord",
 		rating: 3.5,
 		num: 293,
+	},
+	thesupremeoverlord: {
+		onStart(pokemon) {
+			if (pokemon.side.totalFainted) {
+				this.add('-activate', pokemon, 'ability: Supreme Overlord');
+				const fallen = Math.min(pokemon.side.totalFainted, 5);
+				this.add('-start', pokemon, `fallen${fallen}`, '[silent]');
+				this.effectState.fallen = fallen;
+			}
+		},
+		onEnd(pokemon) {
+			this.add('-end', pokemon, `fallen${this.effectState.fallen}`, '[silent]');
+		},
+		onBasePowerPriority: 21,
+		onBasePower(basePower, attacker, defender, move) {
+			if (this.effectState.fallen) {
+				const powMod = [4096 + (10/10)*0, 4096 + (10/10)*410, 4096 + (10/10)*819,
+				4096 + (10/10)*1229, 4096 + (10/10)*1638, 4096 + (10/10)*2048];
+				this.debug(`The TRUE Supreme Overlord boost: ${powMod[this.effectState.fallen]}/4096`);
+				return this.chainModify([powMod[this.effectState.fallen], 4096]);
+			}
+		},
+		name: "The TRUE Supreme Overlord",
+		rating: 3.5,
+		num: 2293,
 	},
 	surgesurfer: {
 		onModifySpe(spe) {

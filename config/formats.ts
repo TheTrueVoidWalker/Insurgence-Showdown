@@ -253,7 +253,7 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 8] NatDex Anything Goes",
 		mod: 'gen8',
-		ruleset: ['Standard NatDex'],
+		ruleset: ['Standard NatDex', 'Sleep Clause Mod'],
 		banlist: [
 			'Exeggutor + Trick Rock',
 		],
@@ -304,7 +304,7 @@ export const Formats: FormatList = [
 		debug: true,
 		battle: {trunc: Math.trunc},
 		// no restrictions, for serious (other than team preview)
-		ruleset: ['Team Preview', 'Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
+		ruleset: ['Team Preview', 'Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100', 'Sleep Clause Mod'],
 	},
 
 	// Sw/Sh Doubles

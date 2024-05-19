@@ -4668,11 +4668,11 @@ export const MovesText: {[k: string]: MoveText} = {
 
 		activate: "  [POKEMON] is about to be attacked by its [ITEM]!",
 	},
-	/*populationbomb: {
+	populationbomb: {
 		name: "Population Bomb",
 		desc: "Hits ten times. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
 		shortDesc: "Hits 10 times. Each hit can miss.",
-	},*/
+	},
 	pounce: {
 		name: "Pounce",
 		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",

@@ -3442,7 +3442,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	darkvoid: {
 		num: 464,
-		accuracy: 50,
+		accuracy: 75,
 		basePower: 0,
 		category: "Status",
 		isNonstandard: "Past",
@@ -6823,12 +6823,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Gigaton Hammer",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		condition: {
-			onDisableMove(pokemon) {
-				if (pokemon.lastMove?.id === 'gigatonhammer') pokemon.disableMove('gigatonhammer');
-			},
-		},
+		flags: {protect: 1, mirror: 1, cantusetwice: 1},
 		secondary: null,
 		target: "normal",
 		type: "Steel",
@@ -6895,12 +6890,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		condition: {
 			noCopy: true,
-			duration: 2,
-			onRestart() {
-				this.effectState.duration = 2;
-			},
-			onBeforeTurn() {
-				this.effectState.turnPassed = true;
+			onStart(pokemon) {
+				this.add('-singlemove', pokemon, 'Glaive Rush', '[silent]');
 			},
 			onAccuracy() {
 				if (this.effectState.turnPassed) return true;
@@ -6909,6 +6900,11 @@ export const Moves: {[moveid: string]: MoveData} = {
 				if (this.effectState.turnPassed) {
 					return this.chainModify(2);
 				}
+			},
+			onBeforeMovePriority: 100,
+			onBeforeMove(pokemon) {
+				this.debug('removing Glaive Rush drawback before attack');
+				pokemon.removeVolatile('glaiverush');
 			},
 		},
 		secondary: null,
@@ -11041,7 +11037,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	lusterpurge: {
 		num: 295,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 95,
 		category: "Special",
 		name: "Luster Purge",
 		pp: 5,
@@ -12526,12 +12522,17 @@ export const Moves: {[moveid: string]: MoveData} = {
 	mistball: {
 		num: 296,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 95,
 		category: "Special",
 		name: "Mist Ball",
 		pp: 5,
 		priority: 0,
 		flags: {bullet: 1, protect: 1, mirror: 1},
+		self: {
+			onHit(source) {
+				this.field.setTerrain('mistyterrain');
+			},
+		},
 		secondary: {
 			chance: 50,
 			boosts: {
@@ -14186,7 +14187,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Ghost",
 	},
-	/*populationbomb: {
+	populationbomb: {
 		num: 860,
 		accuracy: 90,
 		basePower: 20,
@@ -14200,7 +14201,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		secondary: null,
 		target: "normal",
 		type: "Normal",
-	},*/
+	},
 	pounce: {
 		num: 884,
 		accuracy: 100,
