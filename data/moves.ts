@@ -22227,11 +22227,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 			}
 			this.add('-prepare', attacker, move.name);
 			this.boost({spa: 1}, attacker, attacker, move);
-			if (['raindance', 'primordialsea'].includes(attacker.effectiveWeather())) {
-				this.attrLastMove('[still]');
-				this.addMove('-anim', attacker, move.name, defender);
-				return;
-			}
 			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
 				return;
 			}
