@@ -22605,7 +22605,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Kingambit",
 		types: ["Dark", "Steel"],
 		baseStats: {hp: 100, atk: 135, def: 120, spa: 60, spd: 85, spe: 50},
-		abilities: {0: "Defiant", 1: "Supreme Overlord", H: "Pressure"},
+		abilities: {0: "Defiant", 1: "Supreme Overlord", H: "The TRUE Supreme Overlord"},
 		heightm: 2,
 		weightkg: 120,
 		color: "Black",
