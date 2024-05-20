@@ -11304,7 +11304,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: 452,
 		name: "Drapion",
 		types: ["Poison", "Dark"],
-		baseStats: {hp: 50, atk: 100, def: 110, spa: 95, spd: 85, spe: 85},
+		baseStats: {hp: 45, atk: 100, def: 110, spa: 95, spd: 85, spe: 90},
 		abilities: {0: "Battle Armor", 1: "Sniper", H: "Heliophobia"},
 		heightm: 1.3,
 		weightkg: 61.5,

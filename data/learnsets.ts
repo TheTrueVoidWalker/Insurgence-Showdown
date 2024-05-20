@@ -106134,6 +106134,7 @@ ceruledge: {
 		  
 		willowisp: ["8M", "8L16"],
 		xscissor: ["8M"],
+		poltergeist: ["8T"],
 	},
 },
 toedscool: {
