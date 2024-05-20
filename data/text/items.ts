@@ -2680,4 +2680,32 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Vile Vial",
 		desc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
 	},
+	fairyfeather: {
+		name: "Fairy Feather",
+		desc: "Holder's Fairy-type attacks have 1.2x power.",
+	},
+	syrupyapple: {
+		name: "Syrupy Apple",
+		desc: "Evolves Applin into Dipplin when used.",
+	},
+	unremarkableteacup: {
+		name: "Unremarkable Teacup",
+		desc: "Evolves Poltchageist into Sinistcha when used.",
+	},
+	masterpieceteacup: {
+		name: "Masterpiece Teacup",
+		desc: "Evolves Poltchageist-Artisan into Sinistcha-Masterpiece when used.",
+	},
+	cornerstonemask: {
+		name: "Cornerstone Mask",
+		desc: "Ogerpon-Cornerstone: 1.2x power attacks.",
+	},
+	wellspringmask: {
+		name: "Wellspring Mask",
+		desc: "Ogerpon-Wellspring: 1.2x power attacks.",
+	},
+	hearthflamemask: {
+		name: "Hearthflame Mask",
+		desc: "Ogerpon-Hearthflame: 1.2x power attacks.",
+	},
 };

@@ -1748,10 +1748,17 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	supremeoverlord: {
 		name: "Supreme Overlord",
+		desc: "This Pokemon's Attack and Special Attack stats are increased by 5% for each fainted teammate.",
+		shortDesc: "This Pokemon's Attack and Special Attack raise by 5% per fainted teammate.",
+
+		activate: "  [POKEMON] gained strength from the fallen!",
+	},
+	thesupremeoverlord: {
+		name: "Supreme Overlord",
 		desc: "This Pokemon's Attack and Special Attack stats are increased by 10% for each fainted teammate.",
 		shortDesc: "This Pokemon's Attack and Special Attack raise by 10% per fainted teammate.",
 
-		activate: "  [POKEMON] gained strength from the fallen!",
+		activate: "  [POKEMON] gained true strength from the fallen!",
 	},
 	surgesurfer: {
 		name: "Surge Surfer",
@@ -2118,5 +2125,45 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		shortDesc: "When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns.",
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
+	},
+	hospitality: {
+		name: "Hospitality",
+		shortDesc: "On switch-in, this Pokemon restores 1/4 of its ally's maximum HP, rounded down.",
+
+		heal: "  [POKEMON] drank down all the matcha that [SOURCE] made!",
+	},
+	mindseye: {
+		name: "Mind's Eye",
+		desc: "This Pokemon can hit Ghost types with Normal- and Fighting-type moves. Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
+		shortDesc: "Fighting, Normal moves hit Ghost. Accuracy can't be lowered, ignores evasiveness.",
+	},
+	toxicchain: {
+		name: "Toxic Chain",
+		desc: "This Pokemon's moves have a 30% chance of badly poisoning. This effect comes after a move's inherent secondary effect chance.",
+		shortDesc: "This Pokemon's moves have a 30% chance of badly poisoning.",
+	},
+	supersweetsyrup: {
+		name: "Supersweet Syrup",
+		shortDesc: "On switch-in, this Pokemon lowers the evasiveness of opponents 1 stage. Once per battle.",
+
+		start: "  A supersweet aroma is wafting from the syrup covering [POKEMON]!",
+	},
+	terashift: {
+		name: "Tera Shift",
+		shortDesc: "If this Pokemon is a Terapagos, it transforms into its Terastal Form on entry.",
+
+		transform: "[POKEMON] transformed!",
+	},
+	terashell: {
+		name: "Tera Shell",
+		desc: "If this Pokemon is a Terapagos at full HP, the effectiveness of attacks against it is changed to 0.5 unless this Pokemon is immune to the move. Multi-hit moves retain the same effectiveness throughout the attack.",
+		shortDesc: "Terapagos: If full HP, attacks taken have 0.5x effectiveness unless naturally immune.",
+
+		activate: "  [POKEMON] made its shell gleam! It's distorting type matchups!",
+	},
+	poisonpuppeteer: {
+		name: "Poison Puppeteer",
+		desc: "If this Pokemon is a Pecharunt and poisons or badly poisons a target, the target also becomes confused.",
+		shortDesc: "Pecharunt: If this Pokemon poisons a target, the target also becomes confused.",
 	},
 };
