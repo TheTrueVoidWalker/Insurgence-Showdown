@@ -18201,7 +18201,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		baseForme: "Midday",
 		types: ["Rock"],
 		baseStats: {hp: 75, atk: 115, def: 65, spa: 55, spd: 65, spe: 112},
-		abilities: {0: "Steadfast", 1: "Sand Rush", H: "Sand Rush"},
+		abilities: {0: "Steadfast", 1: "Sand Rush", H: "Guts"},
 		heightm: 0.8,
 		weightkg: 25,
 		color: "Brown",
