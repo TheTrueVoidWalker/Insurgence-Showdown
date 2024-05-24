@@ -7503,4 +7503,13 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "If the current weather is Sunny Day and the user is not holding Utility Umbrella, this move's damage is multiplied by 1.5 instead of halved for being Water type.",
 		shortDesc: "During Sunny Day: 1.5x damage instead of half.",
 	},
+	steelsurgestrike: {
+		name: "Steelsurge Strike",
+		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+		shortDesc: "Foes: Steel hazard.",
+
+		start: "  Sharp-pointed pieces of steel started floating around [PARTY]!",
+		end: "  The pieces of steel surrounding [PARTY] disappeared!",
+		damage: "  The sharp steel bit into [POKEMON]!",
+	},
 };
