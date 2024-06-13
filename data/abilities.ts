@@ -4925,7 +4925,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onBasePowerPriority: 19,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['bite']) {
-				return this.chainModify(1.3);
+				return this.chainModify(1.5);
 			}
 		},
 		onModifyMove(move, pokemon) {
