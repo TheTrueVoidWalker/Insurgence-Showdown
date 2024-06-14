@@ -7512,4 +7512,29 @@ export const MovesText: {[k: string]: MoveText} = {
 		end: "  The pieces of steel surrounding [PARTY] disappeared!",
 		damage: "  The sharp steel bit into [POKEMON]!",
 	},
+	magneticburst: {
+		name: "Magnetic Burst",
+		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		shortDesc: "Hits adjacent Pokemon. The user faints.",
+	},
+	ultrasonicwave: {
+		name: "Ultrasonic Wave",
+		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "10% chance to lower the target's Sp. Def by 1.",
+	},
+	hypersonicfang: {
+		name: "Hypersonic Fang",
+		desc: "Has a 10% chance to make the target flinch.",
+		shortDesc: "10% chance to make the target flinch.",
+	},
+	avaricefang: {
+		name: "Avarice Fang",
+		desc: "The user recovers 4/10 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 40% of the damage dealt.",
+	},
+	steelburstbarrage: {
+		name: "Steelburst Barrage",
+		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+		shortDesc: "Hits 2-5 times in one turn.",
+	},
 };

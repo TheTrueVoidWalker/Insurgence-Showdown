@@ -6456,4 +6456,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 4.5,
 		num: 2001,
 	},
+	chloroplasticveil: {
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Water' || move.type === 'Electric' || move.type === 'Grass' || move.type === 'Ground') {
+				this.debug('Chloroplastic Veil weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		name: "Chloroplastic Veil",
+		gen: 8,
+		rating: 3.5,
+		num: 2002,
+	},
 };
