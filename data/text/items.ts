@@ -2708,4 +2708,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Hearthflame Mask",
 		desc: "Ogerpon-Hearthflame: 1.2x power attacks.",
 	},
+	deltaampharosite: {
+		name: "Delta Ampharosite",
+		desc: "If held by an Ampharos-Delta, this item allows it to Mega Evolve in battle.",
+	},
 };

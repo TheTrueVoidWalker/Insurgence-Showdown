@@ -8410,4 +8410,18 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 2408,
 		gen: 8,
 	},
+	deltaampharosite: {
+		name: "Delta Ampharosite",
+		spritenum: 1000,
+		megaStone: "Ampharos-Delta-Mega",
+		megaEvolves: "Ampharos-Delta",
+		itemUser: ["Ampharos-Delta"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 3001,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 };

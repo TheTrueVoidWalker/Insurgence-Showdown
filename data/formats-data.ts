@@ -1980,16 +1980,28 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "LC",
 	},
+	mareepdelta: {
+		tier: "LC",
+	},
 	flaaffy: {
 		isNonstandard: "Past",
+		tier: "NFE",
+	},
+	flaaffydelta: {
 		tier: "NFE",
 	},
 	ampharos: {
 		isNonstandard: "Past",
 		tier: "PU",
 	},
+	ampharosdelta: {
+		tier: "PU",
+	},
 	ampharosmega: {
 		isNonstandard: "Past",
+		tier: "RU",
+	},
+	ampharosdeltamega: {
 		tier: "RU",
 	},
 	azurill: {
