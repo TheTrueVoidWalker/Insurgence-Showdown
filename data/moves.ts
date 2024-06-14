@@ -20413,7 +20413,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		onHit(source) {
 			let success = false;
-			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'steelsurge'];
 			for (const sideCondition of removeAll) {
 				if (source.side.removeSideCondition(sideCondition)) {
 					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Tidy Up', '[of] ' + source);
@@ -22594,7 +22594,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		condition: {
 			onSideStart(side) {
-				this.add('-sidestart', side, 'move: G-Max Steelsurge Strike');
+				this.add('-sidestart', side, 'move: Steelsurge Strike');
 			},
 			onEntryHazard(pokemon) {
 				if (pokemon.hasItem('heavydutyboots')) return;
@@ -22695,5 +22695,59 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {basePower: 140},
 		maxMove: {basePower: 130},
 		contestType: "Beautiful",
+	},
+	heavymetallica: {
+		num: 2008,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Heavy Metallica",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "allAdjacentFoes",
+		type: "Steel",
+	},
+	mindmeld: {
+		num: 2009,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Mind Meld",
+		pp: 15,
+		priority: 0,
+		flags: {},
+		onHit(source) {
+			let success = false;
+			const removeAll = [
+				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'livewire', 'permafrost', 'stealthrock', 'stealthcoal', 'stickyweb', 'steelsurge',
+			];
+			for (const sideCondition of removeAll) {
+				if (source.side.removeSideCondition(sideCondition)) {
+					this.add('-sideend', source.side, this.dex.conditions.get(sideCondition).name, '[from] move: Mind Meld', '[of] ' + source);
+					success = true;
+				}
+				if (source.side.foe.removeSideCondition(sideCondition)) {
+					this.add('-sideend', source.side.foe, this.dex.conditions.get(sideCondition).name, '[from] move: Mind Meld', '[of] ' + source);
+					success = true;
+				}
+			}
+			for (const pokemon of this.getAllActive()) {
+				if (pokemon.removeVolatile('substitute')) success = true;
+			}
+			if (success) this.add('-activate', source, 'move: Mind Meld');
+		},
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
+		},
+		secondary: null,
+		target: "self",
+		type: "Psychic",
 	},
 };

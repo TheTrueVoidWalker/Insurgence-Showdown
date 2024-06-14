@@ -3056,7 +3056,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			headbutt: ["8V", "7V", "4T"],
 			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			hyperbeam: ["8V", "7M", "7V", "6M", "5M", "4M", "3M"],
-			hyperfang: ["8V", "7L16", "7V", "6L16", "5L16", "4L16", "3L13", "3S0"],
+			hyperfang: ["8M", "7L16", "7V", "6L16", "5L16", "4L16", "3L13", "3S0"],
 			icebeam: ["8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			icywind: ["7T", "7V", "6T", "5T", "4T", "3T"],
 			irontail: ["8V", "7T", "7V", "6T", "5T", "4M", "3M"],
@@ -68366,6 +68366,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			outrage: ["8T"],
 			defog: ["8T"],
 			rapidspin: ["8T"],
+			dragonclaw: ["8T"],
 		},
 	},
 	sewaddle: {

@@ -7537,4 +7537,14 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
 		shortDesc: "Hits 2-5 times in one turn.",
 	},
+	heavymetallica: {
+		name: "Heavy Metallica",
+		desc: "Has a 30% chance to lower the target's Special Defense by 1 stage. Hits all adjacent Pokemon.",
+		shortDesc: "30% chance to lower the target's Sp. Def by 1. Hits foe(s).",
+	},
+	mindmeld: {
+		name: "Mind Meld",
+		desc: "This move becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes. The effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for both sides. Ignores a target's substitute. If there is a terrain active and this move is successful, the terrain will be cleared.",
+		shortDesc: "Clears field on both sides. Special if user's Sp. Atk > Atk.",
+	},
 };

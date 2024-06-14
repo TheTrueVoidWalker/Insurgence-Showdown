@@ -6469,4 +6469,30 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 2002,
 	},
+	allknowing: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Psychic' && defender.types.includes("Dark")) {
+				this.debug('All-Knowing boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Psychic' && defender.types.includes("Dark")) {
+				this.debug('All-Knowing boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifyMovePriority: 6,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true && move.type == "Psychic") {
+				move.ignoreImmunity['Dark'] = true;
+			}
+		},
+		name: "All-Knowing",
+		rating: 5,
+		num: 2003,
+	},
 };
