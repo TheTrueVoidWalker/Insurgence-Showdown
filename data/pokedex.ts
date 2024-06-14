@@ -712,7 +712,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Raticate",
 		types: ["Normal"],
 		baseStats: {hp: 75, atk: 50, def: 60, spa: 107, spd: 90, spe: 107},
-		abilities: {0: "Adaptability", 1: "Flare Boost", H: "Spectral Jaw"},
+		abilities: {0: "Adaptability", 1: "Flare Boost", H: "Spectral Jaws"},
 		heightm: 0.7,
 		weightkg: 18.5,
 		color: "Brown",
