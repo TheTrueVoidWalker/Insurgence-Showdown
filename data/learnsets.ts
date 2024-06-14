@@ -2022,6 +2022,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			terrainpulse: ["8T"],
 			lashout: ["8T"],
 			coaching: ["8T"],
+			rapidspin: ["8M"],
 		},
 	},
 	caterpie: {
