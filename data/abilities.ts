@@ -1281,6 +1281,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(0.5);
 			}
 		},
+		onSourceModifySpAPriority: 6,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Bug' || move.type === 'Poison') {
+				this.debug('Ethereal Shroud weaken');
+				return this.chainModify(0.5);
+			}
+		},
 		name: "Ethereal Shroud",
 		gen: 6,
 		rating: 3.5,
@@ -6459,6 +6466,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	chloroplasticveil: {
 		onSourceModifyAtkPriority: 6,
 		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Water' || move.type === 'Electric' || move.type === 'Grass' || move.type === 'Ground') {
+				this.debug('Chloroplastic Veil weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 6,
+		onSourceModifySpA(atk, attacker, defender, move) {
 			if (move.type === 'Water' || move.type === 'Electric' || move.type === 'Grass' || move.type === 'Ground') {
 				this.debug('Chloroplastic Veil weaken');
 				return this.chainModify(0.5);
