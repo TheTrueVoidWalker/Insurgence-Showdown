@@ -6484,22 +6484,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 2002,
 	},
 	allknowing: {
-		//onModifyAtkPriority: 5,
-		//onModifyAtk(atk, attacker, defender, move) {
-		//	if (move.type === 'Psychic' && defender.types.includes("Dark")) {
-		//		this.debug('All-Knowing boost');
-		//		return this.chainModify(2.0);
-		//	}
-		//},
-		//onModifySpAPriority: 5,
-		//onModifySpA(atk, attacker, defender, move) {
-		//	if (move.type === 'Psychic' && defender.types.includes("Dark")) {
-		//		this.debug('All-Knowing boost');
-		//		return this.chainModify(2.0);
-		//	}
-		//},
-		onFoeEffectiveness(typeMod, target, type) {
-			if (target && target.types.includes("Dark") && type == "Psychic") return 1;
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Psychic' && defender.types.includes("Dark")) {
+				this.debug('All-Knowing boost');
+				return this.chainModify(2.0);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Psychic' && defender.types.includes("Dark")) {
+				this.debug('All-Knowing boost');
+				return this.chainModify(2.0);
+			}
 		},
 		onModifyMovePriority: -5,
 		onModifyMove(move) {
