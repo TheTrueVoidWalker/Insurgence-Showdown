@@ -100776,7 +100776,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			wideguard: ["8L48"],
 		},
 	},
-	frosmothelta: {
+	frosmothdelta: {
 		learnset: {
 			suckerpunch: ["8T"],
 			toxic: ["8T"],
