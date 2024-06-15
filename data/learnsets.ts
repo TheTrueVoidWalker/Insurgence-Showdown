@@ -114488,7 +114488,7 @@ pecharunt: {
 			recover: ["8L70"],
 			hyperbeam: ["8L80"],
 			perishsong: ["8L90"],
-			judgement: ["8L100"],
+			judgment: ["8L100"],
 		}
 	},
 };
