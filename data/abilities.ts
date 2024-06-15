@@ -6498,8 +6498,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		//		return this.chainModify(2.0);
 		//	}
 		//},
-		onEffectiveness(typeMod, target, type, move) {
-			if (type === 'Dark' && move.type == "Psychic") return 1;
+		onFoeEffectiveness(typeMod, target, type) {
+			if (target && target.types.includes("Dark") && type == "Psychic") return 1;
 		},
 		onModifyMovePriority: -5,
 		onModifyMove(move) {
