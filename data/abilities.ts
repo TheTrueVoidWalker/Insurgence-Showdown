@@ -6484,19 +6484,22 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		num: 2002,
 	},
 	allknowing: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Psychic' && defender.types.includes("Dark")) {
-				this.debug('All-Knowing boost');
-				return this.chainModify(2.0);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Psychic' && defender.types.includes("Dark")) {
-				this.debug('All-Knowing boost');
-				return this.chainModify(2.0);
-			}
+		//onModifyAtkPriority: 5,
+		//onModifyAtk(atk, attacker, defender, move) {
+		//	if (move.type === 'Psychic' && defender.types.includes("Dark")) {
+		//		this.debug('All-Knowing boost');
+		//		return this.chainModify(2.0);
+		//	}
+		//},
+		//onModifySpAPriority: 5,
+		//onModifySpA(atk, attacker, defender, move) {
+		//	if (move.type === 'Psychic' && defender.types.includes("Dark")) {
+		//		this.debug('All-Knowing boost');
+		//		return this.chainModify(2.0);
+		//	}
+		//},
+		onEffectiveness(typeMod, target, type, move) {
+			if (type === 'Dark' && move.type == "Psychic") return 1;
 		},
 		onModifyMovePriority: -5,
 		onModifyMove(move) {
@@ -6508,5 +6511,65 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "All-Knowing",
 		rating: 5,
 		num: 2003,
+	},
+	dryice: {
+		onSourceModifyAtkPriority: 5,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				return this.chainModify(0.5);
+			}
+		},
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Water') {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Water') {
+				return this.chainModify(2);
+			}
+		},
+		onUpdate(pokemon) {
+			if (pokemon.status === 'brn') {
+				this.add('-activate', pokemon, 'ability: Dry Ice');
+				pokemon.cureStatus();
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (status.id !== 'brn') return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Dry Ice');
+			}
+			return false;
+		},
+		isBreakable: true,
+		name: "Dry Ice",
+		rating: 4.5,
+		num: 2004,
+	},
+	terrafirma: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Ground') {
+				this.debug('Terra Firma boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Ground') {
+				this.debug('Terra Firma boost');
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Terra Firma",
+		rating: 3.5,
+		num: 2005,
 	},
 };

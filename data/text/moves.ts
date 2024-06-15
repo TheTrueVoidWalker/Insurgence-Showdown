@@ -7547,4 +7547,19 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "This move becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes. The effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for both sides. Ignores a target's substitute. If there is a terrain active and this move is successful, the terrain will be cleared.",
 		shortDesc: "Clears field on both sides. Special if user's Sp. Atk > Atk.",
 	},
+	meltingpoint: {
+		name: "Melting Point",
+		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
+		shortDesc: "30% chance to burn the target. Thaws target.",
+	},
+	mountainpress: {
+		name: "Mountain Press",
+		desc: "Damage is calculated using the user's Defense stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
+		shortDesc: "Uses user's Def stat as Atk in damage calculation.",
+	},
+	freezingpoint: {
+		name: "Freezing Point",
+		desc: "Has a 10% chance to freeze the target. This move's type effectiveness against Water is changed to be super effective no matter what this move's type is.",
+		shortDesc: "10% chance to freeze. Super effective on Water.",
+	},
 };

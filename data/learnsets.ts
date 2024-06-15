@@ -55409,6 +55409,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			toxic: ["7M", "6M", "5M", "4M", "3M"],
 			zapcannon: ["8L66", "7L55", "7S6", "6L1", "6S8", "5L65", "5S3", "4L65", "3L49"],
 			hardpress: ["8M"],
+			mountainpress: ["8M"],
+			recover: ["8M"],
 		},
 		eventData: [
 			{generation: 3, level: 40, shiny: 1, moves: ["rockthrow", "curse", "superpower", "ancientpower"]},
@@ -55598,6 +55600,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			thunderwave: ["8M", "7M", "6M", "5M", "4M", "3T"],
 			toxic: ["7M", "6M", "5M", "4M", "3M"],
 			zapcannon: ["8L66", "8S7", "7L55", "7S6", "6L1", "6S8", "5L65", "5S3", "4L65", "3L49"],
+			freezingpoint: ["8M"],
+			recover: ["8M"],
 		},
 		eventData: [
 			{generation: 3, level: 40, shiny: 1, moves: ["icywind", "curse", "superpower", "ancientpower"]},
@@ -55799,6 +55803,8 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			toxic: ["7M", "6M", "5M", "4M", "3M"],
 			zapcannon: ["8L66", "7L55", "7S6", "6L1", "6S8", "5L65", "5S3", "4L65", "3L49"],
 			hardpress: ["8M"],
+			meltingpoint: ["8M"],
+			recover: ["8M"],
 		},
 		eventData: [
 			{generation: 3, level: 40, shiny: 1, moves: ["metalclaw", "curse", "superpower", "ancientpower"]},
@@ -100719,7 +100725,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			helpinghand: ["8M"],
 
 			bubble: ["8L1"],
-			sturgglebug: ["8L1"],
+			strugglebug: ["8L1"],
 		}
 	},
 	frosmoth: {
@@ -100813,7 +100819,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 
 			hex: ["8L0"],
 			bubble: ["8L1"],
-			sturgglebug: ["8L1"],
+			strugglebug: ["8L1"],
 			attract: ["8L1"],
 			thunderwave: ["8L4"],
 			bubblebeam: ["8L8"],

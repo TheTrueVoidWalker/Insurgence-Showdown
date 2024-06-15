@@ -2181,4 +2181,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon can hit Dark types with Psychic-type moves, and they are super effective against them.",
 		shortDesc: "Psychic moves hit Dark supereffective.",
 	},
+	dryice: {
+		name: "Dry Ice",
+		desc: "This Pokemon's attacking stat is doubled while using a Water-type attack. If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+		shortDesc: "This Pokemon's Water power is 2x; it can't be burned; Fire power against it is halved.",
+	},
+	terrafirma: {
+		name: "Terra Firma",
+		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Ground-type attack.",
+	},
 };
