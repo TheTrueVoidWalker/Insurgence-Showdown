@@ -2243,7 +2243,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			echoedvoice: ["8L18"],
 			psybeam: ["8L20"],
 			snowscape: ["8L22"],
-			fpirespin: ["8L24"],
+			firespin: ["8L24"],
 			lavaplume: ["8L26"],
 			ragepowder: ["8L28"],
 			heatwave: ["8L32"],
