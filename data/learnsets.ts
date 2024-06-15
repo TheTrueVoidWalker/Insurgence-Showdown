@@ -55602,6 +55602,12 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			zapcannon: ["8L66", "8S7", "7L55", "7S6", "6L1", "6S8", "5L65", "5S3", "4L65", "3L49"],
 			freezingpoint: ["8M"],
 			recover: ["8M"],
+			surf: ["8M"],
+			hydropump: ["8M"],
+			chillingwater: ["8M"],
+			whirlpool: ["8M"],
+			liquidation: ["8M"],
+			weatherball: ["8M"],
 		},
 		eventData: [
 			{generation: 3, level: 40, shiny: 1, moves: ["icywind", "curse", "superpower", "ancientpower"]},

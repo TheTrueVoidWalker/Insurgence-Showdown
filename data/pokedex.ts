@@ -9952,7 +9952,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		types: ["Ice"],
 		gender: "N",
 		baseStats: {hp: 80, atk: 50, def: 100, spa: 100, spd: 200, spe: 50},
-		abilities: {0: "Dry Ice", H: "Adapatability"},
+		abilities: {0: "Dry Ice", H: "Adaptability"},
 		heightm: 1.8,
 		weightkg: 175,
 		color: "Blue",
