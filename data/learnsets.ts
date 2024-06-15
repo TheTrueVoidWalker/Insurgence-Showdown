@@ -63716,6 +63716,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			wonderroom: ["8M", "7T", "6T", "5T"],
 			yawn: ["8L56", "7L31", "7S4", "6L31", "6S3", "5L31", "4L31", "4S0", "4S1"],
 			zenheadbutt: ["8M", "7T", "6T", "5T", "4T"],
+			mysticalpower: ["8M"],
 		},
 		eventData: [
 			{generation: 4, level: 50, shiny: 1, moves: ["confusion", "yawn", "futuresight", "amnesia"]},
@@ -63824,6 +63825,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			waterpulse: ["7T", "6T", "4M"],
 			wonderroom: ["8M", "7T", "6T", "5T"],
 			zenheadbutt: ["8M", "7T", "6T", "5T", "4T"],
+			mysticalpower: ["8M"],
 		},
 		eventData: [
 			{generation: 4, level: 50, shiny: 1, moves: ["confusion", "luckychant", "futuresight", "charm"]},
@@ -63937,6 +63939,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			brushfire: ["6M"],
 			wonderroom: ["8M", "7T", "6T", "5T"],
 			zenheadbutt: ["8M", "7T", "6T", "5T", "4T"],
+			mysticalpower: ["8M"],
 		},
 		eventData: [
 			{generation: 4, level: 50, shiny: 1, moves: ["confusion", "uproar", "futuresight", "nastyplot"]},
@@ -87055,7 +87058,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			grassknot: ["8M", "7M", "6M"],
 			hiddenpower: ["7M", "6M"],
 			hyperbeam: ["8M", "7M", "6M"],
-			hypervoice: ["8M", "7T", "6T"],
+			//hypervoice: ["8M", "7T", "6T"],
 			irontail: ["8M", "7T", "6T"],
 			lightscreen: ["8M", "7M", "6M"],
 			livewire: ["6M"],
