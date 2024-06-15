@@ -2179,6 +2179,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	allknowing: {
 		name: "All-Knowing",
 		desc: "This Pokemon can hit Dark types with Psychic-type moves, and they are super effective against them.",
-		shortDesc: "Psychic moves hit Ghost supereffective.",
+		shortDesc: "Psychic moves hit Dark supereffective.",
 	},
 };

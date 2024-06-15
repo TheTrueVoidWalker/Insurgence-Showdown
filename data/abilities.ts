@@ -6488,17 +6488,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Psychic' && defender.types.includes("Dark")) {
 				this.debug('All-Knowing boost');
-				return this.chainModify(1.5);
+				return this.chainModify(2.0);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
 			if (move.type === 'Psychic' && defender.types.includes("Dark")) {
 				this.debug('All-Knowing boost');
-				return this.chainModify(1.5);
+				return this.chainModify(2.0);
 			}
 		},
-		onModifyMovePriority: 6,
+		onModifyMovePriority: -6,
 		onModifyMove(move) {
 			if (!move.ignoreImmunity) move.ignoreImmunity = {};
 			if (move.ignoreImmunity !== true && move.type == "Psychic") {

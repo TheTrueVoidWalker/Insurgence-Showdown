@@ -102529,6 +102529,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 
 			spectrallance: ["8L1"],
 			glaciallance: ["8L1"],
+			astralbarrage: ["8L1"],
 			leechseed: ["8L4"],
 			shadowsneak: ["8L8"],
 			lifedew: ["8L16"],

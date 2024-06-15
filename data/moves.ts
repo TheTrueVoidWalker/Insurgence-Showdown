@@ -22747,7 +22747,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
 		},
 		secondary: null,
-		target: "self",
+		target: "normal",
 		type: "Psychic",
 	},
 };
