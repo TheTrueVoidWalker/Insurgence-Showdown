@@ -6498,11 +6498,11 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				return this.chainModify(2.0);
 			}
 		},
-		onModifyMovePriority: -6,
+		onModifyMovePriority: -5,
 		onModifyMove(move) {
 			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true && move.type == "Psychic") {
-				move.ignoreImmunity['Dark'] = true;
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Psychic'] = true;
 			}
 		},
 		name: "All-Knowing",
