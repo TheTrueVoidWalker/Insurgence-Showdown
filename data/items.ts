@@ -8420,7 +8420,49 @@ export const Items: {[itemid: string]: ItemData} = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
+		num: 3000,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	deltabeedrillite: {
+		name: "Delta Beedrillite",
+		spritenum: 1001,
+		megaStone: "Beedrill-Delta-Mega",
+		megaEvolves: "Beedrill-Delta",
+		itemUser: ["Beedrill-Delta"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
 		num: 3001,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	deltaaerodactylite: {
+		name: "Delta Aerodactylite",
+		spritenum: 1002,
+		megaStone: "Aerodactyl-Delta-Mega",
+		megaEvolves: "Aerodactyl-Delta",
+		itemUser: ["Aerodactyl-Delta"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 3002,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	magnezoneite: {
+		name: "Magnezoneite",
+		spritenum: 1003,
+		megaStone: "Magnezone-Mega",
+		megaEvolves: "Magnezone",
+		itemUser: ["Magnezone"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 3003,
 		gen: 6,
 		isNonstandard: "Past",
 	},

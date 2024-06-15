@@ -133,7 +133,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	caterpie: {
 		tier: "LC",
 	},
+	caterpiedelta: {
+		tier: "LC",
+	},
 	metapod: {
+		tier: "NFE",
+	},
+	metapoddelta: {
 		tier: "NFE",
 	},
 	butterfree: {
@@ -141,6 +147,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 87,
 		randomDoubleBattleMoves: ["hurricane", "pollenpuff", "protect", "ragepowder", "sleeppowder", "tailwind"],
 		randomDoubleBattleLevel: 88,
+		tier: "(PU)",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	butterfreedelta: {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -159,16 +170,28 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "LC",
 	},
+	weedledelta: {
+		tier: "LC",
+	},
 	kakuna: {
 		isNonstandard: "Past",
+		tier: "NFE",
+	},
+	kakunadelta: {
 		tier: "NFE",
 	},
 	beedrill: {
 		isNonstandard: "Past",
 		tier: "PU",
 	},
+	beedrilldelta: {
+		tier: "PU",
+	},
 	beedrillmega: {
 		isNonstandard: "Past",
+		tier: "UU",
+	},
+	beedrilldeltamega: {
 		tier: "UU",
 	},
 	pidgey: {
@@ -878,6 +901,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
+	},
+	magnezonemega: {
+		isNonstandard: "Past",
+		tier: "OU",
 	},
 	farfetchd: {
 		randomBattleMoves: ["bravebird", "closecombat", "knockoff", "leafblade", "swordsdance"],
@@ -1656,8 +1683,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	aerodactyldelta: {
+		tier: "NU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
 	aerodactylmega: {
 		isNonstandard: "Past",
+		tier: "UU",
+	},
+	aerodactyldeltamega: {
 		tier: "UU",
 	},
 	munchlax: {
@@ -1952,7 +1987,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	togepi: {
 		tier: "LC",
 	},
+	togepidelta: {
+		tier: "LC",
+	},
 	togetic: {
+		tier: "NFE",
+	},
+	togeticdelta: {
 		tier: "NFE",
 	},
 	togekiss: {
@@ -1960,6 +2001,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 80,
 		randomDoubleBattleMoves: ["airslash", "dazzlinggleam", "followme", "heatwave", "protect", "tailwind"],
 		randomDoubleBattleLevel: 80,
+		tier: "RU",
+		doublesTier: "DUU",
+		natDexTier: "RU",
+	},
+	togekissdelta: {
 		tier: "RU",
 		doublesTier: "DUU",
 		natDexTier: "RU",
@@ -2219,6 +2265,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 		natDexTier: "UU",
 	},
+	dudunsparcedelta: {
+		tier: "UU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
 	gligar: {
 		isNonstandard: "Past",
 		tier: "UU",
@@ -2306,8 +2357,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "LC",
 	},
+	slugmadelta: {
+		tier: "LC",
+	},
 	magcargo: {
 		isNonstandard: "Past",
+		tier: "PU",
+	},
+	magcargodelta: {
 		tier: "PU",
 	},
 	magcargomega: {
@@ -2588,7 +2645,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	mudkip: {
 		tier: "LC",
 	},
+	mudkipdelta: {
+		tier: "LC",
+	},
 	marshtomp: {
+		tier: "NFE",
+	},
+	marshtompdelta: {
 		tier: "NFE",
 	},
 	swampert: {
@@ -2596,6 +2659,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 80,
 		randomDoubleBattleMoves: ["highhorsepower", "icywind", "muddywater", "protect", "stealthrock", "wideguard"],
 		randomDoubleBattleLevel: 86,
+		tier: "UU",
+		doublesTier: "(DUU)",
+		natDexTier: "UU",
+	},
+	swampertdelta: {
 		tier: "UU",
 		doublesTier: "(DUU)",
 		natDexTier: "UU",
@@ -4428,12 +4496,21 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "LC",
 	},
+	tepigdelta: {
+		tier: "LC",
+	},
 	pignite: {
 		isNonstandard: "Past",
 		tier: "NFE",
 	},
+	pignitedelta: {
+		tier: "NFE",
+	},
 	emboar: {
 		isNonstandard: "Past",
+		tier: "RU",
+	},
+	emboardelta: {
 		tier: "RU",
 	},
 	oshawott: {
@@ -4535,7 +4612,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	pidove: {
 		tier: "LC",
 	},
+	pidovedelta: {
+		tier: "LC",
+	},
 	tranquill: {
+		tier: "NFE",
+	},
+	tranquilldelta: {
 		tier: "NFE",
 	},
 	unfezant: {
@@ -4543,6 +4626,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["bravebird", "nightslash", "quickattack", "roost", "tailwind", "uturn"],
 		randomDoubleBattleLevel: 86,
+		tier: "(PU)",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	unfezantdelta: {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -4632,7 +4720,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	tympole: {
 		tier: "LC",
 	},
+	tympoledelta: {
+		tier: "LC",
+	},
 	palpitoad: {
+		tier: "NFE",
+	},
+	palpitoaddelta: {
 		tier: "NFE",
 	},
 	seismitoad: {
@@ -4640,6 +4734,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["earthpower", "knockoff", "muddywater", "powerwhip", "protect", "raindance"],
 		randomDoubleBattleLevel: 86,
+		tier: "RU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	seismitoaddelta: {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -5158,11 +5257,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	joltik: {
 		tier: "LC",
 	},
+	joltikdelta: {
+		tier: "LC",
+	},
 	galvantula: {
 		randomBattleMoves: ["bugbuzz", "gigadrain", "stickyweb", "thunder", "voltswitch"],
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["bugbuzz", "electroweb", "energyball", "protect", "stickyweb", "thunder"],
 		randomDoubleBattleLevel: 85,
+		tier: "PU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	galvantuladelta: {
 		tier: "PU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -7203,7 +7310,13 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	sobble: {
 		tier: "LC",
 	},
+	sobbledelta: {
+		tier: "LC",
+	},
 	drizzile: {
+		tier: "NFE",
+	},
+	drizziledelta: {
 		tier: "NFE",
 	},
 	inteleon: {
@@ -7211,6 +7324,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 80,
 		randomDoubleBattleMoves: ["airslash", "hydropump", "icebeam", "muddywater", "shadowball", "uturn"],
 		randomDoubleBattleLevel: 84,
+		tier: "PUBL",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	inteleondelta: {
 		tier: "PUBL",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -7604,11 +7722,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	snom: {
 		tier: "LC",
 	},
+	snomdelta: {
+		tier: "LC",
+	},
 	frosmoth: {
 		randomBattleMoves: ["bugbuzz", "gigadrain", "hurricane", "icebeam", "quiverdance"],
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["bugbuzz", "gigadrain", "hurricane", "icebeam", "protect", "quiverdance", "wideguard"],
 		randomDoubleBattleLevel: 88,
+		tier: "PU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	frosmothdelta: {
 		tier: "PU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -7891,6 +8017,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 88,
 		randomDoubleBattleMoves: ["helpinghand", "leafstorm", "pollenpuff", "protect"],
 		randomDoubleBattleLevel: 94,
+		tier: "(PU)",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	calyrexdelta: {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -8860,5 +8991,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Uber",
 		doublesTier: "DOU",
 		natDexTier: "Uber",
+	},
+	allknown: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
 	},
 };
