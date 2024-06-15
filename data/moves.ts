@@ -22768,12 +22768,12 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Steel",
 		contestType: "Tough",
 	},
-	mountainpress: {
+	breakingpoint: {
 		num: 776,
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
-		name: "Mountain Press",
+		name: "Breaking Point",
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},

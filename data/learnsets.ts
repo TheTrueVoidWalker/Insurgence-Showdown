@@ -55409,7 +55409,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			toxic: ["7M", "6M", "5M", "4M", "3M"],
 			zapcannon: ["8L66", "7L55", "7S6", "6L1", "6S8", "5L65", "5S3", "4L65", "3L49"],
 			hardpress: ["8M"],
-			mountainpress: ["8M"],
+			breakingpoint: ["8M"],
 			recover: ["8M"],
 		},
 		eventData: [

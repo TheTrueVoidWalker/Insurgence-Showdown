@@ -7552,8 +7552,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
 		shortDesc: "30% chance to burn the target. Thaws target.",
 	},
-	mountainpress: {
-		name: "Mountain Press",
+	breakingpoint: {
+		name: "Breaking Point",
 		desc: "Damage is calculated using the user's Defense stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
 		shortDesc: "Uses user's Def stat as Atk in damage calculation.",
 	},
