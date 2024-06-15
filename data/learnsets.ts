@@ -75150,8 +75150,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			waterpulse: ["7T", "7L13", "6T", "6L13", "5L13"],
 			watersport: ["7L3", "6L3", "5L3"],
 			wingattack: ["7L9", "6L9", "5L9"],
-
-			herobrine: ["8L0"],
 		},
 	},
 	swanna: {
