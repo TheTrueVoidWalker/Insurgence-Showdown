@@ -6569,4 +6569,70 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3.5,
 		num: 2005,
 	},
+	ferrumpilus: {
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Normal' || move.type === 'Grass' || move.type === 'Ice' || move.type === 'Flying' || move.type === 'Psychic' || move.type === 'Bug' || move.type === 'Rock' || move.type === 'Dragon' || move.type === 'Steel' || move.type === 'Fairy') {
+				this.debug('Ferrum Pilus weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 6,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Normal' || move.type === 'Grass' || move.type === 'Ice' || move.type === 'Flying' || move.type === 'Psychic' || move.type === 'Bug' || move.type === 'Rock' || move.type === 'Dragon' || move.type === 'Steel' || move.type === 'Fairy') {
+				this.debug('Ferrum Pilus weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onTryHit(target, source, move) {
+			if (move.category === 'Status' || target === source) return;
+			if (move.type === 'Poison') {
+				this.add('-immune', target, '[from] ability: Ferrum Pilus');
+				return null;
+			}
+		},
+		onAllyTryHitSide(target, source, move) {
+			if (move.category === 'Status' || target === source) return;
+			if (move.type === 'Poison') {
+				this.add('-immune', target, '[from] ability: Ferrum Pilus');
+				return null;
+			}
+		},
+		name: "Ferrum Pilus",
+		gen: 8,
+		rating: 3.5,
+		num: 2006,
+	},
+	dinosauriaaves: {
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fighting' || move.type === 'Grass' || move.type === 'Bug') {
+				this.debug('Dinosauria Aves weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 6,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fighting' || move.type === 'Grass' || move.type === 'Bug') {
+				this.debug('Dinosauria Aves weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		name: "Dinosauria Aves",
+		gen: 8,
+		rating: 3.5,
+		num: 2007,
+	},
+	catseye: {
+		onTryHit(target, source, move) {
+			if (move.category === 'Status' && target !== source) {
+				this.add('-immune', target, '[from] ability: Cat\'s Eye');
+				return null;
+			}
+		},
+		isBreakable: true,
+		name: "Cat's Eye",
+		rating: 5,
+		num: 2008,
+	},
 };

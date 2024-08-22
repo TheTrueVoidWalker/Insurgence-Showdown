@@ -5655,8 +5655,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	sizzlyslide: {
 		name: "Sizzly Slide",
-		desc: "Has a 100% chance to burn the foe.",
-		shortDesc: "100% chance to burn the foe.",
+		desc: "Has a 50% chance to burn the foe.",
+		shortDesc: "50% chance to burn the foe.",
 	},
 	sketch: {
 		name: "Sketch",
@@ -7505,12 +7505,8 @@ export const MovesText: {[k: string]: MoveText} = {
 	},
 	steelsurgestrike: {
 		name: "Steelsurge Strike",
-		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
-		shortDesc: "Foes: Steel hazard.",
-
-		start: "  Sharp-pointed pieces of steel started floating around [PARTY]!",
-		end: "  The pieces of steel surrounding [PARTY] disappeared!",
-		damage: "  The sharp steel bit into [POKEMON]!",
+		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in, unless it is a Flying-type Pokemon or has the Levitate Ability. Can be set up to three times before failing. Opponents lose 1/8 of their maximum HP with one layer, 1/6 of their maximum HP with two layers, and 1/4 of their maximum HP with three layers, all rounded down. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+		shortDesc: "Sets a layer of Spikes on the target's side.",
 	},
 	magneticburst: {
 		name: "Magnetic Burst",
@@ -7561,5 +7557,17 @@ export const MovesText: {[k: string]: MoveText} = {
 		name: "Freezing Point",
 		desc: "Has a 10% chance to freeze the target. This move's type effectiveness against Water is changed to be super effective no matter what this move's type is.",
 		shortDesc: "10% chance to freeze. Super effective on Water.",
+	},
+	payload: {
+		name: "Payload",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		shortDesc: "Always results in a critical hit.",
+	},
+	lullabash: {
+		name: "Lullabash",
+		desc: "Causes the target to fall asleep at the end of the next turn. Fails when used if the target cannot fall asleep or if it already has a non-volatile status condition. At the end of the next turn, if the target is still active, does not have a non-volatile status condition, and can fall asleep, it falls asleep. If the target becomes affected, this effect cannot be prevented by Safeguard or a substitute, or by falling asleep and waking up during the effect.",
+		shortDesc: "Puts the target to sleep after 1 turn.",
+
+		start: "  [POKEMON] grew drowsy!",
 	},
 };

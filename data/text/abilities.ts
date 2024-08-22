@@ -2190,4 +2190,18 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Terra Firma",
 		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Ground-type attack.",
 	},
+	ferrumpilus: {
+		name: "Ferrum Pilus",
+		desc: "This Pokemon resists Normal, Grass, Ice, Flying, Psychic, Bug, Rock, Dragon, Steel, and Fairy-type attacks. This Pokemon is immune to Poison-type attacks.",
+		shortDesc: "Gains the resistances of the Steel-type.",
+	},
+	dinosauriaaves: {
+		name: "Dinosauria Aves",
+		desc: "This Pokemon resists Fighting, Grass, and Bug-type attacks.",
+		shortDesc: "Gains the resistances of the Flying-type.",
+	},
+	catseye: {
+		name: "Cat\'s Eye",
+		shortDesc: "This Pokemon is immune to Status moves.",
+	},
 };

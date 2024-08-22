@@ -6929,7 +6929,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	glitzyglow: {
 		num: 736,
-		accuracy: 95,
+		accuracy: 80,
 		basePower: 80,
 		category: "Special",
 		//isNonstandard: "LGPE",
@@ -14804,8 +14804,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	psyshieldbash: {
 		num: 828,
-		accuracy: 90,
-		basePower: 70,
+		accuracy: 100,
+		basePower: 80,
 		category: "Physical",
 		//isNonstandard: "Unobtainable",
 		name: "Psyshield Bash",
@@ -17218,7 +17218,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	sizzlyslide: {
 		num: 735,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 40,
 		category: "Physical",
 		//isNonstandard: "LGPE",
 		name: "Sizzly Slide",
@@ -17226,7 +17226,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, defrost: 1},
 		secondary: {
-			chance: 100,
+			chance: 50,
 			status: 'brn',
 		},
 		target: "normal",
@@ -18113,7 +18113,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	sparklyswirl: {
 		num: 740,
-		accuracy: 85,
+		accuracy: 70,
 		basePower: 120,
 		category: "Special",
 		//isNonstandard: "LGPE",
@@ -22578,40 +22578,24 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	steelsurgestrike: {
 		num: 2002,
-		accuracy: true,
-		basePower: 100,
+		accuracy: 90,
+		basePower: 80,
 		category: "Physical",
-		name: "Steelsurge Strike",
+		//isNonstandard: "Unobtainable",
+		name: "Steelsurge Strke",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
 		self: {
 			onHit(source) {
 				for (const side of source.side.foeSidesWithConditions()) {
-					side.addSideCondition('steelsurgestrike');
+					side.addSideCondition('spikes');
 				}
 			},
 		},
-		condition: {
-			onSideStart(side) {
-				this.add('-sidestart', side, 'move: Steelsurge Strike');
-			},
-			onEntryHazard(pokemon) {
-				if (pokemon.hasItem('heavydutyboots')) return;
-				// Ice Face and Disguise correctly get typed damage from Stealth Rock
-				// because Stealth Rock bypasses Substitute.
-				// They don't get typed damage from Steelsurge because Steelsurge doesn't,
-				// so we're going to test the damage of a Steel-type Stealth Rock instead.
-				const steelHazard = this.dex.getActiveMove('Stealth Rock');
-				steelHazard.type = 'Steel';
-				const typeMod = this.clampIntRange(pokemon.runEffectiveness(steelHazard), -6, 6);
-				this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
-			},
-		},
-		secondary: null,
-		target: "adjacentFoe",
+		secondary: {}, // allows sheer force to trigger
+		target: "normal",
 		type: "Steel",
-		contestType: "Cool",
 	},
 	magneticburst: {
 		num: 2003,
@@ -22769,7 +22753,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Tough",
 	},
 	breakingpoint: {
-		num: 776,
+		num: 2011,
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
@@ -22783,7 +22767,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Rock",
 	},
 	freezingpoint: {
-		num: 573,
+		num: 2012,
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
@@ -22801,5 +22785,50 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Ice",
 		contestType: "Beautiful",
+	},
+	payload: {
+		num: 2013,
+		accuracy: 100,
+		basePower: 50,
+		category: "Special",
+		name: "Payload",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		willCrit: true,
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+	},
+	lullabash: {
+		num: 2014,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Lullabash",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		volatileStatus: 'yawn',
+		onTryHit(target) {
+			if (target.status || !target.runStatusImmunity('slp')) {
+				return false;
+			}
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			duration: 2,
+			onStart(target, source) {
+				this.add('-start', target, 'move: Yawn', '[of] ' + source);
+			},
+			onResidualOrder: 23,
+			onEnd(target) {
+				this.add('-end', target, 'move: Yawn', '[silent]');
+				target.trySetStatus('slp', this.effectState.source);
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
 	},
 };
