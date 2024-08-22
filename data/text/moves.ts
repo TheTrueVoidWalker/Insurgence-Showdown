@@ -7570,4 +7570,19 @@ export const MovesText: {[k: string]: MoveText} = {
 
 		start: "  [POKEMON] grew drowsy!",
 	},
+	clobberingchain: {
+		name: "Clobbering Chain",
+		desc: "Has a 30% chance to badly poison the target.",
+		shortDesc: "30% chance to badly poison the target.",
+	},
+	crumblingchain: {
+		name: "Crumbling Chain",
+		desc: "This move's type effectiveness against Steel is changed to be super effective no matter what this move's type is. Has a 30% chance to badly poison the target.",
+		shortDesc: "Super effective on Steel. 30% chance to badly poison the target.",
+	},
+	chantingchain: {
+		name: "Chanting Chain",
+		desc: "Raises the target's Speed by 1 stages and badly poisons it.",
+		shortDesc: "Raises the target's Speed by 1 and badly poisons it.",
+	},
 };
