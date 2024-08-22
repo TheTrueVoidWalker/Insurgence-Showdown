@@ -12989,7 +12989,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	mysticalpower: {
 		num: 832,
 		accuracy: 90,
-		basePower: 70,
+		basePower: 80,
 		category: "Special",
 		//isNonstandard: "Unobtainable",
 		name: "Mystical Power",
@@ -22582,7 +22582,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		basePower: 80,
 		category: "Physical",
 		//isNonstandard: "Unobtainable",
-		name: "Steelsurge Strke",
+		name: "Steelsurge Strike",
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
