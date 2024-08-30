@@ -5023,10 +5023,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	stancechange: {
 		onModifyMovePriority: 1,
 		onModifyMove(move, attacker, defender) {
-			if (attacker.species.baseSpecies !== 'Aegislash' || attacker.transformed) return;
-			if (move.category === 'Status' && move.id !== 'kingsshield') return;
-			const targetForme = (move.id === 'kingsshield' ? 'Aegislash' : 'Aegislash-Blade');
-			if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
+			if (attacker.transformed) return;
+			if (move.category === 'Status' && !(move.id === 'kingsshield' || move.id === 'swarmreform')) return;
+			if (attacker.species.baseSpecies === 'Aegislash') {
+				const targetForme = (move.id === 'kingsshield' ? 'Aegislash' : 'Aegislash-Blade');
+				if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
+			} else if (attacker.species.baseSpecies === 'Aegiswarm') {
+				const targetForme = (move.id === 'swarmreform' ? 'Aegiswarm' : 'Aegiswarm-Bow');
+				if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
+			} else return;
 		},
 		isPermanent: true,
 		name: "Stance Change",
@@ -6634,5 +6639,56 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Cat's Eye",
 		rating: 5,
 		num: 2008,
+	},
+	heliophilia: {
+		onModifySpe(spe, pokemon) {
+			if (this.field.isWeather('sunnyday')) {
+				return this.chainModify(2);
+			}
+		},
+		name: "Heliophilia",
+		rating: 3,
+		num: 2009,
+	},
+	lavabubble: {
+		onSourceModifyAtkPriority: 5,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Water') {
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Water') {
+				return this.chainModify(0.5);
+			}
+		},
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				return this.chainModify(2);
+			}
+		},
+		onUpdate(pokemon) {
+			if (pokemon.status === 'brn') {
+				this.add('-activate', pokemon, 'ability: Lava Bubble');
+				pokemon.cureStatus();
+			}
+		},
+		onSetStatus(status, target, source, effect) {
+			if (status.id !== 'brn') return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Lava Bubble');
+			}
+			return false;
+		},
+		isBreakable: true,
+		name: "Lava Bubble",
+		rating: 4.5,
+		num: 2010,
 	},
 };

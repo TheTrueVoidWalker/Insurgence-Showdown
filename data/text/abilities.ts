@@ -2204,4 +2204,13 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Cat\'s Eye",
 		shortDesc: "This Pokemon is immune to Status moves.",
 	},
+	heliophilia: {
+		name: "Heliophilia",
+		shortDesc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
+	},
+	lavabubble: {
+		name: "Lava Bubble",
+		desc: "This Pokemon's attacking stat is doubled while using a Fire-type attack. If a Pokemon uses a Water-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+		shortDesc: "This Pokemon's Fire power is 2x; it can't be burned; Water power against it is halved.",
+	},
 };

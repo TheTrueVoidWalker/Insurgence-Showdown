@@ -7585,4 +7585,48 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Raises the target's Speed by 1 stages and badly poisons it.",
 		shortDesc: "Raises the target's Speed by 1 and badly poisons it.",
 	},
+	calamuscascade: {
+		name: "Calamus Cascade",
+		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+		shortDesc: "Hits 2-5 times in one turn.",
+		gen4: {
+			desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the target has a Focus Sash and had full HP when this move started, it will not be knocked out regardless of the number of hits.",
+		},
+		gen3: {
+			desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+		},
+	},
+	licklash: {
+		name: "Discharge",
+		desc: "Has a 30% chance to paralyze the target.",
+		shortDesc: "30% chance to paralyze the target.",
+	},
+	bonebludgeoning: {
+		name: "Bone Bludgeoning",
+		desc: "This move hits twice, and can hit Flying-type Pokemon, Pokemon with the Levitate Ability, Pokemon holding an Air Balloon, and Pokemon under the effect of Magnet Rise or Telekinesis. If the target is a Flying type and is not already grounded, this move deals neutral damage regardless of its other type(s). This move can hit a target using Bounce, Fly, or Sky Drop. If this move hits a target under the effect of Bounce, Fly, Magnet Rise, or Telekinesis, the effect ends. If the target is a Flying type that has not used Roost this turn or a Pokemon with the Levitate Ability, it loses its immunity to Ground-type attacks and the Arena Trap Ability as long as it remains active. During the effect, Magnet Rise fails for the target and Telekinesis fails against the target.",
+		shortDesc: "Hits twice. Neutral on Flying.",
+	},
+	medievilchain: {
+		name: "Medievil Chain",
+		desc: "Has a 50% chance to cause the target to become a Dragon type and flinch. Fails if the target is an Arceus or a Silvally, or if the target is already purely Dragon type.",
+		shortDesc: "50% chance to turn the target's type to Dragon and flinch.",
+	},
+	gigawattgattling: {
+		name: "Gagawatt Gattling",
+		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+		shortDesc: "Hits 2-5 times in one turn.",
+	},
+	dracojaw: {
+		name: "Draco Jaw",
+		desc: "Has a 20% chance to make the target flinch.",
+		shortDesc: "20% chance to make the target flinch.",
+	},
+	quartershot: {
+		name: "Quarter Shot",
+		desc: "Fails if the target did not select a physical attack, special attack, or Me First for use this turn, or if the target moves before the user.",
+		shortDesc: "Usually goes first. Fails if target is not attacking.",
+		gen4: {
+			desc: "Fails if the target did not select a physical or special attack for use this turn, or if the target moves before the user.",
+		},
+	},
 };
