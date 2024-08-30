@@ -2724,4 +2724,16 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Magnezoneite",
 		desc: "If held by a Magnezone, this item allows it to Mega Evolve in battle.",
 	},
+	empoleonite: {
+		name: "Empoleonite",
+		desc: "If held by an Empoleon, this item allows it to Mega Evolve in battle.",
+	},
+	dusknoirite: {
+		name: "Dusknoirite",
+		desc: "If held by an Dusknoir, this item allows it to Mega Evolve in battle.",
+	},
+	altronarmor: {
+		name: "Altron Armor",
+		desc: "If held by an Altron-sponsored Pokemon, this item triggers its Armor in battle.",
+	},
 };

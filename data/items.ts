@@ -8466,4 +8466,33 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	empoleonite: {
+		name: "Empoleonite",
+		spritenum: 1004,
+		megaStone: "Empoleon-Mega",
+		megaEvolves: "Empoleon",
+		itemUser: ["Empoleon"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 3004,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	dusknoirite: {
+		name: "Dusknoirite",
+		spritenum: 1005,
+		megaStone: "Dusknoir-Mega",
+		megaEvolves: "Dusknoir",
+		itemUser: ["Dusknoir"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 3005,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	// TODO: Altron Armor
 };
