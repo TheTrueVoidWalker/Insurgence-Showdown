@@ -7629,4 +7629,25 @@ export const MovesText: {[k: string]: MoveText} = {
 			desc: "Fails if the target did not select a physical or special attack for use this turn, or if the target moves before the user.",
 		},
 	},
+	cambriancleave: {
+		name: "Cambrian Cleave",
+		desc: "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
+		shortDesc: "Destroys screens, unless the target is immune.",
+	},
+	pillagingplunder: {
+		name: "Pillaging Plunder",
+		desc: "The power of this move is based on the user's held item. The held item is lost and it activates for the target if applicable. If there is no target or the target avoids this move by protecting itself, the user's held item is still lost. The user can regain a thrown item with Recycle or the Harvest Ability. Fails if the user has no held item, if the held item cannot be thrown, if the user is under the effect of Embargo or Magic Room, or if the user has the Klutz Ability. If this attack was successful and the user has not fainted, it steals the target's held item if the user is not holding one. The target's item is not stolen if it is a Mail or Z-Crystal, or if the target is a Kyogre holding a Blue Orb, a Groudon holding a Red Orb, a Giratina holding a Griseous Orb, an Arceus holding a Plate, a Genesect holding a Drive, a Silvally holding a Memory, or a Pokemon that can Mega Evolve holding the Mega Stone for its species. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+		shortDesc: "Flings the user's item at the target, then steals the target's. Power varies.",
+
+		removeItem: "  [POKEMON] flung its [ITEM]!",
+	},
+	meteorimpact: {
+		name: "Meteor Impact",
+		shortDesc: "Cannot be used twice in a row.",
+	},
+	pettypayload: {
+		name: "Petty Payload",
+		desc: "Lowers the user's Attack by 1 stage.",
+		shortDesc: "Lowers the user's Atk by 1.",
+	},
 };
