@@ -101344,7 +101344,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			waterspout: ["8M"],
 			liquidation: ["8M"],
 			waterfall: ["8M"],
-			hyrdopump: ["8M"],
+			hydropump: ["8M"],
 			scald: ["8M"],
 			steelsurgestrike: ["8M"],
 			spikes: ["8M"],
