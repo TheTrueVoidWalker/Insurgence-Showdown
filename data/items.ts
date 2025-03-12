@@ -8497,7 +8497,7 @@ export const Items: {[itemid: string]: ItemData} = {
 	},
 	*/
 	alltronarmor: {
-		name: "Altron Armor",
+		name: "Alltron Armor",
 		spritenum: 1006,
 		onTakeItem(item, pokemon, source) {
 			const userIDs = [18];
