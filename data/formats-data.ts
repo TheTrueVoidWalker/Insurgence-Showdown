@@ -3427,6 +3427,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	dusknoirmega: {
+		isNonstandard: "Past",
+		tier: "OU",
+	},
 	tropius: {
 		isNonstandard: "Past",
 		tier: "PU",
@@ -3811,6 +3815,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	empoleon: {
 		isNonstandard: "Past",
 		tier: "UU",
+	},
+	empoleonmega: {
+		isNonstandard: "Past",
+		tier: "OU",
 	},
 	starly: {
 		isNonstandard: "Past",
@@ -7687,6 +7695,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	alcremie: {
+		tier: "(PU)",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	celecremie: {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",

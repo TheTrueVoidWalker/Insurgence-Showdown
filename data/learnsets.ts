@@ -116177,4 +116177,27 @@ pecharunt: {
 			judgment: ["8L100"],
 		}
 	},
+	celecremie: {
+		learnset: {
+			hypervoice: ["8M"],
+			doubleedge: ["8M"],
+			rapidspin: ["8M"],
+			finalgambit: ["8M"],
+			explosion: ["8M"],
+			selfdestruct: ["8M"],
+			frostbreath: ["8M"],
+			tripleaxel: ["8M"],
+			icebeam: ["8M"],
+			blizzard: ["8M"],
+			icywind: ["8M"],
+			heavyslam: ["8M"],
+			bodypress: ["8M"],
+			glaciate: ["8M"],
+			mirrorcoat: ["8M"],
+			thunderwave: ["8M"],
+			bodyslam: ["8M"],
+			celebrate: ["8M"],
+			frostingfinale: ["8M"],
+		}
+	},
 };

@@ -8466,7 +8466,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
-	/*
 	empoleonite: {
 		name: "Empoleonite",
 		spritenum: 1004,
@@ -8495,7 +8494,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
-	*/
 	alltronarmor: {
 		name: "Alltron Armor",
 		spritenum: 1006,
