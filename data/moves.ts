@@ -23535,4 +23535,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
+	volcanicpulse: {
+		num: 2047,
+		accuracy: true,
+		basePower: 80,
+		category: "Special",
+		name: "Volanic Pulse",
+		pp: 20,
+		priority: 0,
+		flags: {bullet: 1, protect: 1, pulse: 1, mirror: 1, distance: 1},
+		secondary: null,
+		target: "any",
+		type: "Fire",
+		contestType: "Beautiful",
+	},
 };

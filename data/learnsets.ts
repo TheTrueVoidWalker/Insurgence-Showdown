@@ -26382,6 +26382,15 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		],
 		eventOnly: true,
 	},
+	articunogalararmor: {
+		learnset: {
+			doomdesire: ["8M"],
+			voltswitch: ["8M"],
+			thunderbolt: ["8M"],
+			thunder: ["8M"],
+			frostbreath: ["8M"],
+		}
+	},
 	zapdos: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -26547,6 +26556,16 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		],
 		eventOnly: true,
 	},
+	zapdosgalararmor: {
+		learnset: {
+			boltstrike: ["8M"],
+			bulletpunch: ["8M"],
+			axekick: ["8M"],
+			drillrun: ["8M"],
+			zenheadbutt: ["8M"],
+			tripeaxel: ["8M"],
+		}
+	},
 	moltres: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -26703,6 +26722,21 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 8, level: 70, shiny: true, moves: ["fierywrath", "hurricane", "suckerpunch", "nastyplot"], pokeball: "cherishball"},
 		],
 		eventOnly: true,
+	},
+	moltresgalararmor: {
+		learnset: {
+			roost: ["8M"],
+			steelbeam: ["8M"],
+			ironhead: ["8M"],
+			knockoff: ["8M"],
+			pursuit: ["8M"],
+			oblivionwing: ["8M"],
+			overheat: ["8M"],
+			reflecttype: ["8M"],
+			shiftgear: ["8M"],
+			psychicnoise: ["8M"],
+			hiddenpower: ["8M"],
+		}
 	},
 	dratini: {
 		learnset: {
@@ -87531,6 +87565,22 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 6, level: 35},
 		],
 	},
+	dragalgearmor: {
+		learnset: {
+			dragonhammer: ["8M"],
+			flashcannon: ["8M"],
+			hex: ["8M"],
+			irondefense: ["8M"],
+			bodypress: ["8M"],
+			hardpress: ["8M"],
+			ironhead: ["8M"],
+			irontail: ["8M"],
+			supercellslam: ["8M"],
+			recover: ["8M"],
+			dragondance: ["8M"],
+			gyroball: ["8M"],
+		}
+	},
 	clauncher: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -87661,6 +87711,22 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		encounters: [
 			{generation: 6, level: 35},
 		],
+	},
+	clawitzerarmor: {
+		learnset: {
+			shiftgear: ["8M"],
+			seedbomb: ["8M"],
+			energyball: ["8M"],
+			rockwrecker: ["8M"],
+			zapcannon: ["8M"],
+			armorcannon: ["8M"],
+			flamethrower: ["8M"],
+			overheat: ["8M"],
+			smartstrike: ["8M"],
+			icespinner: ["8M"],
+			temperflare: ["8M"],
+			volcanicpulse: ["8M"],
+		}
 	},
 	helioptile: {
 		learnset: {
@@ -91000,6 +91066,17 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 8, level: 70, shiny: 1, isHidden: true, moves: ["thousandarrows", "landswrath", "dragonpulse", "bind"]}, // 50%
 		],
 		eventOnly: true,
+	},
+	zygarde10armor: {
+		learnset: {
+			overheat: ["8M"],
+			nastyplot: ["8M"],
+			flashcannon: ["8M"],
+			thunderbolt: ["8M"],
+			thunder: ["8M"],
+			energyball: ["8M"],
+			recover: ["8M"],
+		}
 	},
 	diancie: {
 		learnset: {
@@ -96482,6 +96559,19 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			whirlpool: ["8M", "8L32", "7L27"],
 			wrap: ["8L8", "7L9"],
 		},
+	},
+	dhelmisearmor: {
+		learnset: {
+			wavecrash: ["8M"],
+			gunkshot: ["8M"],
+			spikes: ["8M"],
+			ingrain: ["8M"],
+			shadowsneak: ["8M"],
+			aquajet: ["8M"],
+			synthesis: ["8M"],
+			dive: ["8M"],
+			overheat: ["8M"],
+		}
 	},
 	jangmoo: {
 		learnset: {
@@ -105410,6 +105500,20 @@ arboliva: {
 		psychic: ["8M"],
 		weatherball: ["8M"],
 	},
+},
+arbolivaarmor: {
+	learnset: {
+		spikes: ["8M"],
+		toxic: ["8M"],
+		sludgebomb: ["8M"],
+		corrode: ["8M"],
+		gunkshot: ["8M"],
+		return: ["8M"],
+		frustration: ["8M"],
+		irondefense: ["8M"],
+		gyroball: ["8M"],
+		overheat: ["8M"],
+	}
 },
 capsakid: {
 	learnset: {

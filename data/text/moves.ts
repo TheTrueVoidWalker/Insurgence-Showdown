@@ -7736,4 +7736,8 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Ignores the target's stat stage changes, including evasiveness.",
 		shortDesc: "Ignores the target's stat stage changes.",
 	},
+	volcanicpulse: {
+		name: "Volcanic Pulse",
+		shortDesc: "This move does not check accuracy.",
+	},
 };
