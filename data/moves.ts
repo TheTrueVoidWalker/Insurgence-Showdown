@@ -3862,9 +3862,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 			if (attacker.removeVolatile(move.id)) {
 				return;
 			}
-			if (attacker.hasAbility('gulpmissile') && attacker.species.name === 'Cramorant' && !attacker.transformed) {
-				const forme = attacker.hp <= attacker.maxhp / 2 ? 'cramorantgorging' : 'cramorantgulping';
-				attacker.formeChange(forme, move);
+			if (attacker.hasAbility('gulpmissile') && (attacker.species.name === 'Cramorant' || attacker.species.name === 'Cramorant-Armor') && !attacker.transformed) {
+				const item = attacker.getItem();
+				if (item.name === "Alltron Armor") {
+					const forme = attacker.hp <= attacker.maxhp / 2 ? 'cramorantarmorgorging' : 'cramorantarmorgulping';
+					attacker.formeChange(forme, move);
+				} else {
+					const forme = attacker.hp <= attacker.maxhp / 2 ? 'cramorantgorging' : 'cramorantgulping';
+					attacker.formeChange(forme, move);
+				}
 			}
 			this.add('-prepare', attacker, move.name);
 			if (!this.runEvent('ChargeMove', attacker, defender, move)) {

@@ -1813,8 +1813,8 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				effect && effect.id === 'surf' && source.hasAbility('gulpmissile') &&
 				(source.species.name === 'Cramorant' || source.species.name === 'Cramorant-Armor') && !source.transformed
 			) {
-				const armor = source.item == "Alltron Armor";
-				if (armor) {
+				const item = source.getItem();
+				if (item.name === "Alltron Armor") {
 					const forme = source.hp <= source.maxhp / 2 ? 'cramorantarmorgorging' : 'cramorantarmorgulping';
 					source.formeChange(forme, effect);
 				} else {
