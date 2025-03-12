@@ -1228,6 +1228,19 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 8, level: 50, gender: "M", nature: "Adamant", moves: ["flamethrower", "dragontail", "slash", "seismictoss"], pokeball: "pokeball"},
 		],
 	},
+	charizardarmor: {
+		learnset: {
+			uturn: ["8M"],
+			burningbulwark: ["8M"],
+			ironhead: ["8M"],
+			bulletpunch: ["8M"],
+			flashcannon: ["8M"],
+			autotomize: ["8M"],
+			clearsmog: ["8M"],
+			drainpunch: ["8M"],
+			firelash: ["8M"],
+		}
+	},
 	charizarddelta: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -3096,6 +3109,16 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			lashout: ["8T"],
 			dualwingbeat: ["8T"],
 		},
+	},
+	pidgeotdeltaarmor: {
+		learnset: {
+			ironhead: ["8M"],
+			anchorshot: ["8M"],
+			gyroball: ["8M"],
+			crushclaw: ["8M"],
+			gunkshot: ["8M"],
+			perishsong: ["8M"],
+		}
 	},
 	rattata: {
 		learnset: {
@@ -16192,6 +16215,19 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 3, level: 20},
 			{generation: 4, level: 16},
 		],
+	},
+	haunterarmor: {
+		learnset: {
+			partingshot: ["8M"],
+			swordsdance: ["8M"],
+			meteormash: ["8M"],
+			flashcannon: ["8M"],
+			steelbeam: ["8M"],
+			autotomize: ["8M"],
+			supercellslam: ["8M"],
+			bulletpunch: ["8M"],
+			ironhead: ["8M"],
+		}
 	},
 	gengar: {
 		learnset: {
@@ -33854,6 +33890,24 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 7, level: 65, gender: "M", abilities: ["superluck"], moves: ["nightslash", "skyattack", "heatwave", "icywind"], pokeball: "cherishball"},
 		],
 	},
+	honchkrowarmor: {
+		learnset: {
+			shiftgear: ["8M"],
+			ironhead: ["8M"],
+			lashout: ["8M"],
+			throatchop: ["8M"],
+			flashcannon: ["8M"],
+			overheat: ["8M"],
+			thunderbolt: ["8M"],
+			icebeam: ["8M"],
+			mysticalfire: ["8M"],
+			gyroball: ["8M"],
+			hardpress: ["8M"],
+			wildcharge: ["8M"],
+			storedpower: ["8M"],
+			meteorbeam: ["8M"],
+		}
+	},
 	misdreavus: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -47517,6 +47571,25 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			storedpower: ["8M"],
 			scorchingsands: ["8T"],
 		},
+	},
+	medichamdeltaarmor: {
+		learnset: {
+			rapidspin: ["8M"],
+			autotomize: ["8M"],
+			irondefense: ["8M"],
+			recover: ["8M"],
+			spiritbreak: ["8M"],
+			bulletpunch: ["8M"],
+			flashcannon: ["8M"],
+			meteormash: ["8M"],
+			overheat: ["8M"],
+			thunderbolt: ["8M"],
+			frostbreath: ["8M"],
+			icywind: ["8M"],
+			spikes: ["8M"],
+			thunderwave: ["8M"],
+			behemothbash: ["8M"],
+		}
 	},
 	electrike: {
 		learnset: {
@@ -79301,6 +79374,19 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			yawn: ["8L1"],
 		},
 	},
+	accelgorarmor: {
+		learnset: {
+			hypervoice: ["8M"],
+			metalsound: ["8M"],
+			alluringvoice: ["8M"],
+			scald: ["8M"],
+			physicnoise: ["8M"],
+			flashcannon: ["8M"],
+			steelbeam: ["8M"],
+			drakonvoice: ["8M"],
+			tachyoncutter: ["8M"],
+		}
+	},
 	stunfisk: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -94080,6 +94166,20 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			xscissor: ["8M", "8L30", "7M", "7L1"],
 		},
 	},
+	lurantisarmor: {
+		learnset: {
+			rapidspin: ["8M"],
+			gyroball: ["8M"],
+			spinout: ["8M"],
+			metalburst: ["8M"],
+			topsyturvy: ["8M"],
+			thunderbolt: ["8M"],
+			zapcannon: ["8M"],
+			icehammer: ["8M"],
+			scaleshot: ["8M"],
+			flashcannon: ["8M"],
+		}
+	},
 	lurantistotem: {
 		learnset: {
 			aerialace: ["7M"],
@@ -100128,6 +100228,16 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			willowisp: ["8M"],
 		},
 	},
+	coalossalarmor: {
+		learnset: {
+			flashcannon: ["8M"],
+			steelbeam: ["8M"],
+			shiftgear: ["8M"],
+			chargebeam: ["8M"],
+			gravity: ["8M"],
+			morningsun: ["8M"],
+		}
+	},
 	applin: {
 		learnset: {
 			astonish: ["8L1"],
@@ -100391,6 +100501,19 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			weatherball: ["8M"],
 			whirlpool: ["8M"],
 		},
+	},
+	cramorantarmor: {
+		learnset: {
+			thunderbolt: ["8M"],
+			volttackle: ["8M"],
+			rapidspin: ["8M"],
+			chargebeam: ["8M"],
+			ironhead: ["8M"],
+			spikes: ["8M"],
+			flashcannon: ["8M"],
+			partingshot: ["8M"],
+			overheat: ["8M"],
+		}
 	},
 	arrokuda: {
 		learnset: {
@@ -106279,6 +106402,36 @@ cyclizar: {
 		uturn: ["8M", "8L27"],
 		wildcharge: ["8M"],
 	},
+},
+cyclizararmorscarlet: {
+	learnset: {
+		collisioncourse: ["8M"],
+		flareblitz: ["8M"],
+		flamethrower: ["8M"],
+		heatcrash: ["8M"],
+		firepunch: ["8M"],
+		crushclaws: ["8M"],
+		incinerate: ["8M"],
+		explosion: ["8M"],
+		solarblade: ["8M"],
+	}
+},
+cyclizararmorviolet: {
+	learnset: {
+		electrodrift: ["8M"],
+		discharge: ["8M"],
+		thunder: ["8M"],
+		electroball: ["8M"],
+		electroweb: ["8M"],
+		electrify: ["8M"],
+		nuzzle: ["8M"],
+		flashcannon: ["8M"],
+		steelbeam: ["8M"],
+		irondefense: ["8M"],
+		mirrorshot: ["8M"],
+		calmmind: ["8M"],
+		paraboliccharge: ["8M"],
+	}
 },
 pawmi: {
 	learnset: {

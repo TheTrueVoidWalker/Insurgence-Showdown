@@ -23173,7 +23173,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		flags: {protect: 1, mirror: 1, cantusetwice: 1},
 		secondary: null,
 		target: "normal",
-		type: "Steel",
+		type: "Fighting",
 	},
 	pettypayload: {
 		num: 2029,

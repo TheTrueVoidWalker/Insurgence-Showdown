@@ -1797,6 +1797,15 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				}
 				target.formeChange('cramorant', move);
 			}
+			if (['cramorantarmorgulping', 'cramorantarmorgorging'].includes(target.species.id)) {
+				this.damage(source.baseMaxhp / 4, source, target);
+				if (target.species.id === 'cramorantarmorgulping') {
+					this.boost({def: -1}, source, target, null, true);
+				} else {
+					source.trySetStatus('par', target, move);
+				}
+				target.formeChange('cramorantarmor', move);
+			}
 		},
 		// The Dive part of this mechanic is implemented in Dive's `onTryMove` in moves.ts
 		onSourceTryPrimaryHit(target, source, effect) {
@@ -1804,8 +1813,14 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				effect && effect.id === 'surf' && source.hasAbility('gulpmissile') &&
 				source.species.name === 'Cramorant' && !source.transformed
 			) {
-				const forme = source.hp <= source.maxhp / 2 ? 'cramorantgorging' : 'cramorantgulping';
-				source.formeChange(forme, effect);
+				const armor = source.item == "Alltron Armor";
+				if (armor) {
+					const forme = source.hp <= source.maxhp / 2 ? 'cramorantarmorgorging' : 'cramorantarmorgulping';
+					source.formeChange(forme, effect);
+				} else {
+					const forme = source.hp <= source.maxhp / 2 ? 'cramorantgorging' : 'cramorantgulping';
+					source.formeChange(forme, effect);
+				}
 			}
 		},
 		isPermanent: true,
