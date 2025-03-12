@@ -1004,10 +1004,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	baddybad: {
 		num: 737,
-		accuracy: 95,
+		accuracy: 80,
 		basePower: 80,
 		category: "Special",
-		isNonstandard: "LGPE",
 		name: "Baddy Bad",
 		pp: 15,
 		priority: 0,
@@ -1794,10 +1793,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	bouncybubble: {
 		num: 733,
-		accuracy: 100,
+		accuracy: 80,
 		basePower: 60,
 		category: "Special",
-		isNonstandard: "LGPE",
 		name: "Bouncy Bubble",
 		pp: 20,
 		priority: 0,
@@ -2124,10 +2122,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	buzzybuzz: {
 		num: 734,
-		accuracy: 100,
+		accuracy: 80,
 		basePower: 60,
 		category: "Special",
-		isNonstandard: "LGPE",
 		name: "Buzzy Buzz",
 		pp: 20,
 		priority: 0,
@@ -6401,10 +6398,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	freezyfrost: {
 		num: 739,
-		accuracy: 90,
+		accuracy: 80,
 		basePower: 100,
 		category: "Special",
-		isNonstandard: "LGPE",
 		name: "Freezy Frost",
 		pp: 10,
 		priority: 0,
@@ -6932,7 +6928,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 80,
 		basePower: 80,
 		category: "Special",
-		//isNonstandard: "LGPE",
 		name: "Glitzy Glow",
 		pp: 15,
 		priority: 0,
@@ -16347,10 +16342,9 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	sappyseed: {
 		num: 738,
-		accuracy: 90,
+		accuracy: 80,
 		basePower: 100,
 		category: "Physical",
-		isNonstandard: "LGPE",
 		name: "Sappy Seed",
 		pp: 10,
 		priority: 0,
@@ -17220,7 +17214,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
-		//isNonstandard: "LGPE",
 		name: "Sizzly Slide",
 		pp: 20,
 		priority: 0,
@@ -21097,7 +21090,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 			return Math.floor((pokemon.happiness * 10) / 25) || 1;
 		},
 		category: "Physical",
-		isNonstandard: "LGPE",
 		name: "Veevee Volley",
 		pp: 20,
 		priority: 0,
@@ -23101,7 +23093,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		name: "Cambrian Cleave",
 		pp: 10,
 		priority: 0,
-		flags: {bite: 1, contact: 1, protect: 1, mirror: 1, slicing: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
 		onTryHit(pokemon) {
 			// will shatter screens through sub, before you hit
 			pokemon.side.removeSideCondition('reflect');
@@ -23162,8 +23154,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 				target.item = yourItem.id; // bypass setItem so we don't break choicelock or anything
 				return;
 			}
-			this.add('-enditem', target, yourItem, '[silent]', '[from] move: Thief', '[of] ' + source);
-			this.add('-item', source, yourItem, '[from] move: Thief', '[of] ' + target);
+			this.add('-enditem', target, yourItem, '[silent]', '[from] move: Pillaging Plunder', '[of] ' + source);
+			this.add('-item', source, yourItem, '[from] move: Pillaging Plunder', '[of] ' + target);
 		},
 		secondary: null,
 		target: "normal",
@@ -23200,5 +23192,341 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Dark",
 		contestType: "Beautiful",
+	},
+	sinkingstalactite: {
+		num: 2030,
+		accuracy: 90,
+		basePower: 65,
+		category: "Physical",
+		//isNonstandard: "Unobtainable",
+		name: "Sinking Stalactite",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, bite: 1},
+		self: {
+			onHit(source) {
+				for (const side of source.side.foeSidesWithConditions()) {
+					side.addSideCondition('stealthrock');
+				}
+			},
+		},
+		secondary: {}, // allows sheer force to trigger
+		target: "normal",
+		type: "Rock",
+	},
+	superstuffcheeks: {
+		num: 2031,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Super Stuff Cheeks",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1},
+		// Move disabling implemented in Battle#nextTurn in sim/battle.ts
+		onTry(source) {
+			const item = source.getItem();
+			if (item.isBerry && source.eatItem(true)) {
+				source.lastItem = '';
+				this.add('-item', source, this.dex.items.get(item), '[from] move: Super Stuff Cheeks');
+				source.setItem(item);
+				source.eatItem(true);
+				this.boost({def: 2}, source, null, null, false, true);
+			} else {
+				return false;
+			}
+		},
+		secondary: null,
+		target: "self",
+		type: "Normal",
+	},
+	dualslash: {
+		num: 2032,
+		accuracy: 90,
+		basePower: 25,
+		category: "Physical",
+		name: "Dual Slash",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		multihit: 2,
+		secondary: null,
+		target: "normal",
+		type: "Dragon",
+		maxMove: {basePower: 130},
+		contestType: "Tough",
+	},
+	surgesurfer: {
+		num: 2033,
+		accuracy: 100,
+		basePower: 120,
+		category: "Special",
+		name: "Surgesurfer",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		recoil: [33, 100],
+		secondary: {
+			chance: 10,
+			onHit(source) {
+				this.field.setTerrain('electricterrain');
+			},
+		},
+		target: "normal",
+		type: "Electric",
+		contestType: "Cool",
+	},
+	crystalstorm: {
+		num: 2034,
+		accuracy: 95,
+		basePower: 100,
+		category: "Physical",
+		name: "Crystal Storm",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		self: {
+			chance: 50,
+			boosts: {
+				def: 2,
+			},
+		},
+		secondary: {
+			// Sheer Force negates the self even though it is not secondary
+		},
+		target: "allAdjacentFoes",
+		type: "Crystal",
+		contestType: "Beautiful",
+	},
+	valiantwing: {
+		num: 2035,
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		name: "Valiant Wing",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		critRatio: 2,
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					atk: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Flying",
+	},
+	wellpressed: {
+		num: 2036,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Well-Pressed",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		overrideOffensiveStat: 'def',
+		secondary: null,
+		target: "normal",
+		type: "Fairy",
+	},
+	sinfulshade: {
+		num: 2037,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		name: "Sinful Shade",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onBasePower(basePower, pokemon) {
+			if (pokemon.status && pokemon.status !== 'slp') {
+				return this.chainModify(2);
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Ghost",
+		contestType: "Cute",
+	},
+	turvytopsy: {
+		num: 2038,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Turvy-Topsy",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1},
+		onHit(target) {
+			let success = false;
+			let i: BoostID;
+			for (i in target.boosts) {
+				if (target.boosts[i] === 0) continue;
+				target.boosts[i] = -target.boosts[i];
+				success = true;
+			}
+			if (!success) return false;
+			this.add('-invertboost', target, '[from] move: Turvy-Topsy');
+		},
+		secondary: null,
+		target: "self",
+		type: "Dark",
+		zMove: {boost: {atk: 1}},
+		contestType: "Clever",
+	},
+	frostingfinale: {
+		num: 2039,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Frosting Finale",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, bullet: 1},
+		condition: {
+			noCopy: true,
+			duration: 4,
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Frosting Finale');
+			},
+			onResidualOrder: 14,
+			onResidual() {
+				this.boost({atk: -1});
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Frosting Finale', '[silent]');
+			},
+		},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'frostingfinale',
+		},
+		target: "normal",
+		type: "Normal",
+	},
+	doggypaddle: {
+		num: 2040,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		name: "Doggy Paddle",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Water') return 1;
+		},
+		secondary: {
+			chance: 10,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Water",
+		contestType: "Beautiful",
+	},
+	clobberingcrustacean: {
+		num: 2041,
+		accuracy: 90,
+		basePower: 150,
+		category: "Physical",
+		name: "Clobbering Crustacean",
+		pp: 5,
+		priority: 0,
+		flags: {recharge: 1, protect: 1, mirror: 1},
+		onAfterMoveSecondarySelf(pokemon, target, move) {
+			if (!target || !target.fainted || target.hp > 0) {
+				pokemon.addVolatile('mustrecharge');
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		contestType: "Cool",
+	},
+	kissoflife: {
+		num: 2042,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Kiss of Life",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, heal: 1},
+		drain: [2, 4],
+		secondary: null,
+		target: "normal",
+		type: "Poison",
+		contestType: "Cute",
+	},
+	bongobeating: {
+		num: 2043,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Bongo Beating",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Ground",
+		contestType: "Beautiful",
+	},
+	crystaltail: {
+		num: 2044,
+		accuracy: 85,
+		basePower: 80,
+		category: "Physical",
+		name: "Crystal Tail",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 30,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Crystal",
+		contestType: "Cool",
+	},
+	crystaledge: {
+		num: 2045,
+		accuracy: 80,
+		basePower: 100,
+		category: "Physical",
+		name: "Crystal Edge",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		critRatio: 2,
+		secondary: null,
+		target: "normal",
+		type: "Crystal",
+		contestType: "Tough",
+	},
+	lightninglariat: {
+		num: 2046,
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		name: "Lightning Lariat",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		ignoreEvasion: true,
+		ignoreDefensive: true,
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+		contestType: "Cool",
 	},
 };

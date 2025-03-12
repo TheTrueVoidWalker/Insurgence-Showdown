@@ -2436,12 +2436,17 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 	},
 	libero: {
 		onPrepareHit(source, target, move) {
+			if (this.effectState.libero) return;
 			if (move.hasBounced || move.isFutureMove || move.sourceEffect === 'snatch') return;
 			const type = move.type;
 			if (type && type !== '???' && source.getTypes().join() !== type) {
 				if (!source.setType(type)) return;
+				this.effectState.libero = true;
 				this.add('-start', source, 'typechange', type, '[from] ability: Libero');
 			}
+		},
+		onSwitchIn(pokemon) {
+			delete this.effectState.libero;
 		},
 		name: "Libero",
 		rating: 4.5,
@@ -6690,5 +6695,108 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Lava Bubble",
 		rating: 4.5,
 		num: 2010,
+	},
+	newtonslaw: {
+		name: "Newton's Law",
+		onStart(source) {
+			this.field.addPseudoWeather('Gravity');
+		},
+		rating: 4.5,
+		num: 2011,
+	},
+	aftertaste: {
+		onPrepareHit(source, target, move) {
+			if (move.category === 'Status' || move.selfdestruct || move.multihit) return;
+			if (['dynamaxcannon', 'endeavor', 'fling', 'iceball', 'rollout'].includes(move.id)) return;
+			if (!move.flags['charge'] && !move.spreadHit && !move.isZ && !move.isMax) {
+				move.multihit = 2;
+				move.multihitType = 'aftertaste';
+			}
+		},
+		// Damage modifier implemented in BattleActions#modifyDamage()
+		onSourceModifySecondaries(secondaries, target, source, move) {
+			if (move.multihitType === 'aftertaste' && move.id === 'secretpower' && move.hit < 2) {
+				// hack to prevent accidentally suppressing King's Rock/Razor Fang
+				return secondaries.filter(effect => effect.volatileStatus === 'flinch');
+			}
+		},
+		name: "Aftertaste",
+		rating: 4.5,
+		num: 2012,
+	},
+	jumpingspider: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move?.flags['heal']) return priority + 3;
+		},
+		name: "Jumping Spider",
+		rating: 3.5,
+		num: 2013,
+	},
+	everfrost: {
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Ice') {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Ice') {
+				return this.chainModify(2);
+			}
+		},
+		onSourceModifyAtkPriority: 5,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Ice') {
+				return this.chainModify(0.5);
+			}
+			if (move.type === 'Fire') {
+				return this.chainModify(2);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Ice') {
+				return this.chainModify(0.5);
+			}
+			if (move.type === 'Fire') {
+				return this.chainModify(2);
+			}
+		},
+		isBreakable: true,
+		name: "Everfrost",
+		rating: 3.5,
+		num: 2014,
+	},
+	faefootwork: {
+		onTryHit(target, source, move) {
+			if (move.category === 'Status' || target === source) return;
+			if (move.type === 'Dragon') {
+				this.add('-immune', target, '[from] ability: Fae Footwork');
+				return null;
+			}
+		},
+		onAllyTryHitSide(target, source, move) {
+			if (move.category === 'Status' || target === source) return;
+			if (move.type === 'Dragon') {
+				this.add('-immune', this.effectState.target, '[from] ability: Fae Footwork');
+			}
+		},
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Bug' || move.type === 'Dark' || move.type === 'Fighting') {
+				this.debug('Fae Footwork weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 6,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Bug' || move.type === 'Dark' || move.type === 'Fighting') {
+				this.debug('Fae Footwork weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		name: "Fae Footwork",
+		gen: 6,
+		rating: 3.5,
+		num: 2015,
 	},
 };

@@ -1758,7 +1758,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		desc: "This Pokemon's Attack and Special Attack stats are increased by 10% for each fainted teammate.",
 		shortDesc: "This Pokemon's Attack and Special Attack raise by 10% per fainted teammate.",
 
-		activate: "  [POKEMON] gained true strength from the fallen!",
+		activate: "Git Gud.",
 	},
 	surgesurfer: {
 		name: "Surge Surfer",
@@ -2212,5 +2212,28 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Lava Bubble",
 		desc: "This Pokemon's attacking stat is doubled while using a Fire-type attack. If a Pokemon uses a Water-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
 		shortDesc: "This Pokemon's Fire power is 2x; it can't be burned; Water power against it is halved.",
+	},
+	newtonslaw: {
+		name: "Newton's Law",
+		shortDesc: "On switch-in, this Pokemon sets Gravity.",
+	},
+	aftertaste: {
+		name: "Aftertaste",
+		desc: "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect multi-hit moves or moves that have multiple targets.",
+		shortDesc: "This Pokemon's damaging moves hit twice. The second hit has its damage quartered.",
+	},
+	jumpingspider: {
+		name: "Jumping Spider",
+		shortDesc: "This Pokemon's healing moves have their priority increased by 3.",
+	},
+	everfrost: {
+		name: "Everfrost",
+		desc: "This Pokemon's attacking stat is doubled while using a Ice-type attack. If a Pokemon uses a Ice-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon. This Pokemon takes double damage from Fire-type moves.",
+		shortDesc: "2x Ice power; opposing Ice power is halved; takes 2x Fire damage.",
+	},
+	faefootwork: {
+		name: "Fae Footwork",
+		desc: "If a Pokemon uses a Bug-, Dark-, or Fighting-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon. This Pokemon is immune to Dragon-type moves.",
+		shortDesc: "Gains the immunities and resistances of the Fairy-type.",
 	},
 };

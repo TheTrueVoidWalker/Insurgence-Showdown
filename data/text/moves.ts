@@ -7650,4 +7650,90 @@ export const MovesText: {[k: string]: MoveText} = {
 		desc: "Lowers the user's Attack by 1 stage.",
 		shortDesc: "Lowers the user's Atk by 1.",
 	},
+	sinkstalactite: {
+		name: "Sinking Stalactite",
+		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+		shortDesc: "Sets Stealth Rock on the target's side.",
+	},
+	superstuffcheeks: {
+		name: "Super Stuff Cheeks",
+		desc: "This move cannot be selected unless the user is holding a Berry. The user eats its Berry 2 times in a row and raises its Defense by 2 stages. This effect is not prevented by the Klutz or Unnerve Abilities, or the effects of Embargo or Magic Room. Fails if the user is not holding a Berry.",
+		shortDesc: "Must hold Berry to use. User eats Berry twice, Def +2.",
+	},
+	dualslash: {
+		name: "Dual Slash",
+		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
+		shortDesc: "Hits 2 times in one turn.",
+	},
+	surgesurfer: {
+		name: "Surgersurfer",
+		desc: "Has a 10% chance to set Electric Terrain. If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil. 10% chance to set Electric Terrain.",
+	},
+	crystalstorm: {
+		name: "Crystal Storm",
+		desc: "Has a 50% chance to raise the user's Defense by 2 stages.",
+		shortDesc: "50% chance to raise user's Defense by 2.",
+	},
+	valiantwing: {
+		name: "Valiant Wing",
+		desc: "Has a higher chance for a critical hit. Has a 100% chance to raise the user's Attack by 1 stage.",
+		shortDesc: "High critical hit ratio. Raises the user's Attack by 1.",
+	},
+	wellpressed: {
+		name: "Well-Pressed",
+		desc: "Damage is calculated using the user's Defense stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
+		shortDesc: "Uses user's Def stat as Atk in damage calculation.",
+	},
+	sinfulshade: {
+		name: "Sinful Shade",
+		desc: "Power doubles if the user is burned, paralyzed, or poisoned. The physical damage halving effect from the user's burn is ignored.",
+		shortDesc: "Power doubles if user is burn/poison/paralyzed.",
+	},
+	turvytopsy: {
+		name: "Turvy-Topsy",
+		desc: "The user's positive stat stages become negative and vice versa. Fails if all of the user's stat stages are 0.",
+		shortDesc: "Inverts the user's stat stages.",
+	},
+	frostingfinale: {
+		name: "Frosting Finale",
+		desc: "If this move is successful, it causes the target's Attack to be lowered by 1 stage at the end of each turn for 3 turns.",
+		shortDesc: "Target's Attack is lowered by 1 stage for 3 turns.",
+		start: "  [POKEMON] got covered in chilly frosting!",
+	},
+	doggypaddle: {
+		name: "Doggy Paddle",
+		desc: "Has a 10% chance to flinch the target. This move's type effectiveness against Water is changed to be super effective no matter what this move's type is.",
+		shortDesc: "10% chance to flinch. Super effective on Water.",
+	},
+	clobberingcrustacean: {
+		name: "Clobbering Crustacean",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move, unless the target or its substitute was knocked out by this move.",
+		shortDesc: "Can't move next turn if target or sub is not KOed.",
+	},
+	kissoflife: {
+		name: "Kiss of Life",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+	},
+	bongobeating: {
+		name: "Bongo Beating",
+		desc: "Has a 10% chance to confuse the target.",
+		shortDesc: "10% chance to confuse target.",
+	},
+	crystaltail: {
+		name: "Crystal Tail",
+		desc: "Has a 30% chance to lower the target's Defense by 1 stage.",
+		shortDesc: "30% chance to lower the target's Defense by 1.",
+	},
+	crystaledge: {
+		name: "Crystal Edge",
+		desc: "Has a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio.",
+	},
+	lightninglariat: {
+		name: "Lightning Lariat",
+		desc: "Ignores the target's stat stage changes, including evasiveness.",
+		shortDesc: "Ignores the target's stat stage changes.",
+	},
 };
