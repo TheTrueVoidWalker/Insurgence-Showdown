@@ -66670,6 +66670,22 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 6, level: 50, isHidden: true, moves: ["flareblitz", "holdback", "headsmash", "takedown"], pokeball: "cherishball"},
 		],
 	},
+	emboararmor: {
+		learnset: {
+			stealthrock: ["8M"],
+			nastyplot: ["8M"],
+			swordsdance: ["8M"],
+			firelash: ["8M"],
+			headlongrush: ["8M"],
+			thunderbolt: ["8M"],
+			earthpower: ["8M"],
+			vacuumwave: ["8M"],
+			ironhead: ["8M"],
+			flashcannon: ["8M"],
+			voltswitch: ["8M"],
+			hydrosteam: ["8M"],
+		}
+	},
 	emboardelta: {
 		learnset: {
 			heatcrash: ["8T"],
@@ -77891,6 +77907,27 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			zapcannon: ["7L1", "6L1"],
 		},
 	},
+	eelektrossarmor: {
+		learnset: {
+			stealthrock: ["8M"],
+			calmmind: ["8M"],
+			swordsdance: ["8M"],
+			shiftgear: ["8M"],
+			nuzzle: ["8M"],
+			zingzap: ["8M"],
+			leechlife: ["8M"],
+			wish: ["8M"],
+			meteormash: ["8M"],
+			icepunch: ["8M"],
+			icebeam: ["8M"],
+			rapidspin: ["8M"],
+			steelbeam: ["8M"],
+			flashcannon: ["8M"],
+			ironhead: ["8M"],
+			bulletpunch: ["8M"],
+			partingshot: ["8M"],
+		}
+	},
 	elgyem: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -81861,6 +81898,17 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		encounters: [
 			{generation: 6, level: 59},
 		],
+	},
+	hydreigonarmor: {
+		learnset: {
+			ficklebeam: ["8M"],
+			shiftgear: ["8M"],
+			pursuit: ["8M"],
+			suckerpunch: ["8M"],
+			temperflare: ["8M"],
+			dragonhammer: ["8M"],
+			hurricane: ["8M"],
+		}
 	},
 	hydreigondelta: {
 		learnset: {

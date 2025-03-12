@@ -8500,13 +8500,13 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Alltron Armor",
 		spritenum: 1006,
 		onTakeItem(item, pokemon, source) {
-			const userIDs = [718, 930, 693, 146, 145, 144, 691, 781, 635, 68, 416, 967, 617, 845, 308, 430, 839, 93, 754, 6, 9, 3, 352, 724, 518, 419, 745, 117, 18, 853, 31, 20, 148, 865];
+			const userIDs = [500, 604, 718, 930, 693, 146, 145, 144, 691, 781, 635, 68, 416, 967, 617, 845, 308, 430, 839, 93, 754, 6, 9, 3, 352, 724, 518, 419, 745, 117, 18, 853, 31, 20, 148, 865];
 			if ((source && userIDs.includes(source.baseSpecies.num)) || userIDs.includes(pokemon.baseSpecies.num)) {
 				return false;
 			}
 			return true;
 		},
-		itemUser: ["Zygarde-10%-Armor", "Arboliva-Armor", "Clawitzer-Armor", "Moltres-Galar-Armor", "Zapdos-Galar-Armor", "Articuno-Galar-Armor", "Dragalge-Armor", "Dhelmise-Armor", "Hydreigon-Delta-Armor", "Machamp-Armor", "Vespiquen-Armor", "Cyclizar-Armor-Scarlet", "Cyclizar-Armor-Violet", "Accelgor-Armor", "Pidgeot-Delta-Armor", "Cramorant-Armor", "Cramorant-Armor-Gulping", "Cramorant-Armor-Gorging", "Medicham-Delta-Armor", "Honchkrow-Armor", "Coalossal-Armor", "Haunter-Armor", "Lurantis-Armor", "Charizard-Armor", "Blastoise-Armor", "Venusaur-Armor","Kecleon-Armor","Decidueye-Armor", "Musharna-Armor", "Floatzel-Armor", "Lycanroc-Dusk-Armor", "Seadra-Armor", "Pidgeot-Armor", "Grapploct-Armor", "Nidoqueen-Armor", "Raticate-Armor", "Dragonair-Armor", "Sirfetch\u2019d-Armor"],
+		itemUser: ["Hydreigon-Armor", "Emboar-Armor", "Eelektross-Armor", "Zygarde-10%-Armor", "Arboliva-Armor", "Clawitzer-Armor", "Moltres-Galar-Armor", "Zapdos-Galar-Armor", "Articuno-Galar-Armor", "Dragalge-Armor", "Dhelmise-Armor", "Hydreigon-Delta-Armor", "Machamp-Armor", "Vespiquen-Armor", "Cyclizar-Armor-Scarlet", "Cyclizar-Armor-Violet", "Accelgor-Armor", "Pidgeot-Delta-Armor", "Cramorant-Armor", "Cramorant-Armor-Gulping", "Cramorant-Armor-Gorging", "Medicham-Delta-Armor", "Honchkrow-Armor", "Coalossal-Armor", "Haunter-Armor", "Lurantis-Armor", "Charizard-Armor", "Blastoise-Armor", "Venusaur-Armor","Kecleon-Armor","Decidueye-Armor", "Musharna-Armor", "Floatzel-Armor", "Lycanroc-Dusk-Armor", "Seadra-Armor", "Pidgeot-Armor", "Grapploct-Armor", "Nidoqueen-Armor", "Raticate-Armor", "Dragonair-Armor", "Sirfetch\u2019d-Armor"],
 		num: 3006,
 		gen: 8,
 	},
