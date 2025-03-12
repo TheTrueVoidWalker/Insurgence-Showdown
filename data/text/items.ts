@@ -2732,8 +2732,8 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Dusknoirite",
 		desc: "If held by an Dusknoir, this item allows it to Mega Evolve in battle.",
 	},
-	altronarmor: {
-		name: "Altron Armor",
-		desc: "If held by an Altron-sponsored Pokemon, this item triggers its Armor in battle.",
+	alltronarmor: {
+		name: "Alltron Armor",
+		desc: "If held by an Alltron-sponsored Pokemon, this item triggers its Armor in battle.",
 	},
 };
