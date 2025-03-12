@@ -2928,6 +2928,20 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 7, level: 29},
 		],
 	},
+	pidgeotarmor: {
+		learnset: {
+			closecombat: ["8M"],
+			temperflare: ["8M"],
+			thunderbolt: ["8M"],
+			voltswitch: ["8M"],
+			thunder: ["8M"],
+			overheat: ["8M"],
+			boomburst: ["8M"],
+			stompingtantrum: ["8M"],
+			calmmind: ["8M"],
+			earthpower: ["8M"],
+		}
+	},
 	pidgeotdelta: {
 		learnset: {
 			achillesheel: ["6M"],

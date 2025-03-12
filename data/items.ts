@@ -8500,13 +8500,13 @@ export const Items: {[itemid: string]: ItemData} = {
 		name: "Altron Armor",
 		spritenum: 1006,
 		onTakeItem(item, pokemon, source) {
-			const userIDs = [888];
+			const userIDs = [18];
 			if ((source && userIDs.includes(source.baseSpecies.num)) || userIDs.includes(pokemon.baseSpecies.num)) {
 				return false;
 			}
 			return true;
 		},
-		itemUser: ["Zacian-Crowned"],
+		itemUser: ["Pidgeot-Armor"],
 		num: 3006,
 		gen: 8,
 	},
