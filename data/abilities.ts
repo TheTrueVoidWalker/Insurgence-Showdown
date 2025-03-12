@@ -1811,7 +1811,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		onSourceTryPrimaryHit(target, source, effect) {
 			if (
 				effect && effect.id === 'surf' && source.hasAbility('gulpmissile') &&
-				source.species.name === 'Cramorant' && !source.transformed
+				(source.species.name === 'Cramorant' || source.species.name === 'Cramorant-Armor') && !source.transformed
 			) {
 				const armor = source.item == "Alltron Armor";
 				if (armor) {

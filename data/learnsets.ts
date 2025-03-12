@@ -11847,6 +11847,20 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 2, level: 5},
 		],
 	},
+	machamparmor: {
+		learnset: {
+			ironhead: ["8M"],
+			gyroball: ["8M"],
+			headlongrush: ["8M"],
+			swordsdance: ["8M"],
+			machpunch: ["8M"],
+			magnetrise: ["8M"],
+			temperflare: ["8M"],
+			taunt: ["8M"],
+			voltswitch: ["8M"],
+			shadowpunch: ["8M"],
+		}
+	},
 	bellsprout: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -59987,6 +60001,23 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			xscissor: ["8M", "7M", "6M", "5M", "4M"],
 		},
 	},
+	vespiquenarmor: {
+		learnset: {
+			bodypress: ["8M"],
+			bravebird: ["8M"],
+			steelbeam: ["8M"],
+			wildcharge: ["8M"],
+			firstimpression: ["8M"],
+			headsmash: ["8M"],
+			doubleedge: ["8M"],
+			ultrasonicwave: ["8M"],
+			psychicnoise: ["8M"],
+			alluringvoice: ["8M"],
+			gravity: ["8M"],
+			rapidspin: ["8M"],
+			stealthrock: ["8M"],
+		}
+	},
 	vespiquendelta: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -81907,6 +81938,17 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			dualwingbeat: ["8T"],
 			scorchingsands: ["8T"],
 		},
+	},
+	hydreigondeltaarmor: {
+		learnset: {
+			quickattack: ["8M"],
+			encore: ["8M"],
+			rapidspin: ["8M"],
+			toxicspikes: ["8M"],
+			firstimpression: ["8M"],
+			jawlock: ["8M"],
+			firelash: ["8M"],
+		}
 	},
 	larvesta: {
 		learnset: {
