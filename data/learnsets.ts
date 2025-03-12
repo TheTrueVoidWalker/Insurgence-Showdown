@@ -3332,6 +3332,15 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 4, level: 13},
 		],
 	},
+	raticatearmor: {
+		learnset: {
+			spikes: ["8M"],
+			thunderfang: ["8M"],
+			poisonfang: ["8M"],
+			corrosivegas: ["8M"],
+			avaricefang: ["8M"],
+		}
+	},
 	raticatealola: {
 		learnset: {
 			assurance: ["7L19"],
@@ -6188,6 +6197,17 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		eventData: [
 			{generation: 6, level: 41, perfectIVs: 2, abilities: ["poisonpoint"], moves: ["tailwhip", "doublekick", "poisonsting", "bodyslam"], pokeball: "cherishball"},
 		],
+	},
+	nidoqueenarmor: {
+		learnset: {
+			meanlook: ["8M"],
+			perishsong: ["8M"],
+			gunkshot: ["8M"],
+			autotomize: ["8M"],
+			flashcannon: ["8M"],
+			thunderwave: ["8M"],
+			spikes: ["8M"],
+		}
 	},
 	nidoranm: {
 		learnset: {
@@ -14660,6 +14680,16 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			meteorimpact: ["8M"],
 		},
 	},
+	sirfetchdarmor: {
+		learnset: {
+			kingsshield: ["8M"],
+			sacredsword: ["8M"],
+			psychocut: ["8M"],
+			razorshell: ["8M"],
+			bodypress: ["8M"],
+			drainpunch: ["8M"],
+		}
+	},
 	doduo: {
 		learnset: {
 			acupressure: ["7L33", "6L28", "5L28", "4L28"],
@@ -20282,6 +20312,21 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 3, level: 25},
 			{generation: 4, level: 15},
 		],
+	},
+	seadraarmor: {
+		learnset: {
+			partingshot: ["8M"],
+			corrode: ["8M"],
+			sludgewave: ["8M"],
+			toxicspikes: ["8M"],
+			sludgebomb: ["8M"],
+			corrosivegas: ["8M"],
+			venomdrench: ["8M"],
+			acidspray: ["8M"],
+			acidarmor: ["8M"],
+			recover: ["8M"],
+			focusblast: ["8M"],
+		}
 	},
 	kingdra: {
 		learnset: {
@@ -26849,6 +26894,17 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 4, level: 15},
 			{generation: 7, level: 10},
 		],
+	},
+	dragonairarmor: {
+		learnset: {
+			glare: ["8M"],
+			temperflare: ["8M"],
+			recover: ["8M"],
+			coil: ["8M"],
+			ironhead: ["8M"],
+			flashcannon: ["8M"],
+			magnetrise: ["8M"],
+		}
 	},
 	dragonairdelta: {
 		learnset: {
@@ -60163,6 +60219,20 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 5, level: 10},
 		],
 	},
+	floatzelarmor: {
+		learnset: {
+			tripleaxel: ["8M"],
+			rapidspin: ["8M"],
+			ironhead: ["8M"],
+			meteormash: ["8M"],
+			spikes: ["8M"],
+			fly: ["8M"],
+			floatyfall: ["8M"],
+			drainpunch: ["8M"],
+			wildcharge: ["8M"],
+			suckerpunch: ["8M"],
+		}
+	},
 	cherubi: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -68177,6 +68247,21 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 		eventData: [
 			{generation: 5, level: 50, isHidden: true, moves: ["defensecurl", "luckychant", "psybeam", "hypnosis"]},
 		],
+	},
+	musharnaarmor: {
+		learnset: {
+			thunderbolt: ["8M"],
+			overheat: ["8M"],
+			wish: ["8M"],
+			lunarcannon: ["8M"],
+			teleport: ["8M"],
+			spikes: ["8M"],
+			paraboliccharge: ["8M"],
+			thunder: ["8M"],
+			frostbreath: ["8M"],
+			reflecttype: ["8M"],
+			willowisp: ["8M"],
+		}
 	},
 	pidove: {
 		learnset: {
@@ -91493,6 +91578,20 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 7, level: 50, isHidden: true, moves: ["leafblade", "phantomforce", "shadowsneak", "bravebird"], pokeball: "pokeball"},
 		],
 	},
+	decidueyearmor: {
+		learnset: {
+			ironhead: ["8M"],
+			flashcannon: ["8M"],
+			gyroball: ["8M"],
+			shiftgear: ["8M"],
+			bulletpunch: ["8M"],
+			jumpkick: ["8M"],
+			darkpulse: ["8M"],
+			heatwave: ["8M"],
+			thunderwave: ["8M"],
+			thunderbolt: ["8M"],
+		}
+	},
 	decidueyehisui: {
 		learnset: {
 			aerialace: ["8M"],
@@ -93311,6 +93410,21 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			workup: ["8M"],
 			zenheadbutt: ["8M", "7T"],
 		},
+	},
+	lycanrocduskarmor: {
+		learnset: {
+			powerwhip: ["8M"],
+			extremespeed: ["8M"],
+			morningsun: ["8M"],
+			moonlight: ["8M"],
+			aerialace: ["8M"],
+			bonerush: ["8M"],
+			solarblade: ["8M"],
+			honeclaws: ["8M"],
+			jawlock: ["8M"],
+			flamecharge: ["8M"],
+			temperflare: ["8M"],
+		}
 	},
 	wishiwashi: {
 		learnset: {
@@ -100675,6 +100789,18 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			whirlpool: ["8M"],
 			workup: ["8M"],
 		},
+	},
+	grapploctarmor: {
+		learnset: {
+			thunderpunch: ["8M"],
+			bodypress: ["8M"],
+			rockslide: ["8M"],
+			stoneedge: ["8M"],
+			rapidspin: ["8M"],
+			darkestlariat: ["8M"],
+			aquajet: ["8M"],
+			recover: ["8M"],
+		}
 	},
 	sinistea: {
 		learnset: {

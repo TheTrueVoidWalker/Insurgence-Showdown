@@ -23142,7 +23142,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 			source.addVolatile('fling');
 		},
 		onAfterHit(target, source, move) {
-			if (source.item || source.volatiles['gem']) {
+			if (source.volatiles['gem']) {
 				return;
 			}
 			const yourItem = target.takeItem(source);
