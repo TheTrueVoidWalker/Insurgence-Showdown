@@ -23109,7 +23109,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		num: 2027,
 		accuracy: 100,
 		basePower: 0,
-		category: "Physical",
+		category: "Special",
 		name: "Pillaging Plunder",
 		pp: 10,
 		priority: 0,
@@ -23139,7 +23139,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 					move.secondaries.push({volatileStatus: item.fling.volatileStatus});
 				}
 			}
-			source.addVolatile('fling');
+			//source.addVolatile('fling');
 		},
 		onAfterHit(target, source, move) {
 			if (source.volatiles['gem']) {

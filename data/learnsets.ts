@@ -518,6 +518,22 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 6, level: 100, isHidden: true, moves: ["solarbeam", "frenzyplant", "synthesis", "grasspledge"], pokeball: "cherishball"},
 		],
 	},
+	venusaurarmor: {
+		learnset: {
+			ironhead: ["8M"],
+			flashcannon: ["8M"],
+			steelbeam: ["8M"],
+			discharge: ["8M"],
+			thunderbolt: ["8M"],
+			voltswitch: ["8M"],
+			thunderwave: ["8M"],
+			supercellslam: ["8M"],
+			rapidspin: ["8M"],
+			temperflare: ["8M"],
+			firelash: ["8M"],
+			banefulbunker: ["8M"],
+		}
+	},
 	venusaurdelta: {
 		learnset: {
 			achillesheel: ["6M"],
@@ -1893,6 +1909,18 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 3, level: 70, moves: ["protect", "raindance", "skullbash", "hydropump"], pokeball: "pokeball"},
 			{generation: 6, level: 100, isHidden: true, moves: ["hydropump", "hydrocannon", "irondefense", "waterpledge"], pokeball: "cherishball"},
 		],
+	},
+	blastoisearmor: {
+		learnset: {
+			spikes: ["8M"],
+			ironhead: ["8M"],
+			thunderbolt: ["8M"],
+			magnetrise: ["8M"],
+			thunder: ["8M"],
+			steameruption: ["8M"],
+			overheat: ["8M"],
+			slackoff: ["8M"],
+		}
 	},
 	blastoisedelta: {
 		learnset: {
@@ -52600,6 +52628,21 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			swordsdance: ["8M"],
 			closecombat: ["8M"],
 		},
+	},
+	kecleonarmor: {
+		learnset: {
+			spikes: ["8M"],
+			ironhead: ["8M"],
+			irondefense: ["8M"],
+			bodypress: ["8M"],
+			firelash: ["8M"],
+			iceshard: ["8M"],
+			upperhand: ["8M"],
+			grassyglide: ["8M"],
+			watershuriken: ["8M"],
+			firstimpression: ["8M"],
+			nastyplot: ["8M"],
+		}
 	},
 	shuppet: {
 		learnset: {
