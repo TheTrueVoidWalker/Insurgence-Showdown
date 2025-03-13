@@ -26777,7 +26777,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		num: -1003,
 		name: "Lickiliking",
 		types: ["Normal", "Poison"],
-		baseStats: {hp: 150, atk: 85, def: 70, spa: 90, spd: 70, spe: 50},
+		baseStats: {hp: 150, atk: 85, def: 70, spa: 75, spd: 70, spe: 65},
 		abilities: {0: "Sheer Force", 1: "Sticky Hold", H: "Cloud Nine"},
 		heightm: 1.7,
 		weightkg: 140,
