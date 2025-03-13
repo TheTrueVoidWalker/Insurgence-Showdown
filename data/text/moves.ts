@@ -7612,7 +7612,7 @@ export const MovesText: {[k: string]: MoveText} = {
 		shortDesc: "50% chance to turn the target's type to Dragon and flinch.",
 	},
 	gigawattgattling: {
-		name: "Gagawatt Gattling",
+		name: "Gigawatt Gattling",
 		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
 		shortDesc: "Hits 2-5 times in one turn.",
 	},
@@ -7739,5 +7739,10 @@ export const MovesText: {[k: string]: MoveText} = {
 	volcanicpulse: {
 		name: "Volcanic Pulse",
 		shortDesc: "This move does not check accuracy.",
+	},
+	swarmreform: {
+		name: "Swarm Reform",
+		desc: "The user will survive attacks made by other Pokemon during this turn with at least 1 HP. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "User survives attacks this turn with at least 1 HP.",
 	},
 };

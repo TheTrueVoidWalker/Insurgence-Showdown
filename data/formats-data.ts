@@ -5187,7 +5187,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	trubbishdelta: {
 		tier: "LC",
 	},
-	garbodordelta: {
+	junkodor: {
 		tier: "PU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",

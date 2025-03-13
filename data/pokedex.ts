@@ -26776,7 +26776,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	lickiliking: {
 		num: -1003,
 		name: "Lickiliking",
-		types: ["Poison"],
+		types: ["Normal", "Poison"],
 		baseStats: {hp: 150, atk: 85, def: 70, spa: 90, spd: 70, spe: 50},
 		abilities: {0: "Sheer Force", 1: "Sticky Hold", H: "Cloud Nine"},
 		heightm: 1.7,
@@ -26856,7 +26856,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	fulgeroar: {
 		num: -1009,
 		name: "Fulgeroar",
-		types: ["Electic", "Dark"],
+		types: ["Electric", "Dark"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 95, atk: 115, def: 90, spa: 80, spd: 90, spe: 60},
 		abilities: {0: "Strong Jaw", H: "Disruption"},

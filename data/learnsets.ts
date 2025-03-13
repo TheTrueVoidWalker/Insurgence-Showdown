@@ -30080,7 +30080,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			takedown: ["8M"],
 			ironhead: ["8M"],
 			irontail: ["8M"],
-			powerbeam: ["8M"],
+			powergem: ["8M"],
 			meteorbeam: ["8M"],
 
 			bite: ["8E"],
@@ -62026,7 +62026,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			blizzard: ["8M"],
 			raindance: ["8M"],
 			earthpower: ["8M"],
-			dazzligngleam: ["8M"],
+			dazzlinggleam: ["8M"],
 			outrage: ["8M"],
 			stompingtantrum: ["8M"],
 			earthquake: ["8M"],
@@ -76189,7 +76189,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			gunkshot: ["8L43"],
 			explosion: ["8L48"],
 
-			peotect: ["8M"],
+			protect: ["8M"],
 			substitute: ["8M"],
 			rest: ["8M"],
 			sleeptalk: ["8M"],
@@ -88764,6 +88764,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	aegiswarm: {
 		learnset: {
+			swarmreform: ["8L0"],
 			furycutter: ["8L1"],
 			tackle: ["8L1"],
 			firstimpression: ["8L1"],
@@ -88809,7 +88810,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			poisonjab: ["8M"],
 			hypervoice: ["8M"],
 			shadowball: ["8M"],
-			thunderbotl: ["8M"],
+			thunderbolt: ["8M"],
 			sunnyday: ["8M"],
 
 			fellstinger: ["8E"],
@@ -107660,7 +107661,7 @@ farigirafdeltalantern: {
 		gigaimpact: ["8M"],
 		rest: ["8M"],
 		sleeptalk: ["8M"],
-		psychi: ["8M"],
+		psychic: ["8M"],
 		flamethrower: ["8M"],
 		fireblast: ["8M"],
 		darkpulse: ["8M"],
@@ -118914,7 +118915,7 @@ pecharuntdelta: {
 			spitup: ["8E"],
 			punishment: ["8E"],
 			slackoff: ["8E"],
-			stuffedcheeks: ["8E"],
+			stuffcheeks: ["8E"],
 			upperhand: ["8E"],
 		}
 	},

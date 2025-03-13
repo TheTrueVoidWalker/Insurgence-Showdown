@@ -22974,7 +22974,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 95,
 		basePower: 25,
 		category: "Physical",
-		name: "Gagawatt Gattling",
+		name: "Gigawatt Gattling",
 		pp: 20,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
@@ -23548,5 +23548,41 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "any",
 		type: "Fire",
 		contestType: "Beautiful",
+	},
+	swarmreform: {
+		num: 2048,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Swarm Reform",
+		pp: 10,
+		priority: 4,
+		flags: {},
+		stallingMove: true,
+		volatileStatus: 'endure',
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		condition: {
+			duration: 1,
+			onStart(target) {
+				this.add('-singleturn', target, 'move: Endure');
+			},
+			onDamagePriority: -10,
+			onDamage(damage, target, source, effect) {
+				if (effect?.effectType === 'Move' && damage >= target.hp) {
+					this.add('-activate', target, 'move: Endure');
+					return target.hp - 1;
+				}
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Normal",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Tough",
 	},
 };

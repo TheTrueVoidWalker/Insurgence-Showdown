@@ -5068,9 +5068,9 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (attacker.species.baseSpecies === 'Aegislash') {
 				const targetForme = (move.id === 'kingsshield' ? 'Aegislash' : 'Aegislash-Blade');
 				if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
-			} else if (attacker.species.baseSpecies === 'Aegiswarm') {
-				const targetForme = (move.id === 'swarmreform' ? 'Aegiswarm' : 'Aegiswarm-Bow');
-				if (attacker.species.name !== targetForme) attacker.formeChange(targetForme);
+			} else if (attacker.species.baseSpecies === 'Aegiswarm' && move.id === 'swarmreform') {
+				if (attacker.species.name !== 'Aegiswarm') attacker.formeChange('Aegiswarm');
+				else attacker.formeChange('Aegiswarm-Bow');
 			} else return;
 		},
 		isPermanent: true,
