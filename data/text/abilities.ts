@@ -595,7 +595,7 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	guarddog: {
 		name: "Guard Dog",
-		shortDesc: "Immune to Intimidate. Intimidated: +1 Attack. Cannot be forced to switch out.",
+		shortDesc: "Immune to Intimidate/Disruption. Intimidated/Disrupted: +1 Attack/Sp. Attack. Cannot be forced to switch out.",
 	},
 	gulpmissile: {
 		name: "Gulp Missile",
@@ -733,8 +733,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	innerfocus: {
 		name: "Inner Focus",
-		desc: "This Pokemon cannot be made to flinch. This Pokemon is immune to the effect of the Intimidate Ability.",
-		shortDesc: "This Pokemon cannot be made to flinch. Immune to Intimidate.",
+		desc: "This Pokemon cannot be made to flinch. This Pokemon is immune to the effect of the Intimidate/Disruption Ability.",
+		shortDesc: "This Pokemon cannot be made to flinch. Immune to Intimidate/Disruption.",
 		gen7: {
 			desc: "This Pokemon cannot be made to flinch.",
 			shortDesc: "This Pokemon cannot be made to flinch.",
@@ -1058,8 +1058,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	oblivious: {
 		name: "Oblivious",
-		desc: "This Pokemon cannot be infatuated or taunted. Gaining this Ability while affected cures it. Immune to Intimidate.",
-		shortDesc: "This Pokemon cannot be infatuated or taunted. Immune to Intimidate.",
+		desc: "This Pokemon cannot be infatuated or taunted. Gaining this Ability while affected cures it. Immune to /Disruption.",
+		shortDesc: "This Pokemon cannot be infatuated or taunted. Immune to Intimidate/Disruption.",
 		gen7: {
 			desc: "This Pokemon cannot be infatuated or taunted. Gaining this Ability while affected cures it.",
 			shortDesc: "This Pokemon cannot be infatuated or taunted.",
@@ -1104,8 +1104,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	owntempo: {
 		name: "Own Tempo",
-		desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it. Immune to Intimidate.",
-		shortDesc: "This Pokemon cannot be confused. Immune to Intimidate.",
+		desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it. Immune to Intimidate/Disruption.",
+		shortDesc: "This Pokemon cannot be confused. Immune to Intimidate/Disruption.",
 		gen7: {
 			desc: "This Pokemon cannot be confused. Gaining this Ability while confused cures it.",
 			shortDesc: "This Pokemon cannot be confused.",
@@ -1344,8 +1344,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	rattled: {
 		name: "Rattled",
-		desc: "This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidate.",
-		shortDesc: "Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated.",
+		desc: "This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidate/Disruption.",
+		shortDesc: "Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated/Disrupted.",
 		gen7: {
 			desc: "This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack.",
 			shortDesc: "This Pokemon's Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack.",
@@ -1466,8 +1466,8 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 	},
 	scrappy: {
 		name: "Scrappy",
-		desc: "This Pokemon can hit Ghost types with Normal- and Fighting-type moves. Immune to Intimidate.",
-		shortDesc: "Fighting, Normal moves hit Ghost. Immune to Intimidate.",
+		desc: "This Pokemon can hit Ghost types with Normal- and Fighting-type moves. Immune to Intimidate/Disruption.",
+		shortDesc: "Fighting, Normal moves hit Ghost. Immune to Intimidate/Disruption.",
 		gen7: {
 			desc: "This Pokemon can hit Ghost types with Normal- and Fighting-type moves.",
 			shortDesc: "This Pokemon can hit Ghost types with Normal- and Fighting-type moves.",
@@ -2235,5 +2235,10 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Fae Footwork",
 		desc: "If a Pokemon uses a Bug-, Dark-, or Fighting-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon. This Pokemon is immune to Dragon-type moves.",
 		shortDesc: "Gains the immunities and resistances of the Fairy-type.",
+	},
+	disruption: {
+		name: "Disruption",
+		desc: "On switch-in, this Pokemon lowers the Special Attack of adjacent opposing Pokemon by 1 stage. Inner Focus, Oblivious, Own Tempo, Scrappy, and Pokemon behind a substitute are immune.",
+		shortDesc: "On switch-in, this Pokemon lowers the Sp. Attack of adjacent opponents by 1 stage.",
 	},
 };

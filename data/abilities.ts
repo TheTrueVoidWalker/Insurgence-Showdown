@@ -1780,6 +1780,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				delete boost.atk;
 				this.boost({atk: 1}, target, target, null, false, true);
 			}
+			if (effect.name === 'Disruption') {
+				delete boost.spa;
+				this.boost({spa: 1}, target, target, null, false, true);
+			}
 		},
 		name: "Guard Dog",
 		rating: 2,
@@ -2203,6 +2207,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (effect.name === 'Intimidate') {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Inner Focus', '[of] ' + target);
+			}
+			if (effect.name === 'Disruption') {
+				delete boost.spa;
+				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Inner Focus', '[of] ' + target);
 			}
 		},
 		isBreakable: true,
@@ -3116,6 +3124,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Oblivious', '[of] ' + target);
 			}
+			if (effect.name === 'Disruption') {
+				delete boost.spa;
+				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Oblivious', '[of] ' + target);
+			}
 		},
 		isBreakable: true,
 		name: "Oblivious",
@@ -3372,6 +3384,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (effect.name === 'Intimidate') {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Own Tempo', '[of] ' + target);
+			}
+			if (effect.name === 'Disruption') {
+				delete boost.spa;
+				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Own Tempo', '[of] ' + target);
 			}
 		},
 		isBreakable: true,
@@ -4212,7 +4228,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			}
 		},
 		onAfterBoost(boost, target, source, effect) {
-			if (effect && effect.id === 'intimidate') {
+			if (effect && (effect.id === 'intimidate' || effect.id === 'Disruption')) {
 				this.boost({spe: 1});
 			}
 		},
@@ -4543,6 +4559,10 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 			if (effect.name === 'Intimidate') {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Scrappy', '[of] ' + target);
+			}
+			if (effect.name === 'Disruption') {
+				delete boost.spa;
+				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Scrappy', '[of] ' + target);
 			}
 		},
 		name: "Scrappy",
@@ -6813,5 +6833,24 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		gen: 6,
 		rating: 3.5,
 		num: 2015,
+	},
+	disruption: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Disruption', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({spa: -1}, target, pokemon, null, true);
+				}
+			}
+		},
+		name: "Disruption",
+		rating: 3.5,
+		num: 2016,
 	},
 };

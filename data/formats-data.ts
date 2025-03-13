@@ -254,6 +254,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "PU",
 	},
+	spearowdelta: {
+		tier: "LC",
+	},
+	fearowdelta: {
+		tier: "PU",
+	},
 	ekans: {
 		isNonstandard: "Past",
 		tier: "LC",
@@ -902,6 +908,19 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
 	},
+	magnemitedelta: {
+		tier: "LC",
+	},
+	magnetondelta: {
+		tier: "PU",
+		doublesTier: "NFE",
+		natDexTier: "NFE",
+	},
+	magnezonedelta: {
+		tier: "OU",
+		doublesTier: "(DUU)",
+		natDexTier: "OU",
+	},
 	magnezonemega: {
 		isNonstandard: "Past",
 		tier: "OU",
@@ -1044,6 +1063,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomDoubleBattleMoves: ["headsmash", "heavyslam", "highhorsepower", "protect", "rockpolish"],
 		randomDoubleBattleLevel: 88,
 		randomBattleNoDynamaxMoves: ["curse", "earthquake", "headsmash", "heavyslam", "stealthrock", "toxic"],
+		tier: "RU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	onixcrysta: {
+		tier: "LC",
+	},
+	steelixcrystal: {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -1333,6 +1360,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	staryudelta: {
+		tier: "LC",
+	},
+	starmiedelta: {
+		tier: "NU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
 	mimejr: {
 		tier: "LC",
 	},
@@ -1341,6 +1376,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["dazzlinggleam", "fakeout", "icywind", "lightscreen", "psychic", "reflect"],
 		randomDoubleBattleLevel: 88,
+		tier: "(PU)",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	mimejrdelta: {
+		tier: "LC",
+	},
+	mrmimedelta: {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -1357,6 +1400,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 86,
 		randomDoubleBattleMoves: ["fakeout", "focusblast", "freezedry", "icywind", "protect", "psychic", "rapidspin"],
 		randomDoubleBattleLevel: 88,
+		tier: "(PU)",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	mrcrime: {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -1471,6 +1519,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	pinsirdelta: {
+		tier: "(PU)",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
 	pinsirmega: {
 		isNonstandard: "Past",
 		tier: "UU",
@@ -1501,6 +1554,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 	},
 	lapras: {
+		tier: "(PU)",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	laprasdelta: {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -1915,6 +1973,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "RU",
 	},
+	totodiledelta: {
+		tier: "LC",
+	},
+	croconawdelta: {
+		tier: "NFE",
+	},
+	feraligatrdelta: {
+		tier: "RU",
+	},
 	feraligatrmega: {
 		isNonstandard: "Past",
 		tier: "OU",
@@ -2230,6 +2297,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 88,
 		tier: "PU",
 	},
+	girafarigdeltalantern: {
+		tier: "PU",
+	},
 	girafarigmega: {
 		isNonstandard: "Past",
 		tier: "RU",
@@ -2237,6 +2307,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	girafarigdeltamega: {
 		isNonstandard: "Past",
 		tier: "RU",
+	},
+	farigiraf: {
+		isNonstandard: "Past",
+		tier: "PU",
+	},
+	farigirafdeltalantern: {
+		isNonstandard: "Past",
+		tier: "PU",
 	},
 	pineco: {
 		isNonstandard: "Past",
@@ -2319,6 +2397,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["closecombat", "facade", "knockoff", "megahorn", "protect", "swordsdance"],
 		randomDoubleBattleLevel: 84,
+		tier: "RU",
+		doublesTier: "(DUU)",
+		natDexTier: "RUBL",
+	},
+	heracrossdelta: {
 		tier: "RU",
 		doublesTier: "(DUU)",
 		natDexTier: "RUBL",
@@ -3804,6 +3887,15 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "UU",
 	},
+	chimchardelta: {
+		tier: "LC",
+	},
+	monfernodelta: {
+		tier: "NFE",
+	},
+	infernapedelta: {
+		tier: "UU",
+	},
 	piplup: {
 		isNonstandard: "Past",
 		tier: "LC",
@@ -3971,6 +4063,22 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "RU",
 	},
+	shellosun: {
+		tier: "LC",
+	},
+	shellosmoon: {
+		tier: "LC",
+	},
+	gastrodonsun: {
+		tier: "NU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
+	gastrodonmoon: {
+		tier: "NU",
+		doublesTier: "DOU",
+		natDexTier: "RU",
+	},
 	drifloon: {
 		tier: "NFE",
 		natDexTier: "LC",
@@ -4084,6 +4192,17 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 74,
 		randomDoubleBattleMoves: ["dragonclaw", "earthquake", "fireblast", "protect", "rockslide", "swordsdance"],
 		randomDoubleBattleLevel: 79,
+		tier: "OU",
+		doublesTier: "(DUU)",
+		natDexTier: "OU",
+	},
+	gibledelta: {
+		tier: "LC",
+	},
+	gabitedelta: {
+		tier: "NFE",
+	},
+	garchompdelta: {
 		tier: "OU",
 		doublesTier: "(DUU)",
 		natDexTier: "OU",
@@ -5065,6 +5184,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
+	trubbishdelta: {
+		tier: "LC",
+	},
+	garbodordelta: {
+		tier: "PU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
 	garbodorgmax: {
 		randomBattleMoves: ["explosion", "gunkshot", "painsplit", "spikes", "stompingtantrum", "toxicspikes"],
 		randomBattleLevel: 87,
@@ -5107,6 +5234,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["bulletseed", "knockoff", "protect", "rockblast", "tailslap", "tripleaxel", "uturn"],
 		randomDoubleBattleLevel: 86,
+		tier: "PU",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	minccinodelta: {
+		tier: "LC",
+	},
+	cinccinodelta: {
 		tier: "PU",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -7284,6 +7419,17 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
+	grookeydelta: {
+		tier: "LC",
+	},
+	thwackeydelta: {
+		tier: "NFE",
+	},
+	rillaboomdelta: {
+		tier: "OU",
+		doublesTier: "DOU",
+		natDexTier: "OU",
+	},
 	rillaboomgmax: {
 		randomBattleMoves: ["acrobatics", "grassyglide", "highhorsepower", "knockoff", "swordsdance"],
 		randomBattleLevel: 78,
@@ -7303,6 +7449,17 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 74,
 		randomDoubleBattleMoves: ["courtchange", "gunkshot", "highjumpkick", "protect", "pyroball", "suckerpunch", "uturn"],
 		randomDoubleBattleLevel: 80,
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "Uber",
+	},
+	scorbunnydelta: {
+		tier: "LC",
+	},
+	rabootdelta: {
+		tier: "NFE",
+	},
+	cinderacedelta: {
 		tier: "OU",
 		doublesTier: "DUU",
 		natDexTier: "Uber",
@@ -7551,6 +7708,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		randomDoubleBattleMoves: ["hurricane", "icebeam", "protect", "roost", "surf", "tailwind"],
 		randomDoubleBattleLevel: 88,
+		tier: "(PU)",
+		doublesTier: "(DUU)",
+		natDexTier: "RU",
+	},
+	cramorantarmor: {
 		tier: "(PU)",
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
@@ -8131,6 +8293,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	lokix: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	nymbledelta: {
+		tier: "LC",
+	},
+	lokixdelta: {
 		tier: "OU",
 		doublesTier: "DUU",
 		natDexTier: "UU",
@@ -9003,7 +9173,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
-	pecharunt: {
+	pecharuntdelta: {
 		tier: "UU",
 		doublesTier: "DUU",
 		natDexTier: "RU",
@@ -9014,6 +9184,61 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		natDexTier: "Uber",
 	},
 	allknown: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	kanguardia: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	lickiliking: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	damefetchd: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	hivedge: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	doufestation: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	aegiswarm: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	poliking: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	vapourgon: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	critten: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	wattacat: {
+		tier: "OU",
+		doublesTier: "DUU",
+		natDexTier: "UU",
+	},
+	fulgeroar: {
 		tier: "OU",
 		doublesTier: "DUU",
 		natDexTier: "UU",
