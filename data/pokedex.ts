@@ -26629,10 +26629,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	lickiliking: {
 		num: -1003,
 		name: "Lickiliking",
-		types: ["Fairy", "Ice"],
-		gender: "F",
-		baseStats: {hp: 65, atk: 85, def: 105, spa: 125, spd: 130, spe: 90},
-		abilities: {0: "Refrigerate", 1: "Aroma Veil", H: "Well-Baked Body"},
+		types: ["Poison"],
+		baseStats: {hp: 150, atk: 85, def: 70, spa: 90, spd: 70, spe: 50},
+		abilities: {0: "Sheer Force", 1: "Sticky Hold", H: "Cloud Nine"},
 		heightm: 1.7,
 		weightkg: 140,
 		color: "Pink",
